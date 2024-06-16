@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "farm_and_charm:corn"
+    }
+  ],
+  "result": {
+    "item": "cornexpansion:corn_on_the_cob",
+    "count": 3
+  }
+}

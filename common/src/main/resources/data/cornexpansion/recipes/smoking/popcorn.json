@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "farm_and_charm:kernels"
+  },
+  "result": "cornexpansion:popcorn",
+  "experience": 0.1,
+  "cookingtime": 40
+}

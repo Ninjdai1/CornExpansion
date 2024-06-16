@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "farm_and_charm:butter"
+    }
+  ],
+  "result": {
+    "item": "cornexpansion:buttery_popcorn",
+    "count": 3
+  }
+}

@@ -1,0 +1,101 @@
+plugins {
+    id 'dev.architectury.loom' version '1.6-SNAPSHOT' apply false
+    id 'architectury-plugin' version '3.4-SNAPSHOT'
+    id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
+}
+
+tasks.register("multiplatformDatagen") {
+    Project common = project(":common")
+    Project fabric = project(":fabric")
+    Project forge = project(":forge")
+    dependsOn project(":fabric").tasks.named("runDatagen")
+    // Copy the fabric only recipes to the generated resources
+    File fabricDir = fabric.file("src/main/generated/data/cornexpansion/recipes/")
+    File forgeDir = forge.file("src/main/generated/data/cornexpansion/recipes/")
+
+    delete(fabricDir)
+    delete(forgeDir)
+
+    copy {
+        from common.file("src/main/generated/data/cornexpansion/recipes/.fabric")
+        include "**/*.json"
+        into fabric.file("src/main/generated/data/cornexpansion/recipes/")
+    }
+    // Copy the forge only recipes to the generated resources
+    copy {
+        from common.file("src/main/generated/data/cornexpansion/recipes/.forge")
+        include "**/*.json"
+        into forge.file("src/main/generated/data/cornexpansion/recipes/")
+    }
+}
+
+architectury {
+    minecraft = project.minecraft_version
+}
+
+allprojects {
+    group = rootProject.maven_group
+    version = rootProject.mod_version
+}
+
+subprojects {
+    apply plugin: 'dev.architectury.loom'
+    apply plugin: 'architectury-plugin'
+    apply plugin: 'maven-publish'
+
+    base {
+        archivesName = "$rootProject.archives_name-$project.name"
+    }
+
+    loom {
+        silentMojangMappingsLicense()
+    }
+
+    repositories {
+        maven {
+            name "terraform wood api, trinkets"
+            url "https://maven.terraformersmc.com"
+        }
+        maven {
+            name = "Jared's maven"
+            url = "https://maven.blamejared.com/"
+        }
+        repositories {
+            exclusiveContent {
+                forRepository {
+                    maven {
+                        name = "Modrinth"
+                        url = "https://api.modrinth.com/maven"
+                    }
+                }
+                filter {
+                    includeGroup "maven.modrinth"
+                }
+                maven {
+                    name = "Jared's maven"
+                    url = "https://maven.blamejared.com/"
+                }
+            }
+            mavenCentral()
+            maven {
+                url "https://oss.sonatype.org/content/repositories/snapshots/"
+            }
+        }
+    }
+
+    dependencies {
+        minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
+        mappings loom.officialMojangMappings()
+    }
+
+    java {
+        withSourcesJar()
+
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        it.options.release = 17
+    }
+}
