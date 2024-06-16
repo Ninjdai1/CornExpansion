@@ -1,5 +1,9 @@
 {
   "creativetab.cornexpansion.tab": "Corn Expansion",
   "item.cornexpansion.popcorn": "Popcorn",
-  "item.cornexpansion.sweet_popcorn": "Sweet Popcorn"
+  "item.cornexpansion.sweet_popcorn": "Sweet Popcorn",
+  "item.cornexpansion.buttery_popcorn": "Buttery Popcorn",
+  "item.cornexpansion.candied_popcorn": "Candied Popcorn",
+  "item.cornexpansion.cheesy_popcorn": "Cheesy Popcorn",
+  "item.cornexpansion.popcorn_tin": "Popcorn Tin"
 }
