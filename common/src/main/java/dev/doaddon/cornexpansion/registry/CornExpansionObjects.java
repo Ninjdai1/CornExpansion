@@ -34,19 +34,30 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> BUTTERY_POPCORN = ITEMS.register("buttery_popcorn", () -> new Item(
             new Item.Properties().food(BUTTERY_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
-    public static final FoodProperties CHEESY_POPCORN_FOOD_PROPERTIES = createFood(1, 0.1F, MobEffects.ABSORPTION, 200, true, true);
+    public static final FoodProperties CHEESY_POPCORN_FOOD_PROPERTIES = createFood(3, 0.3F, MobEffects.ABSORPTION, 200, true, true);
     public static final RegistrySupplier<Item> CHEESY_POPCORN = ITEMS.register("cheesy_popcorn", () -> new Item(
             new Item.Properties().food(CHEESY_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
+    public static final FoodProperties CANDIED_POPCORN_FOOD_PROPERTIES = createFood(2, 0.2F, MobEffects.ABSORPTION, 200, true, true);
+    public static final RegistrySupplier<Item> CANDIED_POPCORN = ITEMS.register("candied_popcorn", () -> new Item(
+            new Item.Properties().food(CANDIED_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
+    );
+
+// Added Candied in above, and Grilled below. Adjusting the hunger and saturation for cheesy and candied because they, in theory, should be more filling
 
     public static final RegistrySupplier<Item> CORN_ON_THE_COB = ITEMS.register("corn_on_the_cob", () -> new StickFoodItem(
             new Item.Properties().food(createFood(2, 0.2F, false, true)).stacksTo(16).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
+    );
+
+    public static final RegistrySupplier<Item> GRILLED_CORN = ITEMS.register("grilled_corn", () -> new StickFoodItem(
+            new Item.Properties().food(createFood(4, 0.4F, false, true)).stacksTo(16).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
 
     public static final RegistrySupplier<Item> POPCORN_TIN = ITEMS.register("popcorn_tin", () -> new EffectBlockItem(CornExpansionBlocks.POPCORN_TIN_BLOCK.get(), new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     public static final RegistrySupplier<Item> SWEET_POPCORN_TIN = ITEMS.register("sweet_popcorn_tin", () -> new EffectBlockItem(CornExpansionBlocks.SWEET_POPCORN_TIN_BLOCK.get(), new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     public static final RegistrySupplier<Item> BUTTERY_POPCORN_TIN = ITEMS.register("buttery_popcorn_tin", () -> new EffectBlockItem(CornExpansionBlocks.BUTTERY_POPCORN_TIN_BLOCK.get(), new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     public static final RegistrySupplier<Item> CHEESY_POPCORN_TIN = ITEMS.register("cheesy_popcorn_tin", () -> new EffectBlockItem(CornExpansionBlocks.CHEESY_POPCORN_TIN_BLOCK.get(), new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    public static final RegistrySupplier<Item> CANDIED_POPCORN_TIN = ITEMS.register("candied_popcorn_tin", () -> new EffectBlockItem(CornExpansionBlocks.CANDIED_POPCORN_TIN_BLOCK.get(), new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
 
 
     private static FoodProperties createFood(int nutrition, float saturationMod, boolean alwaysEat, boolean fast) {
