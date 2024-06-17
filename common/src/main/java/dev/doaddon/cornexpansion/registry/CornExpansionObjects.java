@@ -17,6 +17,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.satisfy.farm_and_charm.block.FoodBlock;
 import net.satisfy.farm_and_charm.item.food.EffectBlockItem;
+import net.satisfy.farm_and_charm.item.registry.MobEffectRegistry;
 
 public class CornExpansionObjects {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(CornExpansion.MOD_ID, Registries.ITEM);
@@ -26,19 +27,19 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> POPCORN = ITEMS.register("popcorn", () -> new Item(
             new Item.Properties().food(POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
-    public static final FoodProperties SWEET_POPCORN_FOOD_PROPERTIES = createFood(1, 0F, MobEffects.MOVEMENT_SPEED, 100, true, true);
+    public static final FoodProperties SWEET_POPCORN_FOOD_PROPERTIES = createFood(1, 0F, MobEffects.MOVEMENT_SPEED, 200, true, true);
     public static final RegistrySupplier<Item> SWEET_POPCORN = ITEMS.register("sweet_popcorn", () -> new Item(
             new Item.Properties().food(SWEET_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
-    public static final FoodProperties BUTTERY_POPCORN_FOOD_PROPERTIES = createFood(1, 0.1F, MobEffects.REGENERATION, 30, true, true);
+    public static final FoodProperties BUTTERY_POPCORN_FOOD_PROPERTIES = createFood(1, 0.1F, MobEffectRegistry.SATIATION, 1200, true, true);
     public static final RegistrySupplier<Item> BUTTERY_POPCORN = ITEMS.register("buttery_popcorn", () -> new Item(
             new Item.Properties().food(BUTTERY_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
-    public static final FoodProperties CHEESY_POPCORN_FOOD_PROPERTIES = createFood(3, 0.3F, MobEffects.ABSORPTION, 200, true, true);
+    public static final FoodProperties CHEESY_POPCORN_FOOD_PROPERTIES = createFood(3, 0.3F, MobEffectRegistry.SUSTINENCE, 1200, true, true);
     public static final RegistrySupplier<Item> CHEESY_POPCORN = ITEMS.register("cheesy_popcorn", () -> new Item(
             new Item.Properties().food(CHEESY_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
-    public static final FoodProperties CANDIED_POPCORN_FOOD_PROPERTIES = createFood(2, 0.2F, MobEffects.ABSORPTION, 200, true, true);
+    public static final FoodProperties CANDIED_POPCORN_FOOD_PROPERTIES = createFood(2, 0.2F, MobEffectRegistry.SWEETS,600, true, true);
     public static final RegistrySupplier<Item> CANDIED_POPCORN = ITEMS.register("candied_popcorn", () -> new Item(
             new Item.Properties().food(CANDIED_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
