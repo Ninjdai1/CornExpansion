@@ -5,6 +5,7 @@ import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
 import dev.doaddon.cornexpansion.registry.CornExpansionTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -36,22 +37,22 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
                 .requires(Items.SUGAR)
-                .unlockedBy("has_popcorn", FabricRecipeProvider.has(CornExpansionObjects.POPCORN.get()))
+                .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
                 .requires(CornExpansionTags.BUTTER)
-                .unlockedBy("has_popcorn", FabricRecipeProvider.has(CornExpansionObjects.POPCORN.get()))
+                .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CHEESY_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
                 .requires(CornExpansionTags.CHEESE)
-                .unlockedBy("has_popcorn", FabricRecipeProvider.has(CornExpansionObjects.POPCORN.get()))
+                .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CANDIED_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
                 .requires(Items.COCOA_BEANS)
-                .unlockedBy("has_popcorn", FabricRecipeProvider.has(CornExpansionObjects.POPCORN.get()))
+                .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
 
         // Popcorn Tins

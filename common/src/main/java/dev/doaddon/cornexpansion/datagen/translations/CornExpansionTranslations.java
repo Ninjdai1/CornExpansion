@@ -1,6 +1,5 @@
 package dev.doaddon.cornexpansion.datagen.translations;
 
-import dev.doaddon.cornexpansion.CornExpansion;
 import dev.doaddon.cornexpansion.datagen.advancements.CornExpansionAdvancements;
 import dev.doaddon.cornexpansion.registry.CornExpansionBlocks;
 import dev.doaddon.cornexpansion.registry.CornExpansionCreativeTabs;
@@ -43,7 +42,7 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Thanks for downloading Corn Expansion !");
         tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Always go out With A \"Pop\"");
         tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Make Popcorn by cooking Corn Kernels");
-        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're Popping Off !");
-        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Craft all five types of Popcorn");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're Popping Off !");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Craft all four variants of Popcorn");
     }
 }

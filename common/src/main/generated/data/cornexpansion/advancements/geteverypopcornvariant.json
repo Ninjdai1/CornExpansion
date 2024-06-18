@@ -19,12 +19,6 @@
       },
       "trigger": "minecraft:recipe_crafted"
     },
-    "craft_popcorn": {
-      "conditions": {
-        "recipe_id": "cornexpansion:popcorn"
-      },
-      "trigger": "minecraft:recipe_crafted"
-    },
     "craft_sweet_popcorn": {
       "conditions": {
         "recipe_id": "cornexpansion:sweet_popcorn"
@@ -36,7 +30,7 @@
     "announce_to_chat": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
     "description": {
-      "translate": "advancements.cornexpansion.geteverypopcorn.description"
+      "translate": "advancements.cornexpansion.geteverypopcornvariant.description"
     },
     "frame": "goal",
     "hidden": false,
@@ -45,13 +39,10 @@
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.cornexpansion.geteverypopcorn.title"
+      "translate": "advancements.cornexpansion.geteverypopcornvariant.title"
     }
   },
   "requirements": [
-    [
-      "craft_popcorn"
-    ],
     [
       "craft_sweet_popcorn"
     ],
