@@ -1,5 +1,7 @@
 package dev.doaddon.cornexpansion.datagen.translations;
 
+import dev.doaddon.cornexpansion.CornExpansion;
+import dev.doaddon.cornexpansion.datagen.advancements.CornExpansionAdvancements;
 import dev.doaddon.cornexpansion.registry.CornExpansionBlocks;
 import dev.doaddon.cornexpansion.registry.CornExpansionCreativeTabs;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
@@ -30,10 +32,16 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add(CornExpansionBlocks.CANDIED_POPCORN_TIN_BLOCK.get(), "Candied Popcorn Tin");
 
         // Tags
-        tb.add(CornExpansionTags.BUTTER.location(), "Butter");
-        tb.add(CornExpansionTags.CHEESE.location(), "Cheese");
+        tb.add("tags." + CornExpansionTags.BUTTER.location().toLanguageKey(), "Butter");
+        tb.add("tags." + CornExpansionTags.CHEESE.location().toLanguageKey(), "Cheese");
 
-        //Creative tab
+        // Creative tab
         tb.add(CornExpansionCreativeTabs.CORNEXPANSION_TAB.getKey(), "Corn Expansion");
+
+        // Advancements
+        tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Fun is just around the CORNer");
+        tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Thanks for downloading Corn Expansion !");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're popping off !");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Get Popcorn");
     }
 }
