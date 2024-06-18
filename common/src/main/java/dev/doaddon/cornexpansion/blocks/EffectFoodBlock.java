@@ -70,7 +70,6 @@ public class EffectFoodBlock extends FoodBlock {
         } else {
             player.getFoodData().eat(foodComponent.getNutrition(), foodComponent.getSaturationModifier());
             for(Pair<MobEffect, Integer> effect: effects){
-                CornExpansion.LOGGER.info(String.valueOf(effect.getFirst()));
                 player.addEffect(new MobEffectInstance(effect.getFirst(), effect.getSecond()));
             }
             world.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.5f, world.getRandom().nextFloat() * 0.1f + 0.9f);
