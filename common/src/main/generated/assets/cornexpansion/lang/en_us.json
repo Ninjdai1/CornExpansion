@@ -1,5 +1,6 @@
 {
   "block.cornexpansion.buttery_popcorn_tin": "Buttery Popcorn Tin",
+  "block.cornexpansion.candied_popcorn_tin": "Candied Popcorn Tin",
   "block.cornexpansion.cheesy_popcorn_tin": "Cheesy Popcorn Tin",
   "block.cornexpansion.popcorn_tin": "Popcorn Tin",
   "block.cornexpansion.sweet_popcorn_tin": "Sweet Popcorn Tin",
@@ -7,11 +8,9 @@
   "cornexpansion.cheese": "Cheese",
   "creativetab.cornexpansion.tab": "Corn Expansion",
   "item.cornexpansion.buttery_popcorn": "Buttery Popcorn",
+  "item.cornexpansion.candied_popcorn": "Candied Popcorn",
   "item.cornexpansion.cheesy_popcorn": "Cheesy Popcorn",
   "item.cornexpansion.corn_on_the_cob": "Corn On The Cob",
   "item.cornexpansion.popcorn": "Popcorn",
-  "item.cornexpansion.sweet_popcorn": "Sweet Popcorn",
-  "item.cornexpansion.buttery_popcorn": "Buttery Popcorn",
-  "item.cornexpansion.candied_popcorn": "Candied Popcorn",
-  "item.cornexpansion.cheesy_popcorn": "Cheesy Popcorn"
+  "item.cornexpansion.sweet_popcorn": "Sweet Popcorn"
 }

@@ -1,5 +1,6 @@
 package dev.doaddon.cornexpansion.datagen.recipes;
 
+import dev.doaddon.cornexpansion.CornExpansion;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
 import dev.doaddon.cornexpansion.registry.CornExpansionTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -18,9 +19,18 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
 
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> exporter) {
-        SimpleCookingRecipeBuilder.smoking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 40)
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 15)
                 .unlockedBy("has_corn", FabricRecipeProvider.has(ObjectRegistry.CORN.get()))
-                .save(exporter);
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
+                .save(exporter, CornExpansion.id("smoking/popcorn"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 20)
+                .unlockedBy("has_corn", FabricRecipeProvider.has(ObjectRegistry.CORN.get()))
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
+                .save(exporter, CornExpansion.id("campfire/popcorn"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 30)
+                .unlockedBy("has_corn", FabricRecipeProvider.has(ObjectRegistry.CORN.get()))
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
+                .save(exporter, CornExpansion.id("smelting/popcorn"));
 
         // Popcorn variants
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POPCORN.get(), 3)
@@ -38,10 +48,37 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .requires(CornExpansionTags.CHEESE)
                 .unlockedBy("has_popcorn", FabricRecipeProvider.has(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
-        /*ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CANDIED_POPCORN.get(), 3)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CANDIED_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
                 .requires(Items.COCOA_BEANS)
                 .unlockedBy("has_popcorn", FabricRecipeProvider.has(CornExpansionObjects.POPCORN.get()))
-                .save(exporter);*/
+                .save(exporter);
+
+        // Popcorn Tins
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.POPCORN_TIN.get(), 1)
+                .requires(CornExpansionObjects.POPCORN.get(), 8)
+                .requires(Items.BUCKET)
+                .unlockedBy("has_popcorn", FabricRecipeProvider.has(CornExpansionObjects.POPCORN.get()))
+                .save(exporter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POPCORN_TIN.get(), 1)
+                .requires(CornExpansionObjects.SWEET_POPCORN.get(), 8)
+                .requires(Items.BUCKET)
+                .unlockedBy("has_sweet_popcorn", FabricRecipeProvider.has(CornExpansionObjects.SWEET_POPCORN.get()))
+                .save(exporter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POPCORN_TIN.get(), 1)
+                .requires(CornExpansionObjects.BUTTERY_POPCORN.get(), 8)
+                .requires(Items.BUCKET)
+                .unlockedBy("has_buttery_popcorn", FabricRecipeProvider.has(CornExpansionObjects.BUTTERY_POPCORN.get()))
+                .save(exporter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CHEESY_POPCORN_TIN.get(), 1)
+                .requires(CornExpansionObjects.CHEESY_POPCORN.get(), 8)
+                .requires(Items.BUCKET)
+                .unlockedBy("has_cheesy_popcorn", FabricRecipeProvider.has(CornExpansionObjects.CHEESY_POPCORN.get()))
+                .save(exporter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CANDIED_POPCORN_TIN.get(), 1)
+                .requires(CornExpansionObjects.CANDIED_POPCORN.get(), 8)
+                .requires(Items.BUCKET)
+                .unlockedBy("has_candied_popcorn", FabricRecipeProvider.has(CornExpansionObjects.CANDIED_POPCORN.get()))
+                .save(exporter);
     }
 }

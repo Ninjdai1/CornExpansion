@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sweet_popcorn": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornexpansion:sweet_popcorn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cornexpansion:sweet_popcorn_tin"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_sweet_popcorn",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cornexpansion:sweet_popcorn_tin"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_corn": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farm_and_charm:corn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_kernels": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "farm_and_charm:kernels"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cornexpansion:campfire/popcorn"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_corn",
+      "has_kernels",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cornexpansion:campfire/popcorn"
+    ]
+  },
+  "sends_telemetry_event": false
+}

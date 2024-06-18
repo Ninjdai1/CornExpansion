@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_corn": {
+    "has_popcorn": {
       "conditions": {
         "items": [
           {
             "items": [
-              "farm_and_charm:corn"
+              "cornexpansion:popcorn"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "cornexpansion:popcorn"
+        "recipe": "cornexpansion:popcorn_tin"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_corn",
+      "has_popcorn",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "cornexpansion:popcorn"
+      "cornexpansion:popcorn_tin"
     ]
   },
   "sends_telemetry_event": false

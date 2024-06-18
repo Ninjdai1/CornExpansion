@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smoking",
   "category": "food",
-  "cookingtime": 40,
+  "cookingtime": 15,
   "experience": 0.1,
   "ingredient": {
     "item": "farm_and_charm:kernels"

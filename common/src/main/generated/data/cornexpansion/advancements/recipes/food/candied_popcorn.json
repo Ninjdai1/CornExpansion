@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_popcorn": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornexpansion:popcorn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cornexpansion:candied_popcorn"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_popcorn",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cornexpansion:candied_popcorn"
+    ]
+  },
+  "sends_telemetry_event": false
+}
