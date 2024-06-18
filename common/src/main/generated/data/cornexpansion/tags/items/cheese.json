@@ -8,6 +8,14 @@
     {
       "id": "#forge:cheese",
       "required": false
+    },
+    {
+      "id": "#c:cheeses",
+      "required": false
+    },
+    {
+      "id": "#forge:cheeses",
+      "required": false
     }
   ]
 }

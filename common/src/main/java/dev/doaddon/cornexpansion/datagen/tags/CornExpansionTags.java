@@ -19,6 +19,8 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
                 .addOptionalTag(new ResourceLocation("forge:butter"));
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CHEESE)
                 .addOptionalTag(new ResourceLocation("c:cheese"))
-                .addOptionalTag(new ResourceLocation("forge:cheese"));
+                .addOptionalTag(new ResourceLocation("forge:cheese"))
+                .addOptionalTag(new ResourceLocation("c:cheeses"))
+                .addOptionalTag(new ResourceLocation("forge:cheeses"));
     }
 }

@@ -1,17 +1,11 @@
 {
   "parent": "cornexpansion:getcorn",
   "criteria": {
-    "get_popcorn": {
+    "craft_popcorn": {
       "conditions": {
-        "items": [
-          {
-            "items": [
-              "cornexpansion:popcorn"
-            ]
-          }
-        ]
+        "recipe_id": "cornexpansion:popcorn"
       },
-      "trigger": "minecraft:inventory_changed"
+      "trigger": "minecraft:recipe_crafted"
     }
   },
   "display": {
@@ -32,7 +26,7 @@
   },
   "requirements": [
     [
-      "get_popcorn"
+      "craft_popcorn"
     ]
   ],
   "sends_telemetry_event": true

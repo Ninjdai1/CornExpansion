@@ -1,0 +1,99 @@
+{
+  "parent": "cornexpansion:getpopcorn",
+  "criteria": {
+    "get_everypopcorn_buttery": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornexpansion:buttery_popcorn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_everypopcorn_candied": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornexpansion:candied_popcorn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_everypopcorn_cheesy": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornexpansion:cheesy_popcorn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_everypopcorn_popcorn": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornexpansion:popcorn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "get_everypopcorn_sweet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornexpansion:sweet_popcorn"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.cornexpansion.geteverypopcorn.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "cornexpansion:popcorn"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.cornexpansion.geteverypopcorn.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_everypopcorn_popcorn"
+    ],
+    [
+      "get_everypopcorn_sweet"
+    ],
+    [
+      "get_everypopcorn_buttery"
+    ],
+    [
+      "get_everypopcorn_cheesy"
+    ],
+    [
+      "get_everypopcorn_candied"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

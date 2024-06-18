@@ -41,7 +41,9 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         // Advancements
         tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Fun is just around the CORNer");
         tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Thanks for downloading Corn Expansion !");
-        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're popping off !");
-        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Get Popcorn");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Always go out with a \"pop\"");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Make Popcorn by cooking corn kernels");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're popping off !");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Collect all five types of popcorn");
     }
 }
