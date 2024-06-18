@@ -60,11 +60,11 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
                     true,
                     false
             )
-            .addCriterion("get_everypopcorn_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
-            .addCriterion("get_everypopcorn_sweet", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.SWEET_POPCORN.get()))
-            .addCriterion("get_everypopcorn_buttery", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.BUTTERY_POPCORN.get()))
-            .addCriterion("get_everypopcorn_cheesy", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.CHEESY_POPCORN.get()))
-            .addCriterion("get_everypopcorn_candied", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.CANDIED_POPCORN.get()))
+            .addCriterion("craft_popcorn", RecipeCraftedTrigger.TriggerInstance.craftedItem(CornExpansionObjects.POPCORN.getId()))
+            .addCriterion("craft_sweet_popcorn", RecipeCraftedTrigger.TriggerInstance.craftedItem(CornExpansionObjects.SWEET_POPCORN.getId()))
+            .addCriterion("craft_buttery_popcorn", RecipeCraftedTrigger.TriggerInstance.craftedItem(CornExpansionObjects.BUTTERY_POPCORN.getId()))
+            .addCriterion("craft_cheesy_popcorn", RecipeCraftedTrigger.TriggerInstance.craftedItem(CornExpansionObjects.CHEESY_POPCORN.getId()))
+            .addCriterion("craft_candied_popcorn", RecipeCraftedTrigger.TriggerInstance.craftedItem(CornExpansionObjects.CANDIED_POPCORN.getId()))
             .parent(GET_POPCORN_ADVANCEMENT)
             .build(CornExpansion.id("geteverypopcorn"));
 

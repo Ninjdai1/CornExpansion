@@ -39,11 +39,11 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add(CornExpansionCreativeTabs.CORNEXPANSION_TAB.getKey(), "Corn Expansion");
 
         // Advancements
-        tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Fun is just around the CORNer");
+        tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Fun is Just Around the CORNer");
         tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Thanks for downloading Corn Expansion !");
-        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Always go out with a \"pop\"");
-        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Make Popcorn by cooking corn kernels");
-        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're popping off !");
-        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Collect all five types of popcorn");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Always go out With A \"Pop\"");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Make Popcorn by cooking Corn Kernels");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're Popping Off !");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Craft all five types of Popcorn");
     }
 }
