@@ -3,6 +3,7 @@ package dev.doaddon.cornexpansion.datagen.translations;
 import dev.doaddon.cornexpansion.registry.CornExpansionBlocks;
 import dev.doaddon.cornexpansion.registry.CornExpansionCreativeTabs;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
+import dev.doaddon.cornexpansion.registry.CornExpansionTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 
@@ -25,6 +26,10 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add(CornExpansionBlocks.SWEET_POPCORN_TIN_BLOCK.get(), "Sweet Popcorn Tin");
         tb.add(CornExpansionBlocks.BUTTERY_POPCORN_TIN_BLOCK.get(), "Buttery Popcorn Tin");
         tb.add(CornExpansionBlocks.CHEESY_POPCORN_TIN_BLOCK.get(), "Cheesy Popcorn Tin");
+
+        // Tags
+        tb.add(CornExpansionTags.BUTTER.location(), "Butter");
+        tb.add(CornExpansionTags.CHEESE.location(), "Cheese");
 
         //Creative tab
         tb.add(CornExpansionCreativeTabs.CORNEXPANSION_TAB.getKey(), "Corn Expansion");

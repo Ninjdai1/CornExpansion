@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:butter",
+      "required": false
+    },
+    {
+      "id": "#forge:butter",
+      "required": false
+    }
+  ]
+}

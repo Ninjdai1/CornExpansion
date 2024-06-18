@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#c:cheese",
+      "required": false
+    },
+    {
+      "id": "#forge:cheese",
+      "required": false
+    }
+  ]
+}

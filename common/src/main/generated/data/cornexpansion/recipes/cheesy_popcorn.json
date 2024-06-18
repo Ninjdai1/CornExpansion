@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "tag": "cornexpansion:cheese"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "cornexpansion:cheesy_popcorn"
+  }
+}
