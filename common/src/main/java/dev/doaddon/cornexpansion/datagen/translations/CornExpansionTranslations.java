@@ -20,11 +20,6 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add(CornExpansionObjects.CHEESY_POPCORN.get(), "Cheesy Popcorn");
         tb.add(CornExpansionObjects.CORN_ON_THE_COB.get(), "Corn On The Cob");
 
-        tb.add(CornExpansionObjects.POPCORN_TIN.get(), "Popcorn Tin");
-        tb.add(CornExpansionObjects.SWEET_POPCORN_TIN.get(), "Sweet Popcorn Tin");
-        tb.add(CornExpansionObjects.BUTTERY_POPCORN_TIN.get(), "Buttery Popcorn Tin");
-        tb.add(CornExpansionObjects.CHEESY_POPCORN_TIN.get(), "Cheesy Popcorn Tin");
-
         // Blocks
         tb.add(CornExpansionBlocks.POPCORN_TIN_BLOCK.get(), "Popcorn Tin");
         tb.add(CornExpansionBlocks.SWEET_POPCORN_TIN_BLOCK.get(), "Sweet Popcorn Tin");
