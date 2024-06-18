@@ -80,7 +80,7 @@ public class EffectFoodBlock extends FoodBlock {
             if (bites < maxBites - 1) {
                 world.setBlock(pos, state.setValue(BITES, bites + 1), 3);
             } else {
-                world.destroyBlock(pos, false);
+                world.destroyBlock(pos, true);
                 world.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
             }
             return InteractionResult.SUCCESS;

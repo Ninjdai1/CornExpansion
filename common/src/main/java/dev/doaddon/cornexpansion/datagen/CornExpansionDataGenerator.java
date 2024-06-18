@@ -1,6 +1,7 @@
 package dev.doaddon.cornexpansion.datagen;
 
 import dev.doaddon.cornexpansion.datagen.advancements.CornExpansionAdvancements;
+import dev.doaddon.cornexpansion.datagen.loottables.CornExpansionBlockLootTable;
 import dev.doaddon.cornexpansion.datagen.recipes.CornExpansionRecipes;
 import dev.doaddon.cornexpansion.datagen.tags.CornExpansionTags;
 import dev.doaddon.cornexpansion.datagen.translations.CornExpansionTranslations;
@@ -16,5 +17,6 @@ public class CornExpansionDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(CornExpansionTranslations::new);
         pack.addProvider(CornExpansionRecipes::new);
         pack.addProvider(CornExpansionAdvancements::new);
+        pack.addProvider(CornExpansionBlockLootTable::new);
     }
 }
