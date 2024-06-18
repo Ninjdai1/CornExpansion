@@ -16,6 +16,7 @@ public class CornExpansionBlocks {
     public static final RegistrySupplier<Block> SWEET_POPCORN_TIN_BLOCK = BLOCKS.register("sweet_popcorn_tin", () -> new EffectFoodBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 9, CornExpansionObjects.SWEET_POPCORN_FOOD_PROPERTIES));
     public static final RegistrySupplier<Block> BUTTERY_POPCORN_TIN_BLOCK = BLOCKS.register("buttery_popcorn_tin", () -> new EffectFoodBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 9, CornExpansionObjects.BUTTERY_POPCORN_FOOD_PROPERTIES));
     public static final RegistrySupplier<Block> CHEESY_POPCORN_TIN_BLOCK = BLOCKS.register("cheesy_popcorn_tin", () -> new EffectFoodBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 9, CornExpansionObjects.CHEESY_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> CANDIED_POPCORN_TIN_BLOCK = BLOCKS.register("candied_popcorn_tin", () -> new EffectFoodBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 9, CornExpansionObjects.CANDIED_POPCORN_FOOD_PROPERTIES));
 
     public static void init() {
         BLOCKS.register();

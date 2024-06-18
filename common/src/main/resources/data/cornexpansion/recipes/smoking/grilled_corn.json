@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smoking",
   "ingredient": {
-    "item": "farm_and_charm:kernels"
+    "item": "cornexpansion:corn_on_the_cob"
   },
-  "result": "cornexpansion:popcorn",
+  "result": "cornexpansion:grilled_corn",
   "experience": 0.1,
   "cookingtime": 40
 }
