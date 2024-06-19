@@ -25,15 +25,15 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> SWEET_POPCORN = ITEMS.register("sweet_popcorn", () -> new Item(
             new Item.Properties().food(SWEET_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
-    public static final FoodProperties BUTTERY_POPCORN_FOOD_PROPERTIES = FoodUtils.createFood(1, 0.1F, MobEffectRegistry.SATIATION.get(), 1200, true, true);
+    public static final FoodProperties BUTTERY_POPCORN_FOOD_PROPERTIES = FoodUtils.createFood(1, 0.1F, MobEffectRegistry.SATIATION, 1200, true, true);
     public static final RegistrySupplier<Item> BUTTERY_POPCORN = ITEMS.register("buttery_popcorn", () -> new Item(
             new Item.Properties().food(BUTTERY_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
-    public static final FoodProperties CHEESY_POPCORN_FOOD_PROPERTIES = FoodUtils.createFood(3, 0.3F, MobEffectRegistry.SUSTENANCE.get(), 1200, true, true);
+    public static final FoodProperties CHEESY_POPCORN_FOOD_PROPERTIES = FoodUtils.createFood(3, 0.3F, MobEffectRegistry.SUSTENANCE, 1200, true, true);
     public static final RegistrySupplier<Item> CHEESY_POPCORN = ITEMS.register("cheesy_popcorn", () -> new Item(
             new Item.Properties().food(CHEESY_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );
-    public static final FoodProperties CANDIED_POPCORN_FOOD_PROPERTIES = FoodUtils.createFood(2, 0.2F, MobEffectRegistry.SWEETS.get(),600, true, true);
+    public static final FoodProperties CANDIED_POPCORN_FOOD_PROPERTIES = FoodUtils.createFood(2, 0.2F, MobEffectRegistry.SWEETS,600, true, true);
     public static final RegistrySupplier<Item> CANDIED_POPCORN = ITEMS.register("candied_popcorn", () -> new Item(
             new Item.Properties().food(CANDIED_POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
     );

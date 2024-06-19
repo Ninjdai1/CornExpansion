@@ -21,6 +21,6 @@ public final class CornExpansion {
         CornExpansionObjects.init();
         CornExpansionCreativeTabs.init();
 
-        LOGGER.info("[Let's Do Addon] Corn Expansion initialized !");
+        LOGGER.info("Finished initializing !");
     }
 }
