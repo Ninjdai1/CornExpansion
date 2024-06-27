@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+    {
+        "item": "farm_and_charm:pizza"
+    }
+    ],
+    "result": {
+    "item": "farm_and_charm:pizza_slice",
+    "count": 4
+    }
+}
