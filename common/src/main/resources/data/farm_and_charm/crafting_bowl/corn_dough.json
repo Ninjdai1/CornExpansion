@@ -1,0 +1,21 @@
+{
+  "type": "farm_and_charm:crafting_bowl",
+  "ingredients": [
+    {
+      "item": "cornexpansion:corn_flour"
+    },
+    {
+      "item": "farm_and_charm:corn"
+    },
+    {
+      "item": "farm_and_charm:yeast"
+    },
+    {
+      "tag": "farm_and_charm:water_bottles"
+    }
+  ],
+  "result": {
+    "item": "cornexpansion:corn_dough",
+    "count": 5
+  }
+}

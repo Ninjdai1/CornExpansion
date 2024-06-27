@@ -1,0 +1,24 @@
+{
+  "type": "doapi:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "brewery"
+        }
+      ],
+      "recipe": {
+        "type": "farm_and_charm:mincer",
+        "ingredient": {
+          "item": "brewery:dried_corn"
+        },
+        "recipe_type": "MEAT",
+        "result": {
+          "item": "cornexpansion:cornmeal",
+          "count": 4
+        }
+      }
+    }
+  ]
+}
