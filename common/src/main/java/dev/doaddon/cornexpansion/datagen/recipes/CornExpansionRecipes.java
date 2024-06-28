@@ -9,6 +9,7 @@ import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.satisfy.farm_and_charm.recipe.StoveRecipe;
 import net.satisfy.farm_and_charm.registry.ObjectRegistry;
 
 import java.util.function.Consumer;
@@ -21,15 +22,15 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> exporter) {
         SimpleCookingRecipeBuilder.smoking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 15)
-                .unlockedBy("has_corn", FabricRecipeProvider.has(ObjectRegistry.CORN.get()))
+                .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
                 .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("smoking/popcorn"));
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 20)
-                .unlockedBy("has_corn", FabricRecipeProvider.has(ObjectRegistry.CORN.get()))
+                .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
                 .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("campfire/popcorn"));
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 30)
-                .unlockedBy("has_corn", FabricRecipeProvider.has(ObjectRegistry.CORN.get()))
+                .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
                 .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("smelting/popcorn"));
 
