@@ -25,6 +25,9 @@ public class CornExpansionObjects {
             new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     public static final RegistrySupplier<Item> CORNMEAL = ITEMS.register("cornmeal", () -> new Item(
             new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+
+    public static final RegistrySupplier<Item> DRIED_KERNELS = ITEMS.register("dried_kernels", () -> new Item(
+            new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     
     public static final FoodProperties POPCORN_FOOD_PROPERTIES = FoodUtils.createFood(1, 0F, true, true);
     public static final RegistrySupplier<Item> POPCORN = ITEMS.register("popcorn", () -> new Item(
