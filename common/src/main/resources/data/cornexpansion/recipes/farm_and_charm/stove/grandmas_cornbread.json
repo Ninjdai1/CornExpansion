@@ -1,0 +1,11 @@
+{
+  "type": "farm_and_charm:stove",
+  "ingredients": [
+    {
+      "item": "cornexpansion:corn_dough"
+    }
+  ],
+  "item": "cornexpansion:grandmas_cornbread",
+  "count": 3,
+  "experience": 0.3
+}

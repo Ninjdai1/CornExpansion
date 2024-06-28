@@ -17,6 +17,18 @@ public class CornExpansionObjects {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(CornExpansion.MOD_ID, Registries.ITEM);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(CornExpansion.MOD_ID, Registries.BLOCK);
 
+    public static final RegistrySupplier<Item> CORN_DOUGH = ITEMS.register("corn_dough", () -> new Item(
+            new Item.Properties().food(FoodUtils.createFood(1, 0.1F, MobEffects.HUNGER, 300, false, false)).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    public static final RegistrySupplier<Item> CORN_FLOUR = ITEMS.register("corn_flour", () -> new Item(
+            new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    public static final RegistrySupplier<Item> DRIED_CORN = ITEMS.register("dried_corn", () -> new Item(
+            new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    public static final RegistrySupplier<Item> CORNMEAL = ITEMS.register("cornmeal", () -> new Item(
+            new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+
+    public static final RegistrySupplier<Item> DRIED_KERNELS = ITEMS.register("dried_kernels", () -> new Item(
+            new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    
     public static final FoodProperties POPCORN_FOOD_PROPERTIES = FoodUtils.createFood(1, 0F, true, true);
     public static final RegistrySupplier<Item> POPCORN = ITEMS.register("popcorn", () -> new Item(
             new Item.Properties().food(POPCORN_FOOD_PROPERTIES).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB))
@@ -50,6 +62,9 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> BUTTERY_POPCORN_TIN = ITEMS.register("buttery_popcorn_tin", () -> new EffectBlockItem(CornExpansionBlocks.BUTTERY_POPCORN_TIN_BLOCK.get(), new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     public static final RegistrySupplier<Item> CHEESY_POPCORN_TIN = ITEMS.register("cheesy_popcorn_tin", () -> new EffectBlockItem(CornExpansionBlocks.CHEESY_POPCORN_TIN_BLOCK.get(), new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     public static final RegistrySupplier<Item> CANDIED_POPCORN_TIN = ITEMS.register("candied_popcorn_tin", () -> new EffectBlockItem(CornExpansionBlocks.CANDIED_POPCORN_TIN_BLOCK.get(), new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+
+    public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = ITEMS.register("grandmas_cornbread", () -> new Item(
+            new Item.Properties().food(FoodUtils.createFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING.get(), 1200, false, false)).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
 
     public static void init() {
         ITEMS.register();
