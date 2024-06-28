@@ -52,7 +52,7 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CANDIED_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
-                .requires(Items.COCOA_BEANS)
+                .requires(CornExpansionTags.CANDIED_INGREDIENT)
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
 

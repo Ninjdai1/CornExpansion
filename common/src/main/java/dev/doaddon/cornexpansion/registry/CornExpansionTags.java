@@ -14,4 +14,5 @@ public class CornExpansionTags {
     public static final TagKey<Item> CORN = TagKey.create(Registries.ITEM, CornExpansion.id("corn"));
     public static final TagKey<Item> DRIED_CORN = TagKey.create(Registries.ITEM, CornExpansion.id("dried_corn"));
     public static final TagKey<Item> SWEET_INGREDIENT = TagKey.create(Registries.ITEM, CornExpansion.id("sweet_ingredient"));
+    public static final TagKey<Item> CANDIED_INGREDIENT = TagKey.create(Registries.ITEM, CornExpansion.id("candied_ingredient"));
 }
