@@ -1,0 +1,11 @@
+{
+  "type": "farm_and_charm:mincer",
+  "ingredient": {
+    "tag": "cornexpansion:dried_corn"
+  },
+  "recipe_type": "MEAT",
+  "result": {
+    "item": "cornexpansion:cornmeal",
+    "count": 4
+  }
+}
