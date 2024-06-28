@@ -1,0 +1,12 @@
+{
+  "type": "farm_and_charm:mincer",
+  "ingredients": [
+    {
+      "item": "cornexpansion:dried_kernels"
+    }
+  ],
+  "result": {
+    "item": "cornexpansion:corn_flour",
+    "count": 2
+  }
+}
