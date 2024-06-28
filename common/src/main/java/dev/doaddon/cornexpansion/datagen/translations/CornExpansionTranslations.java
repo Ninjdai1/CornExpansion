@@ -42,6 +42,10 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         // Tags
         tb.add("tags." + CornExpansionTags.BUTTER.location().toLanguageKey(), "Butter");
         tb.add("tags." + CornExpansionTags.CHEESE.location().toLanguageKey(), "Cheese");
+        tb.add("tags." + CornExpansionTags.CORN.location().toLanguageKey(), "Corn");
+        tb.add("tags." + CornExpansionTags.DRIED_CORN.location().toLanguageKey(), "Dried Corn");
+        tb.add("tags." + CornExpansionTags.CANDIED_INGREDIENT.location().toLanguageKey(), "Candied Ingredient");
+        tb.add("tags." + CornExpansionTags.SWEET_INGREDIENT.location().toLanguageKey(), "Sweet Ingredient");
 
         // Creative tab
         tb.add(CornExpansionCreativeTabs.CORNEXPANSION_TAB.getKey(), "Corn Expansion");

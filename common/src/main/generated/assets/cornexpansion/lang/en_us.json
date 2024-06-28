@@ -14,9 +14,20 @@
   "item.cornexpansion.buttery_popcorn": "Buttery Popcorn",
   "item.cornexpansion.candied_popcorn": "Candied Popcorn",
   "item.cornexpansion.cheesy_popcorn": "Cheesy Popcorn",
+  "item.cornexpansion.corn_dough": "Corn Dough",
+  "item.cornexpansion.corn_flour": "Corn Flour",
   "item.cornexpansion.corn_on_the_cob": "Corn On The Cob",
+  "item.cornexpansion.cornmeal": "Cornmeal",
+  "item.cornexpansion.dried_corn": "Dried Corn",
+  "item.cornexpansion.dried_kernels": "Dried Kernels",
+  "item.cornexpansion.grandmas_cornbread": "Grandma's Cornbread",
+  "item.cornexpansion.grilled_corn": "Grilled Corn",
   "item.cornexpansion.popcorn": "Popcorn",
   "item.cornexpansion.sweet_popcorn": "Sweet Popcorn",
   "tags.cornexpansion.butter": "Butter",
-  "tags.cornexpansion.cheese": "Cheese"
+  "tags.cornexpansion.candied_ingredient": "Candied Ingredient",
+  "tags.cornexpansion.cheese": "Cheese",
+  "tags.cornexpansion.corn": "Corn",
+  "tags.cornexpansion.dried_corn": "Dried Corn",
+  "tags.cornexpansion.sweet_ingredient": "Sweet Ingredient"
 }

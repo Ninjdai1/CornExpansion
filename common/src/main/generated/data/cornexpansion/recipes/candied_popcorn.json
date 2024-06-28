@@ -12,7 +12,7 @@
       "item": "cornexpansion:popcorn"
     },
     {
-      "item": "minecraft:cocoa_beans"
+      "tag": "cornexpansion:candied_ingredient"
     }
   ],
   "result": {

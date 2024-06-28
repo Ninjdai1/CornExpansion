@@ -1,16 +1,17 @@
 {
   "replace": false,
   "values": [
+    "minecraft:cocoa_beans",
     {
-      "id": "farm_and_charm:butter",
+      "id": "create:bar_of_chocolate",
       "required": false
     },
     {
-      "id": "#c:butter",
+      "id": "#c:chocolate",
       "required": false
     },
     {
-      "id": "#forge:butter",
+      "id": "#forge:chocolate",
       "required": false
     }
   ]

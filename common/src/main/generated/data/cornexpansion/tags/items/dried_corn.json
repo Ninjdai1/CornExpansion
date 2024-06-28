@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cornexpansion:dried_corn",
+      "required": false
+    },
+    {
+      "id": "brewery:dried_corn",
+      "required": false
+    }
+  ]
+}
