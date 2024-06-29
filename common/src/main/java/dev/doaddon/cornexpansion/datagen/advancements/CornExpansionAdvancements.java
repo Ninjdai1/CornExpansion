@@ -69,7 +69,7 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
 
     public static Advancement GET_POLENTA_ADVANCEMENT = Advancement.Builder.advancement()
             .display(
-                    CornExpansionObjects.POPCORN.get(),
+                    CornExpansionObjects.POLENTA.get(),
                     Component.translatable("advancements.cornexpansion.get_polenta.title"),
                     Component.translatable("advancements.cornexpansion.get_polenta.description"),
                     new ResourceLocation("minecraft","textures/gui/advancements/backgrounds/adventure.png"),
@@ -84,7 +84,7 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
 
     public static Advancement GET_EVERY_POLENTA_VARIANT_ADVANCEMENT = Advancement.Builder.advancement()
             .display(
-                    CornExpansionObjects.CANDIED_POPCORN.get(),
+                    CornExpansionObjects.CHEESY_POLENTA.get(),
                     Component.translatable("advancements.cornexpansion.get_every_polenta_variant.title"),
                     Component.translatable("advancements.cornexpansion.get_every_polenta_variant.description"),
                     new ResourceLocation("minecraft","textures/gui/advancements/backgrounds/adventure.png"),
