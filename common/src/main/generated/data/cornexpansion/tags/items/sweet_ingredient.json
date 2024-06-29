@@ -3,6 +3,7 @@
   "values": [
     "minecraft:sugar",
     "minecraft:honey_bottle",
+    "cornexpansion:corn_syrup",
     {
       "id": "#c:sugar",
       "required": false

@@ -43,6 +43,7 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.SWEET_INGREDIENT)
                 .add(Items.SUGAR)
                 .add(Items.HONEY_BOTTLE)
+                .add(CornExpansionObjects.CORN_SYRUP.get())
                 .addOptionalTag(new ResourceLocation("c:sugar"))
                 .addOptionalTag(new ResourceLocation("forge:sugar"));
 
