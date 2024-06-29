@@ -67,6 +67,37 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
             .parent(GET_POPCORN_ADVANCEMENT)
             .build(CornExpansion.id("geteverypopcornvariant"));
 
+    public static Advancement GET_POLENTA_ADVANCEMENT = Advancement.Builder.advancement()
+            .display(
+                    CornExpansionObjects.POPCORN.get(),
+                    Component.translatable("advancements.cornexpansion.get_polenta.title"),
+                    Component.translatable("advancements.cornexpansion.get_polenta.description"),
+                    new ResourceLocation("minecraft","textures/gui/advancements/backgrounds/adventure.png"),
+                    FrameType.TASK,
+                    true,
+                    true,
+                    false
+            )
+            .addCriterion("get_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
+            .parent(ROOT_ADVANCEMENT)
+            .build(CornExpansion.id("get_polenta"));
+
+    public static Advancement GET_EVERY_POLENTA_VARIANT_ADVANCEMENT = Advancement.Builder.advancement()
+            .display(
+                    CornExpansionObjects.CANDIED_POPCORN.get(),
+                    Component.translatable("advancements.cornexpansion.get_every_polenta_variant.title"),
+                    Component.translatable("advancements.cornexpansion.get_every_polenta_variant.description"),
+                    new ResourceLocation("minecraft","textures/gui/advancements/backgrounds/adventure.png"),
+                    FrameType.GOAL,
+                    true,
+                    true,
+                    false
+            )
+            .addCriterion("craft_sweet_polenta", RecipeCraftedTrigger.TriggerInstance.craftedItem(CornExpansionObjects.SWEET_POLENTA.getId()))
+            .addCriterion("craft_buttery_polenta", RecipeCraftedTrigger.TriggerInstance.craftedItem(CornExpansionObjects.BUTTERY_POLENTA.getId()))
+            .addCriterion("craft_cheesy_polenta", RecipeCraftedTrigger.TriggerInstance.craftedItem(CornExpansionObjects.CHEESY_POLENTA.getId()))
+            .parent(GET_POLENTA_ADVANCEMENT)
+            .build(CornExpansion.id("get_every_polenta_variant"));
 
     public static Advancement DRINK_CORN_SYRUP = Advancement.Builder.advancement()
             .display(
@@ -88,6 +119,8 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
         consumer.accept(ROOT_ADVANCEMENT);
         consumer.accept(GET_POPCORN_ADVANCEMENT);
         consumer.accept(GET_EVERY_POPCORN_VARIANT_ADVANCEMENT);
+        consumer.accept(GET_POLENTA_ADVANCEMENT);
+        consumer.accept(GET_EVERY_POLENTA_VARIANT_ADVANCEMENT);
         consumer.accept(DRINK_CORN_SYRUP);
     }
 }

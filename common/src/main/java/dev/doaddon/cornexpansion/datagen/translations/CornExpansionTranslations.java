@@ -33,6 +33,11 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add(CornExpansionObjects.GRILLED_CORN.get(), "Grilled Corn");
         tb.add(CornExpansionObjects.GRANDMAS_CORNBREAD.get(), "Grandma's Cornbread");
 
+        tb.add(CornExpansionObjects.POLENTA.get(), "Polenta");
+        tb.add(CornExpansionObjects.SWEET_POLENTA.get(), "Sweet Polenta");
+        tb.add(CornExpansionObjects.BUTTERY_POLENTA.get(), "Buttery Polenta");
+        tb.add(CornExpansionObjects.CHEESY_POLENTA.get(), "Cheesy Polenta");
+
         // Blocks
         tb.add(CornExpansionBlocks.POPCORN_TIN_BLOCK.get(), "Popcorn Tin");
         tb.add(CornExpansionBlocks.SWEET_POPCORN_TIN_BLOCK.get(), "Sweet Popcorn Tin");
@@ -63,6 +68,10 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Make Popcorn by cooking Corn Kernels");
         tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're Popping Off !");
         tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Craft all four variants of Popcorn");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POLENTA_ADVANCEMENT.getId().toLanguageKey() + ".title", "Steam-Powered Corn");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POLENTA_ADVANCEMENT.getId().toLanguageKey() + ".description", "Boil Cornmeal in a stove to make Polenta");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POLENTA_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Polenta of Flavors");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POLENTA_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Craft all three variants of Polenta");
         tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.getId().toLanguageKey() + ".title", "Corny Situation");
         tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.getId().toLanguageKey() + ".description", "Drink Corn Syrup");
     }

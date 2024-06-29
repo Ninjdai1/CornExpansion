@@ -63,6 +63,23 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
 
+        // Polenta variants
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POLENTA.get())
+                .requires(CornExpansionObjects.POLENTA.get())
+                .requires(Items.SUGAR)
+                .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
+                .save(exporter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POLENTA.get())
+                .requires(CornExpansionObjects.POLENTA.get())
+                .requires(CornExpansionTags.BUTTER)
+                .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
+                .save(exporter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CHEESY_POLENTA.get())
+                .requires(CornExpansionObjects.POLENTA.get())
+                .requires(CornExpansionTags.CHEESE)
+                .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
+                .save(exporter);
+
         // Popcorn Tins
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.POPCORN_TIN.get(), 1)
                 .requires(CornExpansionObjects.POPCORN.get(), 8)

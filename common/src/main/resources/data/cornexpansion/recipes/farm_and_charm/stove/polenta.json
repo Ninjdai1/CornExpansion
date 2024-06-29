@@ -1,0 +1,14 @@
+{
+  "type": "farm_and_charm:stove",
+  "ingredients": [
+    {
+      "item": "cornexpansion:cornmeal"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "item": "cornexpansion:polenta",
+  "count": 1,
+  "experience": 0.3
+}

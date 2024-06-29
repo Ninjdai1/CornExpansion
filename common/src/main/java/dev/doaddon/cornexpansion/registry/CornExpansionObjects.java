@@ -70,6 +70,15 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = ITEMS.register("grandmas_cornbread", () -> new Item(
             new Item.Properties().food(FoodUtils.createFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING.get(), 1200, false, false)).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
 
+    public static final RegistrySupplier<Item> POLENTA = ITEMS.register("polenta", () -> new Item(
+            new Item.Properties().food(FoodUtils.createFood(3, 0.2F, false, false)).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    public static final RegistrySupplier<Item> SWEET_POLENTA = ITEMS.register("sweet_polenta", () -> new Item(
+            new Item.Properties().food(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SPEED, 1200, false, false)).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    public static final RegistrySupplier<Item> BUTTERY_POLENTA = ITEMS.register("buttery_polenta", () -> new Item(
+            new Item.Properties().food(FoodUtils.createFood(3, 0.4F, MobEffectRegistry.SATIATION, 1200, false, false)).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    public static final RegistrySupplier<Item> CHEESY_POLENTA = ITEMS.register("cheesy_polenta", () -> new Item(
+            new Item.Properties().food(FoodUtils.createFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, 1200, false, false)).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+
     public static void init() {
         ITEMS.register();
     }
