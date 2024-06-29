@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.FrameType;
+import net.minecraft.advancements.critereon.ConsumeItemTrigger;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.advancements.critereon.RecipeCraftedTrigger;
 import net.minecraft.network.chat.Component;
@@ -50,7 +51,7 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
 
     public static Advancement GET_EVERY_POPCORN_VARIANT_ADVANCEMENT = Advancement.Builder.advancement()
             .display(
-                    CornExpansionObjects.POPCORN.get(),
+                    CornExpansionObjects.CANDIED_POPCORN.get(),
                     Component.translatable("advancements.cornexpansion.geteverypopcornvariant.title"),
                     Component.translatable("advancements.cornexpansion.geteverypopcornvariant.description"),
                     new ResourceLocation("minecraft","textures/gui/advancements/backgrounds/adventure.png"),
@@ -66,10 +67,27 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
             .parent(GET_POPCORN_ADVANCEMENT)
             .build(CornExpansion.id("geteverypopcornvariant"));
 
+
+    public static Advancement DRINK_CORN_SYRUP = Advancement.Builder.advancement()
+            .display(
+                    CornExpansionObjects.CORN_SYRUP.get(),
+                    Component.translatable("advancements.cornexpansion.drink_corn_syrup.title"),
+                    Component.translatable("advancements.cornexpansion.drink_corn_syrup.description"),
+                    new ResourceLocation("minecraft","textures/gui/advancements/backgrounds/adventure.png"),
+                    FrameType.TASK,
+                    true,
+                    true,
+                    true
+            )
+            .addCriterion("drink_corn_syrup", ConsumeItemTrigger.TriggerInstance.usedItem(CornExpansionObjects.CORN_SYRUP.get()))
+            .parent(ROOT_ADVANCEMENT)
+            .build(CornExpansion.id("drink_corn_syrup"));
+
     @Override
     public void generateAdvancement(Consumer<Advancement> consumer) {
         consumer.accept(ROOT_ADVANCEMENT);
         consumer.accept(GET_POPCORN_ADVANCEMENT);
         consumer.accept(GET_EVERY_POPCORN_VARIANT_ADVANCEMENT);
+        consumer.accept(DRINK_CORN_SYRUP);
     }
 }

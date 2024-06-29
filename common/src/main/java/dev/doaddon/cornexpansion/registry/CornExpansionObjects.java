@@ -28,7 +28,7 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> CORNMEAL = ITEMS.register("cornmeal", () -> new Item(
             new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     public static final RegistrySupplier<Item> CORN_SYRUP = ITEMS.register("corn_syrup", () -> new HoneyBottleItem(
-            new Item.Properties().stacksTo(16).craftRemainder(Items.GLASS_BOTTLE).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+            new Item.Properties().stacksTo(16).craftRemainder(Items.GLASS_BOTTLE).food(FoodUtils.createFood(7, 0.3F, MobEffects.MOVEMENT_SLOWDOWN, 1400, true, false)).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
 
     public static final RegistrySupplier<Item> DRIED_KERNELS = ITEMS.register("dried_kernels", () -> new Item(
             new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
