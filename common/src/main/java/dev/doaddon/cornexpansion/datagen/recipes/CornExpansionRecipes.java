@@ -34,6 +34,13 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("smelting/popcorn"));
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CORN_SYRUP.get())
+                .requires(Ingredient.of(CornExpansionTags.CORN), 2)
+                .requires(Items.SUGAR)
+                .requires(Items.GLASS_BOTTLE)
+                .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
+                .save(exporter);
+
         // Popcorn variants
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)

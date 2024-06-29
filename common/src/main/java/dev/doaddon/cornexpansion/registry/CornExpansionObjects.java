@@ -7,7 +7,9 @@ import dev.doaddon.cornexpansion.items.StickFoodItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.HoneyBottleItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.satisfy.farm_and_charm.item.food.EffectBlockItem;
 import net.satisfy.farm_and_charm.registry.MobEffectRegistry;
@@ -25,6 +27,8 @@ public class CornExpansionObjects {
             new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
     public static final RegistrySupplier<Item> CORNMEAL = ITEMS.register("cornmeal", () -> new Item(
             new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
+    public static final RegistrySupplier<Item> CORN_SYRUP = ITEMS.register("corn_syrup", () -> new HoneyBottleItem(
+            new Item.Properties().stacksTo(16).craftRemainder(Items.GLASS_BOTTLE).arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
 
     public static final RegistrySupplier<Item> DRIED_KERNELS = ITEMS.register("dried_kernels", () -> new Item(
             new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB)));
