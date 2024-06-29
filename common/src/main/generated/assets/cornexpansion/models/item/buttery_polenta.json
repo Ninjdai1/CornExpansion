@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "cornexpansion:item/corn_syrup"
+    "layer0": "cornexpansion:item/buttery_polenta"
   }
 }
