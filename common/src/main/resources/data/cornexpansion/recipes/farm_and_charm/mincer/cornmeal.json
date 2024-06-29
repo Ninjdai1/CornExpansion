@@ -1,11 +1,11 @@
 {
-  "type": "farm_and_charm:mincer",
-  "ingredient": {
-    "item": "farm_and_charm:kernels"
-  },
-  "recipe_type": "MEAT",
-  "result": {
-    "item": "cornexpansion:cornmeal",
-    "count": 4
-  }
+    "type": "farm_and_charm:mincer",
+    "ingredient": {
+        "item": "farm_and_charm:kernels"
+    },
+    "recipe_type": "MEAT",
+    "result": {
+        "item": "cornexpansion:cornmeal",
+        "count": 4
+    }
 }
