@@ -27,10 +27,13 @@
   "item.cornexpansion.grilled_corn": "Grilled Corn",
   "item.cornexpansion.popcorn": "Popcorn",
   "item.cornexpansion.sweet_popcorn": "Sweet Popcorn",
+  "tags.c.flour": "Flour",
   "tags.cornexpansion.butter": "Butter",
   "tags.cornexpansion.candied_ingredient": "Candied Ingredient",
   "tags.cornexpansion.cheese": "Cheese",
   "tags.cornexpansion.corn": "Corn",
   "tags.cornexpansion.dried_corn": "Dried Corn",
-  "tags.cornexpansion.sweet_ingredient": "Sweet Ingredient"
+  "tags.cornexpansion.popcorn": "Popcorn",
+  "tags.cornexpansion.sweet_ingredient": "Sweet Ingredient",
+  "tags.forge.flour": "Flour"
 }

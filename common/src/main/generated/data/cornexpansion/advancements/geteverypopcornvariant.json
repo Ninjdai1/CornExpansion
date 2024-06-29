@@ -35,7 +35,7 @@
     "frame": "goal",
     "hidden": false,
     "icon": {
-      "item": "cornexpansion:popcorn"
+      "item": "cornexpansion:candied_popcorn"
     },
     "show_toast": true,
     "title": {
