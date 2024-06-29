@@ -51,5 +51,10 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
                 .addOptional(new ResourceLocation("create:bar_of_chocolate"))
                 .addOptionalTag(new ResourceLocation("c:chocolate"))
                 .addOptionalTag(new ResourceLocation("forge:chocolate"));
+
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR_FABRIC)
+                .add(CornExpansionObjects.CORN_FLOUR.get());
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR_FORGE)
+                .add(CornExpansionObjects.CORN_FLOUR.get());
     }
 }
