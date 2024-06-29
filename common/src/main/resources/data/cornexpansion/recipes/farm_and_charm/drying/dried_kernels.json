@@ -1,0 +1,12 @@
+{
+    "type": "farm_and_charm:drying",
+    "ingredient": {
+        "item": "farm_and_charm:kernels"
+    },
+    "recipe_type": "MEAT",
+    "result": {
+        "item": "cornexpansion:dried_kernels",
+        "count": 1
+    }
+}
+  
