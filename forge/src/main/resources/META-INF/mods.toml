@@ -1,15 +1,19 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "GPLv3"
 
 [[mods]]
 modId = "cornexpansion"
 version = "${version}"
 displayName = "[Let's Do Addon] Corn Expansion"
-authors = "Me!"
+authors = '''
+Ninjdai
+KalWantsPizza
+Satisfy
+'''
 description = '''
-This is an example description! Tell everyone what your mod is about!
+A corn addon for Farm&Charm
 '''
 #logoFile = ""
 

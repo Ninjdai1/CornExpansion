@@ -3,15 +3,17 @@
   "id": "cornexpansion",
   "version": "${version}",
   "name": "[Let's Do Addon] Corn Expansion",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "A corn addon for Farm&Charm",
   "authors": [
-    "Me!"
+    "Ninjdai",
+    "KalWantsPizza",
+    "Satisfy"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Ninjdai1/CornExpansion"
   },
-  "license": "CC0-1.0",
+  "license": "GPLv3",
   "icon": "assets/cornexpansion/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -35,7 +37,7 @@
     "architectury": ">=9.2.14",
     "fabric-api": "*",
 
-    "farm_and_charm": ">=1.0.0"
+    "farm_and_charm": "*"
   },
   "suggests": {
     "another-mod": "*"
