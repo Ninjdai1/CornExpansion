@@ -31,6 +31,7 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
 
         tb.add(CornExpansionObjects.GRILLED_CORN.get(), "Grilled Corn");
         tb.add(CornExpansionObjects.GRANDMAS_CORNBREAD.get(), "Grandma's Cornbread");
+        tb.add(CornExpansionObjects.CORN_SYRUP_COOKIE.get(), "Corn Syrup Cookie");
 
         tb.add(CornExpansionObjects.POLENTA.get(), "Polenta");
         tb.add(CornExpansionObjects.SWEET_POLENTA.get(), "Sweet Polenta");

@@ -37,7 +37,7 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> CORNMEAL = registerItem("cornmeal", () -> new Item( getDefaultItemProperties() ));
 
     public static final RegistrySupplier<Item> CORN_SYRUP = registerItem("corn_syrup", () -> new HoneyBottleItem(
-            getFoodItemSettings(FoodUtils.createFood(7, 0.3F, MobEffects.MOVEMENT_SLOWDOWN, 1400, true, false)).stacksTo(16).craftRemainder(Items.GLASS_BOTTLE)));
+            getFoodItemSettings(FoodUtils.createFood(7, 0.3F, MobEffects.MOVEMENT_SLOWDOWN, CornExpansionFoodProperties.SHORT_DURATION, true, false)).stacksTo(16).craftRemainder(Items.GLASS_BOTTLE)));
 
     public static final RegistrySupplier<Item> DRIED_KERNELS = registerItem("dried_kernels", () -> new Item(getDefaultItemProperties()));
     
@@ -78,16 +78,18 @@ public class CornExpansionObjects {
 
 
     public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new Item(
-            getFoodItemSettings(FoodUtils.createFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING.get(), 1200, false, false))));
+            getFoodItemSettings(FoodUtils.createFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING.get(), CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+    public static final RegistrySupplier<Item> CORN_SYRUP_COOKIE = registerItem("corn_syrup_cookie", () -> new Item(
+            getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SLOWDOWN, CornExpansionFoodProperties.BRIEF_DURATION, false, false))));
 
     public static final RegistrySupplier<Item> POLENTA = registerItem("polenta", () -> new Item(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, false, false))));
     public static final RegistrySupplier<Item> SWEET_POLENTA = registerItem("sweet_polenta", () -> new Item(
-            getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SPEED, 1200, false, false))));
+            getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SPEED, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
     public static final RegistrySupplier<Item> BUTTERY_POLENTA = registerItem("buttery_polenta", () -> new Item(
-            getFoodItemSettings(FoodUtils.createFood(3, 0.4F, MobEffectRegistry.SATIATION, 1200, false, false))));
+            getFoodItemSettings(FoodUtils.createFood(3, 0.4F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
     public static final RegistrySupplier<Item> CHEESY_POLENTA = registerItem("cheesy_polenta", () -> new Item(
-            getFoodItemSettings(FoodUtils.createFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, 1200, false, false))));
+            getFoodItemSettings(FoodUtils.createFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
 
 
     public static void init() {

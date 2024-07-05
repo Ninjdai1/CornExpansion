@@ -41,6 +41,14 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
                 .save(exporter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, CornExpansionObjects.CORN_SYRUP_COOKIE.get(), 8)
+                .pattern("WSB")
+                .define('W', CornExpansionTags.FLOUR)
+                .define('S', CornExpansionObjects.CORN_SYRUP.get())
+                .define('B', CornExpansionTags.BUTTER)
+                .unlockedBy("has_corn_syrup", FabricRecipeProvider.has(CornExpansionObjects.CORN_SYRUP.get()))
+                .save(exporter);
+
         // Popcorn variants
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)

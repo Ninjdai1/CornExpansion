@@ -18,6 +18,7 @@ public class CornExpansionTags {
 
     public static final TagKey<Item> POPCORN = TagKey.create(Registries.ITEM, CornExpansion.id("popcorn"));
 
+    public static final TagKey<Item> FLOUR = TagKey.create(Registries.ITEM, CornExpansion.id("flour"));
     public static final TagKey<Item> FLOUR_FABRIC = TagKey.create(Registries.ITEM, new ResourceLocation("c", "flour"));
     public static final TagKey<Item> FLOUR_FORGE = TagKey.create(Registries.ITEM, new ResourceLocation("forge", "flour"));
 }
