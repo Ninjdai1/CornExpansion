@@ -1,7 +1,6 @@
 package dev.doaddon.cornexpansion.datagen.translations;
 
 import dev.doaddon.cornexpansion.datagen.advancements.CornExpansionAdvancements;
-import dev.doaddon.cornexpansion.registry.CornExpansionBlocks;
 import dev.doaddon.cornexpansion.registry.CornExpansionCreativeTabs;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
 import dev.doaddon.cornexpansion.registry.CornExpansionTags;
@@ -39,11 +38,11 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add(CornExpansionObjects.CHEESY_POLENTA.get(), "Cheesy Polenta");
 
         // Blocks
-        tb.add(CornExpansionBlocks.POPCORN_TIN_BLOCK.get(), "Popcorn Tin");
-        tb.add(CornExpansionBlocks.SWEET_POPCORN_TIN_BLOCK.get(), "Sweet Popcorn Tin");
-        tb.add(CornExpansionBlocks.BUTTERY_POPCORN_TIN_BLOCK.get(), "Buttery Popcorn Tin");
-        tb.add(CornExpansionBlocks.CHEESY_POPCORN_TIN_BLOCK.get(), "Cheesy Popcorn Tin");
-        tb.add(CornExpansionBlocks.CANDIED_POPCORN_TIN_BLOCK.get(), "Candied Popcorn Tin");
+        tb.add(CornExpansionObjects.POPCORN_TIN_BLOCK.get(), "Popcorn Tin");
+        tb.add(CornExpansionObjects.SWEET_POPCORN_TIN_BLOCK.get(), "Sweet Popcorn Tin");
+        tb.add(CornExpansionObjects.BUTTERY_POPCORN_TIN_BLOCK.get(), "Buttery Popcorn Tin");
+        tb.add(CornExpansionObjects.CHEESY_POPCORN_TIN_BLOCK.get(), "Cheesy Popcorn Tin");
+        tb.add(CornExpansionObjects.CANDIED_POPCORN_TIN_BLOCK.get(), "Candied Popcorn Tin");
 
         // Tags
         tb.add("tags." + CornExpansionTags.BUTTER.location().toLanguageKey(), "Butter");

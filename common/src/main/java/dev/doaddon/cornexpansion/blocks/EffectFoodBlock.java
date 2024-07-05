@@ -29,15 +29,11 @@ import java.util.List;
 public class EffectFoodBlock extends FoodBlock {
     private final int maxBites;
     private final FoodProperties foodComponent;
-    private final List<Pair<MobEffect, Integer>> effects = new ArrayList<>();
 
     public EffectFoodBlock(Properties settings, int maxBites, FoodProperties foodComponent) {
         super(settings, maxBites, foodComponent);
         this.maxBites = maxBites;
         this.foodComponent = foodComponent;
-        for(Pair<MobEffectInstance, Float> e: foodComponent.getEffects()){
-            this.effects.add(new Pair<MobEffect, Integer>(e.getFirst().getEffect(), e.getFirst().getDuration()));
-        }
     }
 
     @Override
@@ -69,8 +65,8 @@ public class EffectFoodBlock extends FoodBlock {
             return InteractionResult.PASS;
         } else {
             player.getFoodData().eat(foodComponent.getNutrition(), foodComponent.getSaturationModifier());
-            for(Pair<MobEffect, Integer> effect: effects){
-                player.addEffect(new MobEffectInstance(effect.getFirst(), effect.getSecond()));
+            for(Pair<MobEffectInstance, Float> effect: foodComponent.getEffects()){
+                player.addEffect(new MobEffectInstance(effect.getFirst().getEffect(), effect.getFirst().getDuration()));
             }
             world.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.5f, world.getRandom().nextFloat() * 0.1f + 0.9f);
             world.gameEvent(player, GameEvent.EAT, pos);

@@ -2,7 +2,6 @@ package dev.doaddon.cornexpansion;
 
 import dev.doaddon.cornexpansion.registry.CornExpansionCreativeTabs;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
-import dev.doaddon.cornexpansion.registry.CornExpansionBlocks;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +16,6 @@ public final class CornExpansion {
     }
 
     public static void init() {
-        CornExpansionBlocks.init();
         CornExpansionObjects.init();
         CornExpansionCreativeTabs.init();
 
