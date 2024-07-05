@@ -1,5 +1,6 @@
 package dev.doaddon.cornexpansion;
 
+import dev.doaddon.cornexpansion.registry.CornExpansionCompostables;
 import dev.doaddon.cornexpansion.registry.CornExpansionCreativeTabs;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
 import net.minecraft.resources.ResourceLocation;
@@ -18,6 +19,8 @@ public final class CornExpansion {
     public static void init() {
         CornExpansionObjects.init();
         CornExpansionCreativeTabs.init();
+
+        CornExpansionCompostables.init();
 
         LOGGER.info("Finished initializing !");
     }

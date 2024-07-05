@@ -10,8 +10,15 @@ public class CornExpansionCompostables {
         ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.CHEESY_POPCORN.get(), .2f);
         ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.CANDIED_POPCORN.get(), .2f);
 
+        ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.POLENTA.get(), .2f);
+        ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.SWEET_POLENTA.get(), .2f);
+        ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.BUTTERY_POLENTA.get(), .2f);
+        ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.CHEESY_POLENTA.get(), .2f);
+
         ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.CORN_ON_THE_COB.get(), .3f);
         ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.GRILLED_CORN.get(), .3f);
+        ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.DRIED_CORN.get(), .3f);
+        ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.DRIED_KERNELS.get(), .2f);
 
         ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.CORN_DOUGH.get(), .3f);
         ComposterBlock.COMPOSTABLES.put(CornExpansionObjects.CORN_FLOUR.get(), .3f);
