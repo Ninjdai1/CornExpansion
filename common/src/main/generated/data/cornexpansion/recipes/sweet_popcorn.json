@@ -12,7 +12,7 @@
       "item": "cornexpansion:popcorn"
     },
     {
-      "item": "minecraft:sugar"
+      "tag": "cornexpansion:sweet_ingredient"
     }
   ],
   "result": {

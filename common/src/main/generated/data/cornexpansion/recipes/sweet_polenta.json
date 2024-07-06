@@ -6,7 +6,7 @@
       "item": "cornexpansion:polenta"
     },
     {
-      "item": "minecraft:sugar"
+      "tag": "cornexpansion:sweet_ingredient"
     }
   ],
   "result": {

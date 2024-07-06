@@ -34,10 +34,10 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("smelting/popcorn"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CORN_SYRUP.get())
-                .requires(Ingredient.of(CornExpansionTags.CORN), 2)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CORN_SYRUP.get(), 2)
+                .requires(Ingredient.of(CornExpansionTags.CORN))
                 .requires(Items.SUGAR)
-                .requires(Items.GLASS_BOTTLE)
+                .requires(Items.GLASS_BOTTLE, 2)
                 .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
                 .save(exporter);
 
@@ -52,7 +52,7 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
         // Popcorn variants
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
-                .requires(Items.SUGAR)
+                .requires(CornExpansionTags.SWEET_INGREDIENT)
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POPCORN.get(), 3)
@@ -74,7 +74,7 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
         // Polenta variants
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POLENTA.get())
                 .requires(CornExpansionObjects.POLENTA.get())
-                .requires(Items.SUGAR)
+                .requires(CornExpansionTags.SWEET_INGREDIENT)
                 .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POLENTA.get())
