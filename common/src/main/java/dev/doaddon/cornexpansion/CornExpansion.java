@@ -20,8 +20,6 @@ public final class CornExpansion {
         CornExpansionObjects.init();
         CornExpansionCreativeTabs.init();
 
-        CornExpansionCompostables.init();
-
         LOGGER.info("Finished initializing !");
     }
 }

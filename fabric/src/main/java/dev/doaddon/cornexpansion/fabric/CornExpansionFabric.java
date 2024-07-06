@@ -1,5 +1,6 @@
 package dev.doaddon.cornexpansion.fabric;
 
+import dev.doaddon.cornexpansion.registry.CornExpansionCompostables;
 import net.fabricmc.api.ModInitializer;
 
 import dev.doaddon.cornexpansion.CornExpansion;
@@ -7,11 +8,8 @@ import dev.doaddon.cornexpansion.CornExpansion;
 public final class CornExpansionFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        // This code runs as soon as Minecraft is in a mod-load-ready state.
-        // However, some things (like resources) may still be uninitialized.
-        // Proceed with mild caution.
-
-        // Run our common setup.
         CornExpansion.init();
+
+        CornExpansionCompostables.init();
     }
 }
