@@ -14,6 +14,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
@@ -52,22 +53,22 @@ public class EffectFoodBlock extends FoodBlock {
     }
 
     private InteractionResult tryEat(LevelAccessor world, BlockPos pos, BlockState state, Player player) {
-        if (world instanceof Level level) {
+        if ((!player.canEat(false) && !foodComponent.canAlwaysEat()) || !(world instanceof Level level)) {
+            return InteractionResult.PASS;
+        } else {
+            player.getFoodData().eat(foodComponent.getNutrition(), foodComponent.getSaturationModifier());
+            for(Pair<MobEffectInstance, Float> effect: foodComponent.getEffects()){
+                if(!level.isClientSide && effect.getFirst() != null && level.random.nextFloat() < effect.getSecond())
+                    player.addEffect(new MobEffectInstance(effect.getFirst()));
+            }
+
             for (int count = 0; count < 10; ++count) {
                 double d0 = level.random.nextGaussian() * 0.02D;
                 double d1 = level.random.nextGaussian() * 0.02D;
                 double d2 = level.random.nextGaussian() * 0.02D;
                 level.addParticle(new BlockParticleOption(ParticleTypes.BLOCK, state), pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, d0, d1, d2);
             }
-        }
 
-        if (!player.canEat(false) && !foodComponent.canAlwaysEat()) {
-            return InteractionResult.PASS;
-        } else {
-            player.getFoodData().eat(foodComponent.getNutrition(), foodComponent.getSaturationModifier());
-            for(Pair<MobEffectInstance, Float> effect: foodComponent.getEffects()){
-                player.addEffect(new MobEffectInstance(effect.getFirst().getEffect(), effect.getFirst().getDuration()));
-            }
             world.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.5f, world.getRandom().nextFloat() * 0.1f + 0.9f);
             world.gameEvent(player, GameEvent.EAT, pos);
 
