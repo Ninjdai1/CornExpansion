@@ -79,9 +79,9 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> CANDIED_POPCORN_TIN = registerItem("candied_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) CANDIED_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
 
 
-    public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new Item(
+    public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING.get(), CornExpansionFoodProperties.SHORT_DURATION, false, false))));
-    public static final RegistrySupplier<Item> CORN_SYRUP_COOKIE = registerItem("corn_syrup_cookie", () -> new Item(
+    public static final RegistrySupplier<Item> CORN_SYRUP_COOKIE = registerItem("corn_syrup_cookie", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SLOWDOWN, CornExpansionFoodProperties.BRIEF_DURATION, false, false))));
 
     public static final RegistrySupplier<Item> POLENTA = registerItem("polenta", () -> new EffectItem(
