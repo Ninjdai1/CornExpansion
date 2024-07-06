@@ -69,5 +69,10 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
                 .add(CornExpansionObjects.CORN_FLOUR.get());
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR_FORGE)
                 .add(CornExpansionObjects.CORN_FLOUR.get());
+
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BREAD_FABRIC)
+                .add(CornExpansionObjects.GRANDMAS_CORNBREAD.get());
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BREAD_FORGE)
+                .add(CornExpansionObjects.GRANDMAS_CORNBREAD.get());
     }
 }
