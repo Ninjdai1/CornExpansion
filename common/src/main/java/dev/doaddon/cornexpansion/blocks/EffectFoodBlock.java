@@ -29,7 +29,7 @@ import java.util.List;
 @SuppressWarnings("deprecation")
 public class EffectFoodBlock extends FoodBlock {
     private final int maxBites;
-    private final FoodProperties foodComponent;
+    public final FoodProperties foodComponent;
 
     public EffectFoodBlock(Properties settings, int maxBites, FoodProperties foodComponent) {
         super(settings, maxBites, foodComponent);

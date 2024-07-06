@@ -6,6 +6,8 @@ import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.RegistrySupplier;
 import dev.doaddon.cornexpansion.CornExpansion;
 import dev.doaddon.cornexpansion.blocks.EffectFoodBlock;
+import dev.doaddon.cornexpansion.items.EffectItem;
+import dev.doaddon.cornexpansion.items.PlaceableEffectBlockItem;
 import dev.doaddon.cornexpansion.items.StickFoodItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
@@ -44,16 +46,16 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> POPCORN = registerItem("popcorn", () -> new Item(
             getFoodItemSettings(CornExpansionFoodProperties.POPCORN_FOOD_PROPERTIES))
     );
-    public static final RegistrySupplier<Item> SWEET_POPCORN = registerItem("sweet_popcorn", () -> new Item(
+    public static final RegistrySupplier<Item> SWEET_POPCORN = registerItem("sweet_popcorn", () -> new EffectItem(
             getFoodItemSettings(CornExpansionFoodProperties.SWEET_POPCORN_FOOD_PROPERTIES))
     );
-    public static final RegistrySupplier<Item> BUTTERY_POPCORN = registerItem("buttery_popcorn", () -> new Item(
+    public static final RegistrySupplier<Item> BUTTERY_POPCORN = registerItem("buttery_popcorn", () -> new EffectItem(
             getFoodItemSettings(CornExpansionFoodProperties.BUTTERY_POPCORN_FOOD_PROPERTIES))
     );
-    public static final RegistrySupplier<Item> CHEESY_POPCORN = registerItem("cheesy_popcorn", () -> new Item(
+    public static final RegistrySupplier<Item> CHEESY_POPCORN = registerItem("cheesy_popcorn", () -> new EffectItem(
             getFoodItemSettings(CornExpansionFoodProperties.CHEESY_POPCORN_FOOD_PROPERTIES))
     );
-    public static final RegistrySupplier<Item> CANDIED_POPCORN = registerItem("candied_popcorn", () -> new Item(
+    public static final RegistrySupplier<Item> CANDIED_POPCORN = registerItem("candied_popcorn", () -> new EffectItem(
             getFoodItemSettings(CornExpansionFoodProperties.CANDIED_POPCORN_FOOD_PROPERTIES))
     );
 
@@ -70,11 +72,11 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Block> CHEESY_POPCORN_TIN_BLOCK = registerWithoutItem("cheesy_popcorn_tin", () -> new EffectFoodBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 8, CornExpansionFoodProperties.CHEESY_POPCORN_FOOD_PROPERTIES));
     public static final RegistrySupplier<Block> CANDIED_POPCORN_TIN_BLOCK = registerWithoutItem("candied_popcorn_tin", () -> new EffectFoodBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 8, CornExpansionFoodProperties.CANDIED_POPCORN_FOOD_PROPERTIES));
 
-    public static final RegistrySupplier<Item> POPCORN_TIN = registerItem("popcorn_tin", () -> new EffectBlockItem(POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
-    public static final RegistrySupplier<Item> SWEET_POPCORN_TIN = registerItem("sweet_popcorn_tin", () -> new EffectBlockItem(SWEET_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
-    public static final RegistrySupplier<Item> BUTTERY_POPCORN_TIN = registerItem("buttery_popcorn_tin", () -> new EffectBlockItem(BUTTERY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
-    public static final RegistrySupplier<Item> CHEESY_POPCORN_TIN = registerItem("cheesy_popcorn_tin", () -> new EffectBlockItem(CHEESY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
-    public static final RegistrySupplier<Item> CANDIED_POPCORN_TIN = registerItem("candied_popcorn_tin", () -> new EffectBlockItem(CANDIED_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
+    public static final RegistrySupplier<Item> POPCORN_TIN = registerItem("popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
+    public static final RegistrySupplier<Item> SWEET_POPCORN_TIN = registerItem("sweet_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) SWEET_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
+    public static final RegistrySupplier<Item> BUTTERY_POPCORN_TIN = registerItem("buttery_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) BUTTERY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
+    public static final RegistrySupplier<Item> CHEESY_POPCORN_TIN = registerItem("cheesy_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) CHEESY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
+    public static final RegistrySupplier<Item> CANDIED_POPCORN_TIN = registerItem("candied_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) CANDIED_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties()));
 
 
     public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new Item(
@@ -82,13 +84,13 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> CORN_SYRUP_COOKIE = registerItem("corn_syrup_cookie", () -> new Item(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SLOWDOWN, CornExpansionFoodProperties.BRIEF_DURATION, false, false))));
 
-    public static final RegistrySupplier<Item> POLENTA = registerItem("polenta", () -> new Item(
+    public static final RegistrySupplier<Item> POLENTA = registerItem("polenta", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, false, false))));
-    public static final RegistrySupplier<Item> SWEET_POLENTA = registerItem("sweet_polenta", () -> new Item(
+    public static final RegistrySupplier<Item> SWEET_POLENTA = registerItem("sweet_polenta", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SPEED, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
-    public static final RegistrySupplier<Item> BUTTERY_POLENTA = registerItem("buttery_polenta", () -> new Item(
+    public static final RegistrySupplier<Item> BUTTERY_POLENTA = registerItem("buttery_polenta", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.4F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
-    public static final RegistrySupplier<Item> CHEESY_POLENTA = registerItem("cheesy_polenta", () -> new Item(
+    public static final RegistrySupplier<Item> CHEESY_POLENTA = registerItem("cheesy_polenta", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
 
 
