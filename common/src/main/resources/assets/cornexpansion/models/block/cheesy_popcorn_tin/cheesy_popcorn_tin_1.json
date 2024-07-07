@@ -1,69 +1,283 @@
 {
-	"credit": "Made by Satisfy",
+    "credit": "Made by Satisfy & Ninjdai",
+    "parent": "block/block",
     "render_type": "minecraft:cutout",
-	"textures": {
-		"0": "cornexpansion:block/cheesy_popcorn_tin",
-		"particle": "cornexpansion:item/cheesy_popcorn"
-	},
-	"elements": [
-		{
-			"from": [5, 0, 5],
-			"to": [11, 7, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 5]},
-			"faces": {
-				"north": {"uv": [8, 9, 14, 16], "texture": "#0"},
-				"east": {"uv": [14, 9, 8, 16], "texture": "#0"},
-				"south": {"uv": [8, 9, 14, 16], "texture": "#0"},
-				"west": {"uv": [14, 9, 8, 16], "texture": "#0"},
-				"up": {"uv": [1, 1, 7, 7], "texture": "#0"},
-				"down": {"uv": [0, 0, 6, 6], "texture": "#missing"}
-			}
-		},
-		{
-			"from": [4, 7, 4],
-			"to": [12, 9, 12],
-			"rotation": {"angle": 0, "axis": "y", "origin": [4, 7, 4]},
-			"faces": {
-				"north": {"uv": [8, 0, 16, 2], "texture": "#0"},
-				"east": {"uv": [8, 2, 16, 4], "texture": "#0"},
-				"south": {"uv": [8, 4, 16, 6], "texture": "#0"},
-				"west": {"uv": [8, 6, 16, 8], "texture": "#0"},
-				"up": {"uv": [8, 8, 0, 0], "texture": "#0"},
-				"down": {"uv": [8, 0, 0, 8], "texture": "#0"}
-			}
-		},
-		{
-			"from": [11, 0, 5],
-			"to": [5, 9, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [11, 0, 5]},
-			"faces": {
-				"north": {"uv": [9, 0, 15, 2], "texture": "#0"},
-				"east": {"uv": [9, 0, 15, 2], "texture": "#0"},
-				"south": {"uv": [9, 0, 15, 2], "texture": "#0"},
-				"west": {"uv": [9, 0, 15, 2], "texture": "#0"}
-			}
-		},
-		{
-			"name": "food",
-			"from": [5, 1, 5],
-			"to": [11, 1, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [5, 8, 5]},
-			"faces": {
-				"north": {"uv": [0, 0, 6, 1], "texture": "#missing"},
-				"east": {"uv": [0, 0, 6, 1], "texture": "#missing"},
-				"south": {"uv": [0, 0, 6, 1], "texture": "#missing"},
-				"west": {"uv": [0, 0, 6, 1], "texture": "#missing"},
-				"up": {"uv": [1, 9, 7, 15], "texture": "#0"},
-				"down": {"uv": [1, 9, 7, 15], "texture": "#0"}
-			}
-		}
-	],
-	"groups": [
-		{
-			"name": "tin",
-			"origin": [0, 0, 0],
-			"color": 0,
-			"children": [0, 1, 2, 3]
-		}
-	]
+    "textures": {
+        "0": "cornexpansion:block/cheesy_popcorn_tin",
+        "particle": "cornexpansion:item/cheesy_popcorn"
+    },
+    "elements": [
+        {
+            "from": [
+                5,
+                0,
+                5
+            ],
+            "to": [
+                11,
+                7,
+                11
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    5,
+                    0,
+                    5
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        8,
+                        9,
+                        14,
+                        16
+                    ],
+                    "texture": "#0"
+                },
+                "east": {
+                    "uv": [
+                        14,
+                        9,
+                        8,
+                        16
+                    ],
+                    "texture": "#0"
+                },
+                "south": {
+                    "uv": [
+                        8,
+                        9,
+                        14,
+                        16
+                    ],
+                    "texture": "#0"
+                },
+                "west": {
+                    "uv": [
+                        14,
+                        9,
+                        8,
+                        16
+                    ],
+                    "texture": "#0"
+                },
+                "up": {
+                    "uv": [
+                        1,
+                        1,
+                        7,
+                        7
+                    ],
+                    "texture": "#0"
+                },
+                "down": {
+                    "uv": [
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    "texture": "#0"
+                }
+            }
+        },
+        {
+            "from": [
+                4,
+                7,
+                4
+            ],
+            "to": [
+                12,
+                9,
+                12
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    4,
+                    7,
+                    4
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        8,
+                        0,
+                        16,
+                        2
+                    ],
+                    "texture": "#0"
+                },
+                "east": {
+                    "uv": [
+                        8,
+                        2,
+                        16,
+                        4
+                    ],
+                    "texture": "#0"
+                },
+                "south": {
+                    "uv": [
+                        8,
+                        4,
+                        16,
+                        6
+                    ],
+                    "texture": "#0"
+                },
+                "west": {
+                    "uv": [
+                        8,
+                        6,
+                        16,
+                        8
+                    ],
+                    "texture": "#0"
+                },
+                "up": {
+                    "uv": [
+                        8,
+                        8,
+                        0,
+                        0
+                    ],
+                    "texture": "#0"
+                },
+                "down": {
+                    "uv": [
+                        8,
+                        0,
+                        0,
+                        8
+                    ],
+                    "texture": "#0"
+                }
+            }
+        },
+        {
+            "from": [
+                11,
+                0,
+                5
+            ],
+            "to": [
+                5,
+                9,
+                11
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    11,
+                    0,
+                    5
+                ]
+            },
+            "faces": {
+                "north": {
+                    "uv": [
+                        9,
+                        0,
+                        15,
+                        2
+                    ],
+                    "texture": "#0"
+                },
+                "east": {
+                    "uv": [
+                        9,
+                        0,
+                        15,
+                        2
+                    ],
+                    "texture": "#0"
+                },
+                "south": {
+                    "uv": [
+                        9,
+                        0,
+                        15,
+                        2
+                    ],
+                    "texture": "#0"
+                },
+                "west": {
+                    "uv": [
+                        9,
+                        0,
+                        15,
+                        2
+                    ],
+                    "texture": "#0"
+                }
+            }
+        },
+        {
+            "name": "food",
+            "from": [
+                5,
+                1,
+                5
+            ],
+            "to": [
+                11,
+                1,
+                11
+            ],
+            "rotation": {
+                "angle": 0,
+                "axis": "y",
+                "origin": [
+                    5,
+                    8,
+                    5
+                ]
+            },
+            "faces": {
+                "up": {
+                    "uv": [
+                        1,
+                        9,
+                        7,
+                        15
+                    ],
+                    "texture": "#0"
+                },
+                "down": {
+                    "uv": [
+                        1,
+                        9,
+                        7,
+                        15
+                    ],
+                    "texture": "#0"
+                }
+            }
+        }
+    ],
+    "groups": [
+        {
+            "name": "tin",
+            "origin": [
+                0,
+                0,
+                0
+            ],
+            "color": 0,
+            "children": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ]
 }
