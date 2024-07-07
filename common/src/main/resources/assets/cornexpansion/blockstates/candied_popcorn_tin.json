@@ -1,153 +1,153 @@
 {
   "variants": {
     "bites=0,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_8"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_8"
     },
     "bites=0,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_8",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_8",
       "y": 90
     },
     "bites=0,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_8",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_8",
       "y": 180
     },
     "bites=0,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_8",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_8",
       "y": 270
     },
     "bites=1,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_7",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_7",
       "y": 270
     },
     "bites=1,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_7"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_7"
     },
     "bites=1,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_7",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_7",
       "y": 90
     },
     "bites=1,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_7",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_7",
       "y": 180
     },
     "bites=2,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_6"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_6"
     },
     "bites=2,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_6",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_6",
       "y": 90
     },
     "bites=2,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_6",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_6",
       "y": 180
     },
     "bites=2,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_6",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_6",
       "y": 270
     },
     "bites=3,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_5"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_5"
     },
     "bites=3,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_5",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_5",
       "y": 90
     },
     "bites=3,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_5",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_5",
       "y": 180
     },
     "bites=3,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_5",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_5",
       "y": 270
     },
     "bites=4,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_4"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_4"
     },
     "bites=4,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_4",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_4",
       "y": 90
     },
     "bites=4,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_4",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_4",
       "y": 180
     },
     "bites=4,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_4",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_4",
       "y": 270
     },
     "bites=5,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_3"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_3"
     },
     "bites=5,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_3",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_3",
       "y": 90
     },
     "bites=5,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_3",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_3",
       "y": 180
     },
     "bites=5,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_3",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_3",
       "y": 270
     },
     "bites=6,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_2"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_2"
     },
     "bites=6,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_2",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_2",
       "y": 90
     },
     "bites=6,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_2",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_2",
       "y": 180
     },
     "bites=6,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_2",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_2",
       "y": 270
     },
     "bites=7,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1"
     },
     "bites=7,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 90
     },
     "bites=7,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 180
     },
     "bites=7,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 270
     },
     "bites=8,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1"
     },
     "bites=8,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 90
     },
     "bites=8,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 180
     },
     "bites=8,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 270
     },
     "bites=9,facing=north": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1"
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1"
     },
     "bites=9,facing=east": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 90
     },
     "bites=9,facing=south": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 180
     },
     "bites=9,facing=west": {
-      "model": "cornexpansion:blocks/candied_popcorn_tin/candied_popcorn_tin_1",
+      "model": "cornexpansion:block/candied_popcorn_tin/candied_popcorn_tin_1",
       "y": 270
     }
   }
