@@ -34,6 +34,21 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("smelting/popcorn"));
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CORN_ON_THE_COB.get())
+                .requires(Ingredient.of(CornExpansionTags.CORN))
+                .requires(Items.STICK)
+                .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
+                .save(exporter);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(CornExpansionObjects.CORN_ON_THE_COB.get()), RecipeCategory.FOOD, CornExpansionObjects.GRILLED_CORN.get(), 0.1F, 50)
+                .unlockedBy("has_corn_on_the_cob", FabricRecipeProvider.has(CornExpansionObjects.CORN_ON_THE_COB.get()))
+                .save(exporter, CornExpansion.id("smoking/corn_on_the_cob"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(CornExpansionObjects.CORN_ON_THE_COB.get()), RecipeCategory.FOOD, CornExpansionObjects.GRILLED_CORN.get(), 0.1F, 60)
+                .unlockedBy("has_corn_on_the_cob", FabricRecipeProvider.has(CornExpansionObjects.CORN_ON_THE_COB.get()))
+                .save(exporter, CornExpansion.id("campfire/corn_on_the_cob"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(CornExpansionObjects.CORN_ON_THE_COB.get()), RecipeCategory.FOOD, CornExpansionObjects.GRILLED_CORN.get(), 0.1F, 80)
+                .unlockedBy("has_corn_on_the_cob", FabricRecipeProvider.has(CornExpansionObjects.CORN_ON_THE_COB.get()))
+                .save(exporter, CornExpansion.id("smelting/corn_on_the_cob"));
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CORN_SYRUP.get(), 2)
                 .requires(Ingredient.of(CornExpansionTags.CORN))
                 .requires(Items.SUGAR)
