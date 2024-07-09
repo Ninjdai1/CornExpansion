@@ -6,13 +6,15 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.FrameType;
-import net.minecraft.advancements.critereon.ConsumeItemTrigger;
-import net.minecraft.advancements.critereon.InventoryChangeTrigger;
-import net.minecraft.advancements.critereon.RecipeCraftedTrigger;
+import net.minecraft.advancements.critereon.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.satisfy.farm_and_charm.registry.ObjectRegistry;
 
+import java.util.ArrayList;
 import java.util.function.Consumer;
 
 public class CornExpansionAdvancements extends FabricAdvancementProvider {
@@ -114,6 +116,24 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
             .parent(ROOT_ADVANCEMENT)
             .build(CornExpansion.id("drink_corn_syrup"));
 
+    public static Advancement COOK_KERNELS_ON_CAMPFIRE = Advancement.Builder.advancement()
+            .display(
+                    Items.CAMPFIRE,
+                    Component.translatable("advancements.cornexpansion.cook_kernels_on_campfire.title"),
+                    Component.translatable("advancements.cornexpansion.cook_kernels_on_campfire.description"),
+                    new ResourceLocation("minecraft","textures/gui/advancements/backgrounds/adventure.png"),
+                    FrameType.TASK,
+                    true,
+                    true,
+                    true
+            )
+            .addCriterion("cook_kernels_on_campfire", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(
+                    new LocationPredicate.Builder().setBlock(new BlockPredicate(BlockTags.CAMPFIRES, null, StatePropertiesPredicate.ANY, NbtPredicate.ANY)),
+                    ItemPredicate.Builder.item().of(ObjectRegistry.KERNELS.get())
+            ))
+            .parent(ROOT_ADVANCEMENT)
+            .build(CornExpansion.id("cook_kernels_on_campfire"));
+
     @Override
     public void generateAdvancement(Consumer<Advancement> consumer) {
         consumer.accept(ROOT_ADVANCEMENT);
@@ -122,5 +142,6 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
         consumer.accept(GET_POLENTA_ADVANCEMENT);
         consumer.accept(GET_EVERY_POLENTA_VARIANT_ADVANCEMENT);
         consumer.accept(DRINK_CORN_SYRUP);
+        consumer.accept(COOK_KERNELS_ON_CAMPFIRE);
     }
 }

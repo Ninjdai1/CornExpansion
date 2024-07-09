@@ -74,5 +74,7 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POLENTA_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Craft all three variants of Polenta");
         tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.getId().toLanguageKey() + ".title", "Corny Situation");
         tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.getId().toLanguageKey() + ".description", "Drink Corn Syrup");
+        tb.add("advancements." + CornExpansionAdvancements.COOK_KERNELS_ON_CAMPFIRE.getId().toLanguageKey() + ".title", "These are not Marshmallows !");
+        tb.add("advancements." + CornExpansionAdvancements.COOK_KERNELS_ON_CAMPFIRE.getId().toLanguageKey() + ".description", "Cook Popcorn using a Campfire");
     }
 }
