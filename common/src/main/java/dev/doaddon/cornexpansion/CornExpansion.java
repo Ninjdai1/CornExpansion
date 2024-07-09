@@ -1,6 +1,5 @@
 package dev.doaddon.cornexpansion;
 
-import dev.doaddon.cornexpansion.registry.CornExpansionCompostables;
 import dev.doaddon.cornexpansion.registry.CornExpansionCreativeTabs;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
 import net.minecraft.resources.ResourceLocation;

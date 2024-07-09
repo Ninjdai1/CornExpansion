@@ -9,7 +9,6 @@ import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.satisfy.farm_and_charm.recipe.StoveRecipe;
 import net.satisfy.farm_and_charm.registry.ObjectRegistry;
 
 import java.util.function.Consumer;

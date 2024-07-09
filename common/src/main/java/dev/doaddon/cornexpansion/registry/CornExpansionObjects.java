@@ -18,7 +18,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.satisfy.farm_and_charm.item.food.EffectBlockItem;
 import net.satisfy.farm_and_charm.registry.MobEffectRegistry;
 import dev.doaddon.cornexpansion.utils.CornExpansionFoodProperties;
 import dev.doaddon.cornexpansion.utils.FoodUtils;
