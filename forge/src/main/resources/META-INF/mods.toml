@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/Ninjdai1/CornExpansion/issues"
 license = "GPLv3"
 
 [[mods]]
@@ -15,7 +15,7 @@ Satisfy
 description = '''
 A corn addon for Farm&Charm
 '''
-#logoFile = ""
+logoFile = "assets/cornexpansion/icon.png"
 
 [[dependencies.cornexpansion]]
 modId = "forge"

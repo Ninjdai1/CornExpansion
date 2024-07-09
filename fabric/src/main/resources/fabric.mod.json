@@ -10,7 +10,7 @@
     "Satisfy"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://modrinth.com/project/lets-do-addon-corn-expansion",
     "sources": "https://github.com/Ninjdai1/CornExpansion"
   },
   "license": "GPLv3",
@@ -39,7 +39,11 @@
 
     "farm_and_charm": "*"
   },
-  "suggests": {
-    "another-mod": "*"
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.com/invite/Vddst9txP8"
+      }
+    }
   }
 }
