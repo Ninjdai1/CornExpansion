@@ -143,6 +143,9 @@ publishMods {
         file = project(":fabric").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Fabric"
         version = "${rootProject.mod_version}-fabric"
+        optional {
+            slug = "create-fabric"
+        }
     }
 
     curseforge("curseforgeForge") {
@@ -152,6 +155,9 @@ publishMods {
         file = project(":forge").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Forge"
         version = "${rootProject.mod_version}-forge"
+        optional {
+            slug = "create"
+        }
     }
 
     modrinth("modrinthFabric") {
@@ -161,6 +167,9 @@ publishMods {
         file = project(":fabric").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Fabric"
         version = "${rootProject.mod_version}-fabric"
+        optional {
+            slug = "create-fabric"
+        }
     }
 
     modrinth("modrinthForge") {
@@ -170,5 +179,8 @@ publishMods {
         file = project(":forge").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Forge"
         version = "${rootProject.mod_version}-forge"
+        optional {
+            slug = "create"
+        }
     }
 }
