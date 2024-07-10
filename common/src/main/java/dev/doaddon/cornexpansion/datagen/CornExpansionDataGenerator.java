@@ -4,6 +4,7 @@ import dev.doaddon.cornexpansion.datagen.advancements.CornExpansionAdvancements;
 import dev.doaddon.cornexpansion.datagen.loottables.CornExpansionBlockLootTable;
 import dev.doaddon.cornexpansion.datagen.models.CornExpansionModels;
 import dev.doaddon.cornexpansion.datagen.recipes.CornExpansionRecipes;
+import dev.doaddon.cornexpansion.datagen.recipes.create.CornExpansionMillingRecipes;
 import dev.doaddon.cornexpansion.datagen.tags.CornExpansionTags;
 import dev.doaddon.cornexpansion.datagen.translations.CornExpansionTranslations;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -20,5 +21,8 @@ public class CornExpansionDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(CornExpansionAdvancements::new);
         pack.addProvider(CornExpansionBlockLootTable::new);
         pack.addProvider(CornExpansionModels::new);
+
+        //Create recipes
+        pack.addProvider(CornExpansionMillingRecipes::new);
     }
 }
