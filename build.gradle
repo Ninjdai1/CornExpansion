@@ -184,7 +184,17 @@ publishMods {
         optional {
             slug = "create"
         }
+
+        additionalFiles.from(project(":forge").tasks.named("remapSourcesJar").get().archiveFile)
     }
 
-    additionalFiles.from(project(":forge").tasks.named("remapSourcesJar").get().archiveFile)
+    discord {
+        webhookUrl = providers.environmentVariable("DISCORD_WEBHOOK")
+
+        username = "Let's Do Addons Updates"
+        avatarUrl = "https://cdn.modrinth.com/data/20p2kirx/fcf7cd3ca60d2e1c350154b6196d7063b6d4b7a1.png"
+        content = changelog.map { "# A new version of CornExpansion just came out! \n" + it}
+
+        setPlatforms(platforms.modrinth, platforms.curseforge)
+    }
 }
