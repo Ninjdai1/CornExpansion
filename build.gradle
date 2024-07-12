@@ -170,6 +170,8 @@ publishMods {
         optional {
             slug = "create-fabric"
         }
+
+        additionalFiles.from(project(":fabric").tasks.named("remapSourcesJar").get().archiveFile)
     }
 
     modrinth("modrinthForge") {
@@ -183,4 +185,6 @@ publishMods {
             slug = "create"
         }
     }
+
+    additionalFiles.from(project(":forge").tasks.named("remapSourcesJar").get().archiveFile)
 }
