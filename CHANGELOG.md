@@ -4,3 +4,4 @@
 
 Updated:
 * Tins Voxel Shapes
+* Corn Syrup Cookie, Cornbread and Polentas textures
