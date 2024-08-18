@@ -3,9 +3,15 @@
   "ingredients": [
     {
       "item": "cornexpansion:corn_dough"
+    },
+    {
+      "tag": "farm_and_charm:butter"
+    },
+    {
+      "item": "farm_and_charm:corn"
     }
   ],
   "item": "cornexpansion:grandmas_cornbread",
-  "count": 3,
+  "count": 6,
   "experience": 0.3
 }
