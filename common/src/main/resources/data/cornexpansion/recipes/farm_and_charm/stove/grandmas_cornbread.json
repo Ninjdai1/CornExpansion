@@ -8,10 +8,10 @@
       "tag": "farm_and_charm:butter"
     },
     {
-      "item": "farm_and_charm:corn"
+      "tag": "cornexpansion:sweet_ingredient"
     }
   ],
   "item": "cornexpansion:grandmas_cornbread",
-  "count": 6,
+  "count": 4,
   "experience": 0.3
 }
