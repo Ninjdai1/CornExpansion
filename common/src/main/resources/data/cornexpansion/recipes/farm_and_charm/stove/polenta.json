@@ -5,10 +5,13 @@
       "item": "cornexpansion:cornmeal"
     },
     {
+      "item": "cornexpansion:cornmeal"
+    },
+    {
       "item": "minecraft:water_bucket"
     }
   ],
   "item": "cornexpansion:polenta",
-  "count": 1,
+  "count": 2,
   "experience": 0.3
 }
