@@ -6,14 +6,17 @@ import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
 import dev.doaddon.cornexpansion.registry.CornExpansionTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.minecraft.core.HolderLookup;
+
+import java.util.concurrent.CompletableFuture;
 
 public class CornExpansionTranslations extends FabricLanguageProvider {
-    public CornExpansionTranslations(FabricDataOutput output) {
-        super(output, "en_us");
+    public CornExpansionTranslations(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
+        super(dataOutput, "en_us", registryLookup);
     }
 
     @Override
-    public void generateTranslations(TranslationBuilder tb) {
+    public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder tb) {
         // Items
         tb.add(CornExpansionObjects.POPCORN.get(), "Popcorn");
         tb.add(CornExpansionObjects.SWEET_POPCORN.get(), "Sweet Popcorn");
@@ -56,25 +59,24 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add("tags." + CornExpansionTags.POPCORN.location().toLanguageKey(), "Popcorn");
 
         tb.add("tags." + CornExpansionTags.FLOUR_FABRIC.location().toLanguageKey(), "Flour");
-        tb.add("tags." + CornExpansionTags.FLOUR_FORGE.location().toLanguageKey(), "Flour");
 
         // Creative tab
         tb.add(CornExpansionCreativeTabs.CORNEXPANSION_TAB.getKey(), "Corn Expansion");
 
         // Advancements
-        tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Fun is Just Around the CORNer");
-        tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Thanks for downloading Corn Expansion !");
-        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".title", "Always go out With A \"Pop\"");
-        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.getId().toLanguageKey() + ".description", "Make Popcorn by cooking Corn Kernels");
-        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Now you're Popping Off !");
-        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Craft all four variants of Popcorn");
-        tb.add("advancements." + CornExpansionAdvancements.GET_POLENTA_ADVANCEMENT.getId().toLanguageKey() + ".title", "Steam-Powered Corn");
-        tb.add("advancements." + CornExpansionAdvancements.GET_POLENTA_ADVANCEMENT.getId().toLanguageKey() + ".description", "Boil Cornmeal in a stove to make Polenta");
-        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POLENTA_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".title", "Polenta of Flavors");
-        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POLENTA_VARIANT_ADVANCEMENT.getId().toLanguageKey() + ".description", "Craft all three variants of Polenta");
-        tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.getId().toLanguageKey() + ".title", "Corny Situation");
-        tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.getId().toLanguageKey() + ".description", "Drink Corn Syrup");
-        tb.add("advancements." + CornExpansionAdvancements.COOK_KERNELS_ON_CAMPFIRE.getId().toLanguageKey() + ".title", "These are not Marshmallows !");
-        tb.add("advancements." + CornExpansionAdvancements.COOK_KERNELS_ON_CAMPFIRE.getId().toLanguageKey() + ".description", "Cook Popcorn using a Campfire");
+        tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.id().toLanguageKey() + ".title", "Fun is Just Around the CORNer");
+        tb.add("advancements." + CornExpansionAdvancements.ROOT_ADVANCEMENT.id().toLanguageKey() + ".description", "Thanks for downloading Corn Expansion !");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.id().toLanguageKey() + ".title", "Always go out With A \"Pop\"");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POPCORN_ADVANCEMENT.id().toLanguageKey() + ".description", "Make Popcorn by cooking Corn Kernels");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_VARIANT_ADVANCEMENT.id().toLanguageKey() + ".title", "Now you're Popping Off !");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POPCORN_VARIANT_ADVANCEMENT.id().toLanguageKey() + ".description", "Craft all four variants of Popcorn");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POLENTA_ADVANCEMENT.id().toLanguageKey() + ".title", "Steam-Powered Corn");
+        tb.add("advancements." + CornExpansionAdvancements.GET_POLENTA_ADVANCEMENT.id().toLanguageKey() + ".description", "Boil Cornmeal in a stove to make Polenta");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POLENTA_VARIANT_ADVANCEMENT.id().toLanguageKey() + ".title", "Polenta of Flavors");
+        tb.add("advancements." + CornExpansionAdvancements.GET_EVERY_POLENTA_VARIANT_ADVANCEMENT.id().toLanguageKey() + ".description", "Craft all three variants of Polenta");
+        tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.id().toLanguageKey() + ".title", "Corny Situation");
+        tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.id().toLanguageKey() + ".description", "Drink Corn Syrup");
+        tb.add("advancements." + CornExpansionAdvancements.COOK_KERNELS_ON_CAMPFIRE.id().toLanguageKey() + ".title", "These are not Marshmallows !");
+        tb.add("advancements." + CornExpansionAdvancements.COOK_KERNELS_ON_CAMPFIRE.id().toLanguageKey() + ".description", "Cook Popcorn using a Campfire");
     }
 }

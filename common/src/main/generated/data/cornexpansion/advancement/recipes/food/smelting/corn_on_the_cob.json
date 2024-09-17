@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_corn_on_the_cob": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cornexpansion:corn_on_the_cob"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cornexpansion:smelting/corn_on_the_cob"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_corn_on_the_cob"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cornexpansion:smelting/corn_on_the_cob"
+    ]
+  }
+}

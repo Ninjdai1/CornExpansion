@@ -1,5 +1,5 @@
 package dev.doaddon.cornexpansion.datagen.recipes.create;
-
+/*
 import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
 import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
@@ -32,4 +32,4 @@ public class CornExpansionMillingRecipes extends ProcessingRecipeGen {
     protected IRecipeTypeInfo getRecipeType() {
         return AllRecipeTypes.MILLING;
     }
-}
+}*/

@@ -1,0 +1,34 @@
+{
+  "parent": "cornexpansion:getcorn",
+  "criteria": {
+    "get_popcorn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cornexpansion:popcorn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.cornexpansion.getpopcorn.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "cornexpansion:popcorn"
+    },
+    "title": {
+      "translate": "advancements.cornexpansion.getpopcorn.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_popcorn"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

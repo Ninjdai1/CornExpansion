@@ -7,10 +7,10 @@ import net.minecraft.world.food.FoodProperties;
 
 public class FoodUtilsImpl {
     public static FoodProperties createFood(int nutrition, float saturationMod, RegistrySupplier<MobEffect> effect, int duration, boolean alwaysEat, boolean fast) {
-        FoodProperties.Builder food = new FoodProperties.Builder().nutrition(nutrition).saturationMod(saturationMod);
-        if (alwaysEat) food.alwaysEat();
+        FoodProperties.Builder food = new FoodProperties.Builder().nutrition(nutrition).saturationModifier(saturationMod);
+        if (alwaysEat) food.alwaysEdible();
         if (fast) food.fast();
-        if (effect != null) food.effect(new MobEffectInstance(effect.get(), duration), 1.0f);
+        if (effect != null) food.effect(new MobEffectInstance(effect, duration), 1.0f);
         return food.build();
     }
 }

@@ -1,5 +1,5 @@
 plugins {
-    id 'dev.architectury.loom' version '1.6-SNAPSHOT' apply false
+    id 'dev.architectury.loom' version '1.7-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
     id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
     id "me.modmuss50.mod-publish-plugin" version "0.5.1"
@@ -8,14 +8,14 @@ plugins {
 tasks.register("multiplatformDatagen") {
     Project common = project(":common")
     Project fabric = project(":fabric")
-    Project forge = project(":forge")
+    Project neoforge = project(":neoforge")
     dependsOn project(":fabric").tasks.named("runDatagen")
     // Copy the fabric only recipes to the generated resources
     File fabricDir = fabric.file("src/main/generated/data/cornexpansion/recipes/")
-    File forgeDir = forge.file("src/main/generated/data/cornexpansion/recipes/")
+    File neoforgeDir = neoforge.file("src/main/generated/data/cornexpansion/recipes/")
 
     delete(fabricDir)
-    delete(forgeDir)
+    delete(neoforgeDir)
 
     copy {
         from common.file("src/main/generated/data/cornexpansion/recipes/.fabric")
@@ -24,9 +24,9 @@ tasks.register("multiplatformDatagen") {
     }
     // Copy the forge only recipes to the generated resources
     copy {
-        from common.file("src/main/generated/data/cornexpansion/recipes/.forge")
+        from common.file("src/main/generated/data/cornexpansion/recipes/.neoforge")
         include "**/*.json"
-        into forge.file("src/main/generated/data/cornexpansion/recipes/")
+        into neoforge.file("src/main/generated/data/cornexpansion/recipes/")
     }
 }
 
@@ -103,18 +103,18 @@ subprojects {
     }
 
     tasks.withType(JavaCompile).configureEach {
-        it.options.release = 17
+        it.options.release = 21
     }
 }
 
 
-publishMods {
+/*publishMods {
     changelog = file("CHANGELOG.md").text.replace("@VERSION@", rootProject.mod_version)
     type = STABLE
 
     def optionsCurseforge = curseforgeOptions {
         accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
-        minecraftVersions.add("1.20.1")
+        minecraftVersions.add("1.21.1")
         projectId = "1038740"
         requires {
             slug = "architectury-api"
@@ -127,7 +127,7 @@ publishMods {
     def optionsModrinth = modrinthOptions {
         accessToken = providers.environmentVariable("MODRINTH_API_KEY")
         projectId = "20p2kirx"
-        minecraftVersions.add("1.20.1")
+        minecraftVersions.add("1.21.1")
         requires {
             slug = "architectury-api"
         }
@@ -148,13 +148,12 @@ publishMods {
         }
     }
 
-    curseforge("curseforgeForge") {
+    curseforge("curseforgeNeoforge") {
         from optionsCurseforge
-        modLoaders.add("forge")
         modLoaders.add("neoforge")
-        file = project(":forge").tasks.named("remapJar").get().archiveFile
-        displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Forge"
-        version = "${rootProject.mod_version}-forge"
+        file = project(":neoforge").tasks.named("remapJar").get().archiveFile
+        displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Neoforge"
+        version = "${rootProject.mod_version}-neoforge"
         optional {
             slug = "create"
         }
@@ -174,27 +173,16 @@ publishMods {
         additionalFiles.from(project(":fabric").tasks.named("remapSourcesJar").get().archiveFile)
     }
 
-    modrinth("modrinthForge") {
+    modrinth("modrinthNeoorge") {
         from optionsModrinth
-        modLoaders.add("forge")
         modLoaders.add("neoforge")
-        file = project(":forge").tasks.named("remapJar").get().archiveFile
-        displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Forge"
-        version = "${rootProject.mod_version}-forge"
+        file = project(":neoforge").tasks.named("remapJar").get().archiveFile
+        displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Neoorge"
+        version = "${rootProject.mod_version}-neoforge"
         optional {
             slug = "create"
         }
 
-        additionalFiles.from(project(":forge").tasks.named("remapSourcesJar").get().archiveFile)
+        additionalFiles.from(project(":neoforge").tasks.named("remapSourcesJar").get().archiveFile)
     }
-
-    discord {
-        webhookUrl = providers.environmentVariable("DISCORD_WEBHOOK")
-
-        username = "Let's Do Addons Updates"
-        avatarUrl = "https://cdn.modrinth.com/data/20p2kirx/fcf7cd3ca60d2e1c350154b6196d7063b6d4b7a1.png"
-        content = changelog.map { "# A new version of CornExpansion just came out! \n" + it}
-
-        setPlatforms(platforms.modrinth, platforms.curseforge)
-    }
-}
+}*/

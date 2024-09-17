@@ -15,7 +15,7 @@ dependencies {
     modImplementation "maven.modrinth:do-api:${project.doapi_version}"
     modImplementation "maven.modrinth:lets-do-farm-charm:${project.farm_and_charm_version}"
 
-    modImplementation("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_fabric_version}+mc${project.minecraft_version}")
+    //modImplementation("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_fabric_version}+mc${project.minecraft_version}")
 }
 
 sourceSets {
@@ -27,7 +27,7 @@ sourceSets {
             ]
             exclude ".cache/**"
             exclude "**/.fabric"
-            exclude "**/.forge"
+            exclude "**/.neoforge"
 
         }
     }

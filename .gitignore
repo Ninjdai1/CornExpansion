@@ -5,3 +5,8 @@ run/
 .cache/
 
 utils/output/
+.settings
+bin/
+.classpath
+.factorypath
+.project

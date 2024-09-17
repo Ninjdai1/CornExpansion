@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "farm_and_charm:butter",
+      "required": false
+    },
+    {
+      "id": "#c:butter",
+      "required": false
+    }
+  ]
+}

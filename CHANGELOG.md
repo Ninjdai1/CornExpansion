@@ -1,10 +1,6 @@
 # [Let's Do Addon] CornExpansion `@VERSION@`
-`1.20.1` `Fabric & Forge`
+`1.21.1` `Fabric & Neoforge`
 ### Changelog:
 
-Added:
-* Russian Translation by Ghost_Guardian
-
 Updated:
-* Tins Voxel Shapes
-* Corn Syrup Cookie, Cornbread and Polentas textures
+* Port to 1.21.1

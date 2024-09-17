@@ -11,4 +11,4 @@ rootProject.name = 'cornexpansion'
 
 include 'common'
 include 'fabric'
-include 'forge'
+include 'neoforge'
