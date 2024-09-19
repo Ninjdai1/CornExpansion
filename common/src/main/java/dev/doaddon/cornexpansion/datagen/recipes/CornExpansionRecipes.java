@@ -13,7 +13,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.satisfy.farm_and_charm.registry.ObjectRegistry;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Consumer;
 
 public class CornExpansionRecipes extends FabricRecipeProvider {
     public CornExpansionRecipes(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -59,48 +58,48 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
 
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, CornExpansionObjects.CORN_SYRUP_COOKIE.get(), 8)
                 .pattern("WSB")
-                .define('W', CornExpansionTags.FLOUR)
+                .define('W', CornExpansionTags.FLOURS)
                 .define('S', CornExpansionObjects.CORN_SYRUP.get())
-                .define('B', CornExpansionTags.BUTTER)
+                .define('B', CornExpansionTags.BUTTERS)
                 .unlockedBy("has_corn_syrup", FabricRecipeProvider.has(CornExpansionObjects.CORN_SYRUP.get()))
                 .save(exporter);
 
         // Popcorn variants
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
-                .requires(CornExpansionTags.SWEET_INGREDIENT)
+                .requires(CornExpansionTags.SWEET_INGREDIENTS)
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
-                .requires(CornExpansionTags.BUTTER)
+                .requires(CornExpansionTags.BUTTERS)
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CHEESY_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
-                .requires(CornExpansionTags.CHEESE)
+                .requires(CornExpansionTags.CHEESES)
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CANDIED_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
-                .requires(CornExpansionTags.CANDIED_INGREDIENT)
+                .requires(CornExpansionTags.CANDIED_INGREDIENTS)
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
 
         // Polenta variants
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.SWEET_POLENTA.get())
                 .requires(CornExpansionObjects.POLENTA.get())
-                .requires(CornExpansionTags.SWEET_INGREDIENT)
+                .requires(CornExpansionTags.SWEET_INGREDIENTS)
                 .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POLENTA.get())
                 .requires(CornExpansionObjects.POLENTA.get())
-                .requires(CornExpansionTags.BUTTER)
+                .requires(CornExpansionTags.BUTTERS)
                 .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CHEESY_POLENTA.get())
                 .requires(CornExpansionObjects.POLENTA.get())
-                .requires(CornExpansionTags.CHEESE)
+                .requires(CornExpansionTags.CHEESES)
                 .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
                 .save(exporter);
 

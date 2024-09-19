@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "farm_and_charm:butter",
+      "id": "farm_and_charm:corn",
       "required": false
     },
     {
-      "id": "#c:butter",
+      "id": "#c:crops/corn",
       "required": false
     }
   ]

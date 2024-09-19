@@ -5,13 +5,15 @@
       "item": "cornexpansion:corn_dough"
     },
     {
-      "tag": "farm_and_charm:butter"
+      "tag": "c:foods/butter"
     },
     {
-      "tag": "cornexpansion:sweet_ingredient"
+      "tag": "cornexpansion:sweet_ingredients"
     }
   ],
-  "item": "cornexpansion:grandmas_cornbread",
-  "count": 4,
+  "result": {
+    "id": "cornexpansion:grandmas_cornbread",
+    "count": 4
+  },
   "experience": 0.3
 }

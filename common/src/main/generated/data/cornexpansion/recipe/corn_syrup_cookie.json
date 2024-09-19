@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "B": {
-      "tag": "cornexpansion:butter"
+      "tag": "c:foods/butters"
     },
     "S": {
       "item": "cornexpansion:corn_syrup"
     },
     "W": {
-      "tag": "cornexpansion:flour"
+      "tag": "c:foods/flours"
     }
   },
   "pattern": [

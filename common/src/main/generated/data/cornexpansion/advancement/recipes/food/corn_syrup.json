@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#cornexpansion:corn"
+            "items": "#c:crops/corn"
           }
         ]
       },

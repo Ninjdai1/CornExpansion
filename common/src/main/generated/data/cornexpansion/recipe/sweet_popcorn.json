@@ -12,7 +12,7 @@
       "item": "cornexpansion:popcorn"
     },
     {
-      "tag": "cornexpansion:sweet_ingredient"
+      "tag": "c:foods/sweet_ingredients"
     }
   ],
   "result": {

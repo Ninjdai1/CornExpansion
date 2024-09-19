@@ -1,6 +1,5 @@
 package dev.doaddon.cornexpansion.registry;
 
-import dev.doaddon.cornexpansion.CornExpansion;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
@@ -8,17 +7,15 @@ import net.minecraft.world.item.Item;
 
 @SuppressWarnings("unused")
 public class CornExpansionTags {
-    public static final TagKey<Item> BUTTER = TagKey.create(Registries.ITEM, CornExpansion.id("butter"));
-    public static final TagKey<Item> CHEESE = TagKey.create(Registries.ITEM, CornExpansion.id("cheese"));
-    public static final TagKey<Item> CORN = TagKey.create(Registries.ITEM, CornExpansion.id("corn"));
-    public static final TagKey<Item> DRIED_CORN = TagKey.create(Registries.ITEM, CornExpansion.id("dried_corn"));
-    public static final TagKey<Item> SWEET_INGREDIENT = TagKey.create(Registries.ITEM, CornExpansion.id("sweet_ingredient"));
-    public static final TagKey<Item> CANDIED_INGREDIENT = TagKey.create(Registries.ITEM, CornExpansion.id("candied_ingredient"));
+    public static final TagKey<Item> BUTTERS = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "foods/butters"));
+    public static final TagKey<Item> CHEESES = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "foods/cheeses"));
+    public static final TagKey<Item> CORN = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "crops/corn"));
 
-    public static final TagKey<Item> POPCORN = TagKey.create(Registries.ITEM, CornExpansion.id("popcorn"));
+    public static final TagKey<Item> FLOURS = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "foods/flours"));
+    public static final TagKey<Item> SWEET_INGREDIENTS = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "foods/sweet_ingredients"));
+    public static final TagKey<Item> CANDIED_INGREDIENTS = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "foods/candied_ingredients"));
 
-    public static final TagKey<Item> FLOUR = TagKey.create(Registries.ITEM, CornExpansion.id("flour"));
-    public static final TagKey<Item> FLOUR_FABRIC = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "flour"));
-
-    public static final TagKey<Item> BREAD_FABRIC = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "bread"));
+    public static final TagKey<Item> BREADS = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "foods/breads"));
+    public static final TagKey<Item> DRIED_CORN = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "foods/dried_corn"));
+    public static final TagKey<Item> POPCORN = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "foods/popcorn"));
 }

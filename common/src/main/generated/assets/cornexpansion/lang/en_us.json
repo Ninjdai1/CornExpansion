@@ -38,12 +38,12 @@
   "item.cornexpansion.popcorn": "Popcorn",
   "item.cornexpansion.sweet_polenta": "Sweet Polenta",
   "item.cornexpansion.sweet_popcorn": "Sweet Popcorn",
-  "tags.c.flour": "Flour",
-  "tags.cornexpansion.butter": "Butter",
-  "tags.cornexpansion.candied_ingredient": "Candied Ingredient",
-  "tags.cornexpansion.cheese": "Cheese",
-  "tags.cornexpansion.corn": "Corn",
-  "tags.cornexpansion.dried_corn": "Dried Corn",
-  "tags.cornexpansion.popcorn": "Popcorn",
-  "tags.cornexpansion.sweet_ingredient": "Sweet Ingredient"
+  "tag.item.c.crops/corn": "Corn",
+  "tag.item.c.foods/butters": "Butter",
+  "tag.item.c.foods/candied_ingredients": "Candied Ingredient",
+  "tag.item.c.foods/cheeses": "Cheese",
+  "tag.item.c.foods/dried_corn": "Dried Corn",
+  "tag.item.c.foods/flours": "Flour",
+  "tag.item.c.foods/popcorn": "Popcorn",
+  "tag.item.c.foods/sweet_ingredients": "Sweet Ingredient"
 }

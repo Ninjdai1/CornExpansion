@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "cornexpansion:corn"
+      "tag": "c:crops/corn"
     },
     {
       "item": "minecraft:sugar"
