@@ -1,7 +1,6 @@
 {
   "pack": {
     "description": "[Let's Do Addon] Corn Expansion",
-    "forge:server_data_pack_format": 15,
     "pack_format": 15
   }
 }

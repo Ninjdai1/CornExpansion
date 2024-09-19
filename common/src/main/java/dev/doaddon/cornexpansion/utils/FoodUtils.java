@@ -1,7 +1,5 @@
 package dev.doaddon.cornexpansion.utils;
 
-import dev.architectury.injectables.annotations.ExpectPlatform;
-import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -30,10 +28,5 @@ public class FoodUtils {
         if (fast) food.fast();
         if (effect != null) food.arch$effect(() -> new MobEffectInstance(effect, duration), 1.0f);
         return food.build();
-    }
-
-    @ExpectPlatform
-    public static FoodProperties createFood(int nutrition, float saturationMod, RegistrySupplier<MobEffect> effect, int duration, boolean alwaysEat, boolean fast) {
-        throw new AssertionError();
     }
 }

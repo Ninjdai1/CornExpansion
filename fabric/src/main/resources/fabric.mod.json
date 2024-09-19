@@ -34,7 +34,7 @@
     "fabricloader": ">=0.15.11",
     "minecraft": "~1.21.1",
     "java": ">=21",
-    "architectury": ">=9.2.14",
+    "architectury": ">=13.0.6",
     "fabric-api": "*",
 
     "farm_and_charm": "*"
