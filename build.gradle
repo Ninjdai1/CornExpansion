@@ -114,7 +114,7 @@ subprojects {
 
 
 tasks.register("publishMods") {
-    changelog = file("../CHANGELOG.md").text.replace("@VERSION@", rootProject.mod_version)
+    changelog = file("CHANGELOG.md").text.replace("@VERSION@", rootProject.mod_version)
     type = STABLE
 
     def optionsCurseforge = curseforgeOptions {
