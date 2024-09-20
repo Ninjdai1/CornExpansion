@@ -2,7 +2,7 @@ plugins {
     id 'dev.architectury.loom' version '1.7-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
     id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
-    id "me.modmuss50.mod-publish-plugin" version "0.5.1"
+    id "me.modmuss50.mod-publish-plugin" version "0.6.2" apply false
 }
 
 tasks.register("multiplatformDatagen") {
@@ -43,6 +43,7 @@ subprojects {
     apply plugin: 'dev.architectury.loom'
     apply plugin: 'architectury-plugin'
     apply plugin: 'maven-publish'
+    apply plugin: "me.modmuss50.mod-publish-plugin"
 
     base {
         archivesName = "$rootProject.archives_name-$project.name"
@@ -84,9 +85,13 @@ subprojects {
         }
 
         maven { name = "Curseforge Maven"; description = "Forge Config API Port"; url = "https://cursemaven.com" }
-        maven { name = "Tterrag Maven"; description = "Create, Forge Registrate & Forge Flywheel"; url = "https://maven.tterrag.com" }
-        maven { name = "JamiesWhiteShirt Maven"; description = "Reach Entity Attributes"; url = "https://maven.jamieswhiteshirt.com/libs-release" }
-        maven { name = "Devos Maven"; description = "Create Fabric, Porting Lib, Forge Tags, Milk Lib & Fabric Registrate"; url = "https://mvn.devos.one/snapshots/" }
+        maven { name = "Tterrag Maven"; description = "Create, Forge Registrate & Forge Flywheel";
+            url = "https://maven.tterrag.com" }
+        maven { name = "JamiesWhiteShirt Maven"; description = "Reach Entity Attributes";
+            url = "https://maven.jamieswhiteshirt.com/libs-release" }
+        maven { name = "Devos Maven";
+            description = "Create Fabric, Porting Lib, Forge Tags, Milk Lib & Fabric Registrate";
+            url = "https://mvn.devos.one/snapshots/" }
         maven { name = "Jitpack maven"; description = "Mixin Extras & Fabric ASM"; url = "https://jitpack.io/" }
     }
 
@@ -108,8 +113,8 @@ subprojects {
 }
 
 
-/*publishMods {
-    changelog = file("CHANGELOG.md").text.replace("@VERSION@", rootProject.mod_version)
+tasks.register("publishMods") {
+    changelog = file("../CHANGELOG.md").text.replace("@VERSION@", rootProject.mod_version)
     type = STABLE
 
     def optionsCurseforge = curseforgeOptions {
@@ -143,9 +148,9 @@ subprojects {
         file = project(":fabric").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Fabric"
         version = "${rootProject.mod_version}-fabric"
-        optional {
+        /*optional {
             slug = "create-fabric"
-        }
+        }*/
     }
 
     curseforge("curseforgeNeoforge") {
@@ -154,9 +159,9 @@ subprojects {
         file = project(":neoforge").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Neoforge"
         version = "${rootProject.mod_version}-neoforge"
-        optional {
+        /*optional {
             slug = "create"
-        }
+        }*/
     }
 
     modrinth("modrinthFabric") {
@@ -166,9 +171,9 @@ subprojects {
         file = project(":fabric").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Fabric"
         version = "${rootProject.mod_version}-fabric"
-        optional {
+        /*optional {
             slug = "create-fabric"
-        }
+        }*/
 
         additionalFiles.from(project(":fabric").tasks.named("remapSourcesJar").get().archiveFile)
     }
@@ -179,10 +184,10 @@ subprojects {
         file = project(":neoforge").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} Neoorge"
         version = "${rootProject.mod_version}-neoforge"
-        optional {
+        /*optional {
             slug = "create"
-        }
+        }*/
 
         additionalFiles.from(project(":neoforge").tasks.named("remapSourcesJar").get().archiveFile)
     }
-}*/
+}
