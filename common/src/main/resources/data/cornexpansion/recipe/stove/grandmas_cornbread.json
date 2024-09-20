@@ -8,7 +8,7 @@
       "tag": "c:foods/butters"
     },
     {
-      "tag": "cornexpansion:sweet_ingredients"
+      "tag": "c:foods/sweet_ingredients"
     }
   ],
   "result": {
