@@ -17,10 +17,10 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider arg) {
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BUTTERS)
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BUTTER)
                 .addOptional(ObjectRegistry.BUTTER.getId());
 
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CHEESES)
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CHEESE)
                 .addOptionalTag(ResourceLocation.parse("c:foods/cheese"));
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN)
@@ -48,8 +48,10 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
                 .add(CornExpansionObjects.CHEESY_POPCORN.get())
                 .add(CornExpansionObjects.CANDIED_POPCORN.get());
 
-
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOURS)
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR)
                 .addOptional(ObjectRegistry.FLOUR.getId());
+
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.DOUGH)
+                .add(CornExpansionObjects.CORN_DOUGH.get());
     }
 }

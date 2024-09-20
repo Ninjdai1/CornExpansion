@@ -49,14 +49,15 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add(CornExpansionObjects.CANDIED_POPCORN_TIN_BLOCK.get(), "Candied Popcorn Tin");
 
         // Tags
-        tb.add("tag.item." + CornExpansionTags.BUTTERS.location().toLanguageKey(), "Butter");
-        tb.add("tag.item." + CornExpansionTags.CHEESES.location().toLanguageKey(), "Cheese");
+        tb.add("tag.item." + CornExpansionTags.BUTTER.location().toLanguageKey(), "Butter");
+        tb.add("tag.item." + CornExpansionTags.CHEESE.location().toLanguageKey(), "Cheese");
         tb.add("tag.item." + CornExpansionTags.CORN.location().toLanguageKey(), "Corn");
         tb.add("tag.item." + CornExpansionTags.DRIED_CORN.location().toLanguageKey(), "Dried Corn");
         tb.add("tag.item." + CornExpansionTags.CANDIED_INGREDIENTS.location().toLanguageKey(), "Candied Ingredient");
         tb.add("tag.item." + CornExpansionTags.SWEET_INGREDIENTS.location().toLanguageKey(), "Sweet Ingredient");
         tb.add("tag.item." + CornExpansionTags.POPCORN.location().toLanguageKey(), "Popcorn");
-        tb.add("tag.item." + CornExpansionTags.FLOURS.location().toLanguageKey(), "Flour");
+        tb.add("tag.item." + CornExpansionTags.FLOUR.location().toLanguageKey(), "Flour");
+        tb.add("tag.item." + CornExpansionTags.DOUGH.location().toLanguageKey(), "Dough");
 
         // Creative tab
         tb.add(CornExpansionCreativeTabs.CORNEXPANSION_TAB.getKey(), "Corn Expansion");

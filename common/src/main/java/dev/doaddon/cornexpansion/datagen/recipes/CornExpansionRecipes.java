@@ -58,9 +58,9 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
 
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, CornExpansionObjects.CORN_SYRUP_COOKIE.get(), 8)
                 .pattern("WSB")
-                .define('W', CornExpansionTags.FLOURS)
+                .define('W', CornExpansionTags.FLOUR)
                 .define('S', CornExpansionObjects.CORN_SYRUP.get())
-                .define('B', CornExpansionTags.BUTTERS)
+                .define('B', CornExpansionTags.BUTTER)
                 .unlockedBy("has_corn_syrup", FabricRecipeProvider.has(CornExpansionObjects.CORN_SYRUP.get()))
                 .save(exporter);
 
@@ -72,12 +72,12 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
-                .requires(CornExpansionTags.BUTTERS)
+                .requires(CornExpansionTags.BUTTER)
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CHEESY_POPCORN.get(), 3)
                 .requires(CornExpansionObjects.POPCORN.get(), 3)
-                .requires(CornExpansionTags.CHEESES)
+                .requires(CornExpansionTags.CHEESE)
                 .unlockedBy("has_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CANDIED_POPCORN.get(), 3)
@@ -94,12 +94,12 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.BUTTERY_POLENTA.get())
                 .requires(CornExpansionObjects.POLENTA.get())
-                .requires(CornExpansionTags.BUTTERS)
+                .requires(CornExpansionTags.BUTTER)
                 .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
                 .save(exporter);
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CHEESY_POLENTA.get())
                 .requires(CornExpansionObjects.POLENTA.get())
-                .requires(CornExpansionTags.CHEESES)
+                .requires(CornExpansionTags.CHEESE)
                 .unlockedBy("has_polenta", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POLENTA.get()))
                 .save(exporter);
 

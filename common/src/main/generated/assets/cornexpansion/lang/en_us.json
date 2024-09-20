@@ -39,11 +39,12 @@
   "item.cornexpansion.sweet_polenta": "Sweet Polenta",
   "item.cornexpansion.sweet_popcorn": "Sweet Popcorn",
   "tag.item.c.crops/corn": "Corn",
-  "tag.item.c.foods/butters": "Butter",
+  "tag.item.c.foods/butter": "Butter",
   "tag.item.c.foods/candied_ingredients": "Candied Ingredient",
-  "tag.item.c.foods/cheeses": "Cheese",
+  "tag.item.c.foods/cheese": "Cheese",
+  "tag.item.c.foods/dough": "Dough",
   "tag.item.c.foods/dried_corn": "Dried Corn",
-  "tag.item.c.foods/flours": "Flour",
+  "tag.item.c.foods/flour": "Flour",
   "tag.item.c.foods/popcorn": "Popcorn",
   "tag.item.c.foods/sweet_ingredients": "Sweet Ingredient"
 }
