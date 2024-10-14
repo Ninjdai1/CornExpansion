@@ -3,5 +3,4 @@
 ### Changelog:
 
 Updated:
-* Port to 1.21.1
-* Tag refactor: uses new c: convention
+* Simplified Chinese translation by Huantanhua
