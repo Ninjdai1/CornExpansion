@@ -1,154 +1,2564 @@
 {
-  "variants": {
-    "bites=0,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_8"
-    },
-    "bites=0,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_8",
-      "y": 90
-    },
-    "bites=0,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_8",
-      "y": 180
-    },
-    "bites=0,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_8",
-      "y": 270
-    },
-    "bites=1,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_7",
-      "y": 270
-    },
-    "bites=1,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_7"
-    },
-    "bites=1,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_7",
-      "y": 90
-    },
-    "bites=1,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_7",
-      "y": 180
-    },
-    "bites=2,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_6"
-    },
-    "bites=2,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_6",
-      "y": 90
-    },
-    "bites=2,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_6",
-      "y": 180
-    },
-    "bites=2,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_6",
-      "y": 270
-    },
-    "bites=3,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_5"
-    },
-    "bites=3,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_5",
-      "y": 90
-    },
-    "bites=3,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_5",
-      "y": 180
-    },
-    "bites=3,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_5",
-      "y": 270
-    },
-    "bites=4,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_4"
-    },
-    "bites=4,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_4",
-      "y": 90
-    },
-    "bites=4,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_4",
-      "y": 180
-    },
-    "bites=4,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_4",
-      "y": 270
-    },
-    "bites=5,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_3"
-    },
-    "bites=5,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_3",
-      "y": 90
-    },
-    "bites=5,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_3",
-      "y": 180
-    },
-    "bites=5,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_3",
-      "y": 270
-    },
-    "bites=6,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_2"
-    },
-    "bites=6,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_2",
-      "y": 90
-    },
-    "bites=6,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_2",
-      "y": 180
-    },
-    "bites=6,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_2",
-      "y": 270
-    },
-    "bites=7,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1"
-    },
-    "bites=7,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 90
-    },
-    "bites=7,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 180
-    },
-    "bites=7,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 270
-    },
-    "bites=8,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1"
-    },
-    "bites=8,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 90
-    },
-    "bites=8,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 180
-    },
-    "bites=8,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 270
-    },
-    "bites=9,facing=north": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1"
-    },
-    "bites=9,facing=east": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 90
-    },
-    "bites=9,facing=south": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 180
-    },
-    "bites=9,facing=west": {
-      "model": "cornexpansion:block/buttery_popcorn_tin/buttery_popcorn_tin_1",
-      "y": 270
+    "variants": {
+        "bites=0,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=0,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_8",
+            "y": 0
+        },
+        "bites=0,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_8",
+            "y": 90
+        },
+        "bites=0,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_8",
+            "y": 180
+        },
+        "bites=0,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_8",
+            "y": 270
+        },
+        "bites=1,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=1,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_7",
+            "y": 0
+        },
+        "bites=1,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_7",
+            "y": 90
+        },
+        "bites=1,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_7",
+            "y": 180
+        },
+        "bites=1,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_7",
+            "y": 270
+        },
+        "bites=2,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=2,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_6",
+            "y": 0
+        },
+        "bites=2,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_6",
+            "y": 90
+        },
+        "bites=2,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_6",
+            "y": 180
+        },
+        "bites=2,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_6",
+            "y": 270
+        },
+        "bites=3,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=3,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_5",
+            "y": 0
+        },
+        "bites=3,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_5",
+            "y": 90
+        },
+        "bites=3,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_5",
+            "y": 180
+        },
+        "bites=3,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_5",
+            "y": 270
+        },
+        "bites=4,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=4,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_4",
+            "y": 0
+        },
+        "bites=4,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_4",
+            "y": 90
+        },
+        "bites=4,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_4",
+            "y": 180
+        },
+        "bites=4,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_4",
+            "y": 270
+        },
+        "bites=5,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=5,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_3",
+            "y": 0
+        },
+        "bites=5,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_3",
+            "y": 90
+        },
+        "bites=5,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_3",
+            "y": 180
+        },
+        "bites=5,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_3",
+            "y": 270
+        },
+        "bites=6,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=6,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_2",
+            "y": 0
+        },
+        "bites=6,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_2",
+            "y": 90
+        },
+        "bites=6,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_2",
+            "y": 180
+        },
+        "bites=6,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_2",
+            "y": 270
+        },
+        "bites=7,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=7,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=7,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=7,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=7,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=8,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=8,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=8,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=8,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=black": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/black/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/blue/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=brown": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/brown/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=cyan": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/cyan/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/gray/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=green": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/green/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=light_blue": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_blue/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=light_gray": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/light_gray/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=lime": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/lime/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=magenta": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/magenta/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=orange": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/orange/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=pink": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/pink/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=purple": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/purple/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=red": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/red/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=white": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/white/buttery_popcorn_tin_1",
+            "y": 270
+        },
+        "bites=9,facing=north,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 0
+        },
+        "bites=9,facing=east,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 90
+        },
+        "bites=9,facing=south,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 180
+        },
+        "bites=9,facing=west,color=yellow": {
+            "model": "cornexpansion:block/buttery_popcorn_tin/yellow/buttery_popcorn_tin_1",
+            "y": 270
+        }
     }
-  }
 }
