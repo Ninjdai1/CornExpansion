@@ -1,0 +1,9 @@
+{
+    "credit": "Made by Satisfy & Ninjdai",
+    "parent": "cornexpansion:block/base_popcorn_tin/base_popcorn_tin_2",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "0": "cornexpansion:block/tin/white/sweet_popcorn_tin",
+        "particle": "cornexpansion:item/sweet_popcorn"
+    }
+}
