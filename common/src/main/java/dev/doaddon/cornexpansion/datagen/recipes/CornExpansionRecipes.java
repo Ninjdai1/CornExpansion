@@ -13,7 +13,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.function.Consumer;
 
 public class CornExpansionRecipes extends FabricRecipeProvider {
     public CornExpansionRecipes(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -22,17 +21,17 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
 
     @Override
     public void buildRecipes(RecipeOutput exporter) {
-        SimpleCookingRecipeBuilder.smoking(Ingredient.of(CornExpansionTags.KERNELS), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 15)
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 15)
                 .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
-                .unlockedBy("has_kernels", FabricRecipeProvider.has(CornExpansionTags.KERNELS))
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("smoking/popcorn"));
-        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(CornExpansionTags.KERNELS), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 20)
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 20)
                 .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
-                .unlockedBy("has_kernels", FabricRecipeProvider.has(CornExpansionTags.KERNELS))
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("campfire/popcorn"));
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(CornExpansionTags.KERNELS), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 30)
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 30)
                 .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
-                .unlockedBy("has_kernels", FabricRecipeProvider.has(CornExpansionTags.KERNELS))
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
                 .save(exporter, CornExpansion.id("smelting/popcorn"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CORN_ON_THE_COB.get())

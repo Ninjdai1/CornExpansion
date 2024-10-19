@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "food",
+    "group": "sweet_popcorn_tin_dying",
+    "ingredients": [
+        {
+            "item": "cornexpansion:sweet_popcorn_tin"
+        },
+        {
+            "item": "minecraft:yellow_dye"
+        }
+    ],
+    "result": {
+        "id": "cornexpansion:sweet_popcorn_tin",
+        "components": {
+            "minecraft:base_color": "yellow"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "food",
+    "group": "buttery_popcorn_tin_dying",
+    "ingredients": [
+        {
+            "item": "cornexpansion:buttery_popcorn_tin"
+        },
+        {
+            "item": "minecraft:red_dye"
+        }
+    ],
+    "result": {
+        "id": "cornexpansion:buttery_popcorn_tin",
+        "components": {
+            "minecraft:base_color": "red"
+        }
+    }
+}
