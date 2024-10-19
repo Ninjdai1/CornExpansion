@@ -15,7 +15,7 @@ const MODEL_TEMPLATE = (popcorn_type, level, color) => {
 const BLOCKSTATE_TEMPLATE = (popcorn_type) => {
     const RVAL = {"variants": {}};
     for (let bites = 0; bites < 10; bites++) {
-        for (const color of COLORS) {
+        for (const color of Object.keys(COLOR_ID_MAP)) {
             for (const facing of FACING){
                 RVAL.variants[`bites=${bites},facing=${facing},color=${color}`] = {
                     "model": `cornexpansion:block/${popcorn_type}_tin/${color}/${popcorn_type}_tin_${(bites < 8) ? 8-bites : 1}`,
@@ -50,6 +50,31 @@ const COLORED_TIN_RECIPE_TEMPLATE = (popcorn_type, color) => {
     }
 }
 
+const COLORED_TIN_ITEM_TEMPLATE = (popcorn_type, color) => {
+    return {
+        "parent": "minecraft:item/generated",
+        "textures": {
+            "layer0": `cornexpansion:item/dyed_tin/${color}_${popcorn_type}_tin`
+        }
+    };
+}
+
+const COLORED_TIN_ITEM_OVERRIDE_TEMPLATE = (popcorn_type) => {
+    const RVAL = {
+        parent: "minecraft:item/generated",
+        textures: {
+            "layer0": `cornexpansion:item/${popcorn_type}_tin`
+        },
+        overrides: []
+    };
+
+    for (const color of Object.keys(COLOR_ID_MAP)) {
+        RVAL.overrides.push({ "predicate": { "cornexpansion:tin_dye": COLOR_ID_MAP[color]/16 }, "model": `cornexpansion:item/dyed_tin/${color}_${popcorn_type}_tin` });
+    }
+
+    return RVAL;
+}
+
 const MAX_LEVEL = 8;
 const POPCORN_TYPES = [
     "popcorn",
@@ -78,12 +103,31 @@ const COLORS = [
     "yellow"
 ]
 
+const COLOR_ID_MAP = {
+    "white": 0,
+    "orange": 1,
+    "magenta": 2,
+    "light_blue": 3,
+    "yellow": 4,
+    "lime": 5,
+    "pink": 6,
+    "gray": 7,
+    "light_gray": 8,
+    "cyan": 9,
+    "purple": 10,
+    "blue": 11,
+    "brown": 12,
+    "green": 13,
+    "red": 14,
+    "black": 15
+}
+
 const FACING = ["north", "east", "south", "west"];
 const FACING_MAP = {north: 0, east: 90, south: 180, west: 270};
 
 function writeModel({model, popcorn_type, level, color}) {
     if(!model) return;
-    const dir = `./output/models/${popcorn_type}_tin/${color}`;
+    const dir = `./output/models/block/${popcorn_type}_tin/${color}`;
     
     if (!fs.existsSync(dir)){
         fs.mkdirSync(dir, { recursive: true });
@@ -118,6 +162,30 @@ function writeColoredTinRecipe(popcorn_type, color) {
     });
 }
 
+function writeColoredTinOverride(popcorn_type) {
+    const dir = `./output/models/item/`;
+
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFile(`./${dir}/${popcorn_type}_tin.json`, JSON.stringify(COLORED_TIN_ITEM_OVERRIDE_TEMPLATE(popcorn_type), undefined, 4), (err) => {
+        if (err)
+            console.log(err);
+    });
+}
+
+function writeColoredTinItemModel(popcorn_type, color) {
+    const dir = `./output/models/item/dyed_tin/`;
+
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFile(`./${dir}/${color}_${popcorn_type}_tin.json`, JSON.stringify(COLORED_TIN_ITEM_TEMPLATE(popcorn_type, color), undefined, 4), (err) => {
+        if (err)
+            console.log(err);
+    });
+}
+
 for (let level = 1; level < MAX_LEVEL + 1; level++) {
     for (const popcorn_type of POPCORN_TYPES) {
         for (const color of COLORS) {
@@ -133,7 +201,9 @@ for (let level = 1; level < MAX_LEVEL + 1; level++) {
 
 for (const popcorn_type of POPCORN_TYPES) {
     writeBlockstate(popcorn_type);
+    writeColoredTinOverride(popcorn_type);
     for (const color of COLORS) {
         writeColoredTinRecipe(popcorn_type, color);
+        writeColoredTinItemModel(popcorn_type, color);
     }
 }

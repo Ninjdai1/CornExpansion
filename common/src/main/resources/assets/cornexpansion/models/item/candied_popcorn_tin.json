@@ -1,0 +1,104 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "cornexpansion:item/candied_popcorn_tin"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0
+            },
+            "model": "cornexpansion:item/dyed_tin/white_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.0625
+            },
+            "model": "cornexpansion:item/dyed_tin/orange_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.125
+            },
+            "model": "cornexpansion:item/dyed_tin/magenta_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.1875
+            },
+            "model": "cornexpansion:item/dyed_tin/light_blue_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.25
+            },
+            "model": "cornexpansion:item/dyed_tin/yellow_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.3125
+            },
+            "model": "cornexpansion:item/dyed_tin/lime_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.375
+            },
+            "model": "cornexpansion:item/dyed_tin/pink_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.4375
+            },
+            "model": "cornexpansion:item/dyed_tin/gray_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.5
+            },
+            "model": "cornexpansion:item/dyed_tin/light_gray_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.5625
+            },
+            "model": "cornexpansion:item/dyed_tin/cyan_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.625
+            },
+            "model": "cornexpansion:item/dyed_tin/purple_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.6875
+            },
+            "model": "cornexpansion:item/dyed_tin/blue_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.75
+            },
+            "model": "cornexpansion:item/dyed_tin/brown_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.8125
+            },
+            "model": "cornexpansion:item/dyed_tin/green_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.875
+            },
+            "model": "cornexpansion:item/dyed_tin/red_candied_popcorn_tin"
+        },
+        {
+            "predicate": {
+                "cornexpansion:tin_dye": 0.9375
+            },
+            "model": "cornexpansion:item/dyed_tin/black_candied_popcorn_tin"
+        }
+    ]
+}

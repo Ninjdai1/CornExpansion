@@ -33,12 +33,6 @@ public class CornExpansionModels extends FabricModelProvider {
         itemModelGenerator.generateFlatItem(CornExpansionObjects.CHEESY_POPCORN.get(), ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(CornExpansionObjects.CANDIED_POPCORN.get(), ModelTemplates.FLAT_ITEM);
 
-        itemModelGenerator.generateFlatItem(CornExpansionObjects.POPCORN_TIN.get(), ModelTemplates.FLAT_ITEM);
-        itemModelGenerator.generateFlatItem(CornExpansionObjects.SWEET_POPCORN_TIN.get(), ModelTemplates.FLAT_ITEM);
-        itemModelGenerator.generateFlatItem(CornExpansionObjects.BUTTERY_POPCORN_TIN.get(), ModelTemplates.FLAT_ITEM);
-        itemModelGenerator.generateFlatItem(CornExpansionObjects.CHEESY_POPCORN_TIN.get(), ModelTemplates.FLAT_ITEM);
-        itemModelGenerator.generateFlatItem(CornExpansionObjects.CANDIED_POPCORN_TIN.get(), ModelTemplates.FLAT_ITEM);
-
         itemModelGenerator.generateFlatItem(CornExpansionObjects.POLENTA.get(), ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(CornExpansionObjects.SWEET_POLENTA.get(), ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(CornExpansionObjects.BUTTERY_POLENTA.get(), ModelTemplates.FLAT_ITEM);

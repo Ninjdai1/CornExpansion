@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "cornexpansion:item/dyed_tin/blue_buttery_popcorn_tin"
+    }
+}
