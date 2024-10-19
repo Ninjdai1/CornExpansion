@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "cornexpansion:item/dyed_tin/light_gray_sweet_popcorn_tin"
+    }
+}
