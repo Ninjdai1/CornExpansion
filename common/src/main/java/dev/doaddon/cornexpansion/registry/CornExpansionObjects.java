@@ -10,6 +10,7 @@ import dev.doaddon.cornexpansion.blocks.TinBlock;
 import dev.doaddon.cornexpansion.items.EffectItem;
 import dev.doaddon.cornexpansion.items.PlaceableEffectBlockItem;
 import dev.doaddon.cornexpansion.items.StickFoodItem;
+import dev.doaddon.cornexpansion.items.TinItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -72,11 +73,11 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Block> CHEESY_POPCORN_TIN_BLOCK = registerWithoutItem("cheesy_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.CHEESY_POPCORN_FOOD_PROPERTIES));
     public static final RegistrySupplier<Block> CANDIED_POPCORN_TIN_BLOCK = registerWithoutItem("candied_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.CANDIED_POPCORN_FOOD_PROPERTIES));
 
-    public static final RegistrySupplier<Item> POPCORN_TIN = registerItem("popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
-    public static final RegistrySupplier<Item> SWEET_POPCORN_TIN = registerItem("sweet_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) SWEET_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
-    public static final RegistrySupplier<Item> BUTTERY_POPCORN_TIN = registerItem("buttery_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) BUTTERY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
-    public static final RegistrySupplier<Item> CHEESY_POPCORN_TIN = registerItem("cheesy_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) CHEESY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
-    public static final RegistrySupplier<Item> CANDIED_POPCORN_TIN = registerItem("candied_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) CANDIED_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> POPCORN_TIN = registerItem("popcorn_tin", () -> new TinItem((TinBlock) POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> SWEET_POPCORN_TIN = registerItem("sweet_popcorn_tin", () -> new TinItem((TinBlock) SWEET_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> BUTTERY_POPCORN_TIN = registerItem("buttery_popcorn_tin", () -> new TinItem((TinBlock) BUTTERY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> CHEESY_POPCORN_TIN = registerItem("cheesy_popcorn_tin", () -> new TinItem((TinBlock) CHEESY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> CANDIED_POPCORN_TIN = registerItem("candied_popcorn_tin", () -> new TinItem((TinBlock) CANDIED_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
 
 
     public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new EffectItem(

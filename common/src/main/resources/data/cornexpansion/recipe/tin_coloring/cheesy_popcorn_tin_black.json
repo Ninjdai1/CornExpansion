@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "food",
+    "group": "cheesy_popcorn_tin_dying",
+    "ingredients": [
+        {
+            "item": "cornexpansion:cheesy_popcorn_tin"
+        },
+        {
+            "item": "minecraft:black_dye"
+        }
+    ],
+    "result": {
+        "id": "cornexpansion:cheesy_popcorn_tin",
+        "components": {
+            "minecraft:base_color": "black"
+        }
+    }
+}

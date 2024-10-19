@@ -28,6 +28,28 @@ const BLOCKSTATE_TEMPLATE = (popcorn_type) => {
     return RVAL;
 }
 
+const COLORED_TIN_RECIPE_TEMPLATE = (popcorn_type, color) => {
+    return {
+        "type": "minecraft:crafting_shapeless",
+        "category": "food",
+        "group": `${popcorn_type}_tin_dying`,
+        "ingredients": [
+            {
+                "item": `cornexpansion:${popcorn_type}_tin`
+            },
+            {
+                "item": `minecraft:${color}_dye`
+            }
+        ],
+        "result": {
+            "id": `cornexpansion:${popcorn_type}_tin`,
+            "components": {
+                "minecraft:base_color": color
+            }
+        }
+    }
+}
+
 const MAX_LEVEL = 8;
 const POPCORN_TYPES = [
     "popcorn",
@@ -84,6 +106,18 @@ function writeBlockstate(popcorn_type) {
     });
 }
 
+function writeColoredTinRecipe(popcorn_type, color) {
+    const dir = `./output/recipes/tin_coloring`;
+
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFile(`./${dir}/${popcorn_type}_tin_${color}.json`, JSON.stringify(COLORED_TIN_RECIPE_TEMPLATE(popcorn_type, color), undefined, 4), (err) => {
+        if (err)
+            console.log(err);
+    });
+}
+
 for (let level = 1; level < MAX_LEVEL + 1; level++) {
     for (const popcorn_type of POPCORN_TYPES) {
         for (const color of COLORS) {
@@ -99,4 +133,7 @@ for (let level = 1; level < MAX_LEVEL + 1; level++) {
 
 for (const popcorn_type of POPCORN_TYPES) {
     writeBlockstate(popcorn_type);
+    for (const color of COLORS) {
+        writeColoredTinRecipe(popcorn_type, color);
+    }
 }

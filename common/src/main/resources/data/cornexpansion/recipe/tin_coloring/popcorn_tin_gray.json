@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "food",
+    "group": "popcorn_tin_dying",
+    "ingredients": [
+        {
+            "item": "cornexpansion:popcorn_tin"
+        },
+        {
+            "item": "minecraft:gray_dye"
+        }
+    ],
+    "result": {
+        "id": "cornexpansion:popcorn_tin",
+        "components": {
+            "minecraft:base_color": "gray"
+        }
+    }
+}
