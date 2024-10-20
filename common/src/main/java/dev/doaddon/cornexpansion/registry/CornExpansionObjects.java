@@ -63,7 +63,7 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> CORN_ON_THE_COB = registerItem("corn_on_the_cob", () -> new StickFoodItem(
             getFoodItemSettings(FoodUtils.createFood(2, 0.2F)).stacksTo(16))
     );
-    public static final RegistrySupplier<Item> GRILLED_CORN = registerItem("grilled_corn", () -> new StickFoodItem(
+    public static final RegistrySupplier<Item> GRILLED_CORN_ON_THE_COB = registerItem("grilled_corn_on_the_cob", () -> new StickFoodItem(
             getFoodItemSettings(FoodUtils.createFood(4, 0.4F)).stacksTo(16))
     );
 
