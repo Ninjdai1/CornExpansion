@@ -34,12 +34,14 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
-
-    modImplementation "com.terraformersmc.terraform-api:terraform-wood-api-v1:${project.terraform_wood_api_version}"
-    modImplementation "maven.modrinth:do-api:${project.doapi_version}-fabric"
     modImplementation "maven.modrinth:lets-do-farm-charm:${project.farm_and_charm_version}-fabric"
 
     modImplementation("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_fabric_version}+mc${project.minecraft_version}")
+
+
+    modLocalRuntime ("me.shedaniel.cloth:cloth-config-fabric:11.1.136") {
+        exclude(group: "net.fabricmc.fabric-api")
+    }
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')

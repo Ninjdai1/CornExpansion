@@ -14,10 +14,11 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
-import net.satisfy.farm_and_charm.block.FoodBlock;
+import net.satisfy.farm_and_charm.core.block.FoodBlock;
 import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("deprecation")
@@ -25,7 +26,7 @@ public class EffectFoodBlock extends FoodBlock {
     private final int maxBites;
     public final FoodProperties foodComponent;
 
-    public EffectFoodBlock(Properties settings, int maxBites, FoodProperties foodComponent) {
+    public EffectFoodBlock(BlockBehaviour.Properties settings, int maxBites, FoodProperties foodComponent) {
         super(settings, maxBites, foodComponent);
         this.maxBites = maxBites;
         this.foodComponent = foodComponent;

@@ -8,16 +8,17 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectUtil;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.satisfy.farm_and_charm.item.food.EffectBlockItem;
+import net.satisfy.farm_and_charm.core.item.food.EffectBlockItem;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
 public class PlaceableEffectBlockItem extends EffectBlockItem {
-    public PlaceableEffectBlockItem(EffectFoodBlock block, Properties properties) {
+    public PlaceableEffectBlockItem(EffectFoodBlock block, Item.Properties properties) {
         super(block, properties);
     }
 

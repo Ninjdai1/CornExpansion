@@ -6,7 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
-import net.satisfy.farm_and_charm.registry.ObjectRegistry;
+import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 
 import java.util.concurrent.CompletableFuture;
 

@@ -1,6 +1,5 @@
 package dev.doaddon.cornexpansion.registry;
 
-import de.cristelknight.doapi.Util;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -19,7 +18,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.satisfy.farm_and_charm.registry.MobEffectRegistry;
+import net.satisfy.farm_and_charm.core.util.Util;
+import net.satisfy.farm_and_charm.core.registry.MobEffectRegistry;
 import dev.doaddon.cornexpansion.utils.CornExpansionFoodProperties;
 import dev.doaddon.cornexpansion.utils.FoodUtils;
 

@@ -11,7 +11,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Items;
-import net.satisfy.farm_and_charm.registry.ObjectRegistry;
+import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;

@@ -2,7 +2,7 @@ package dev.doaddon.cornexpansion.utils;
 
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.satisfy.farm_and_charm.registry.MobEffectRegistry;
+import net.satisfy.farm_and_charm.core.registry.MobEffectRegistry;
 
 public class CornExpansionFoodProperties {
     public static final int BRIEF_DURATION = 600;    // 30 seconds

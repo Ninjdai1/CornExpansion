@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -12,7 +13,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
 public class TinBlock extends EffectFoodBlock{
-    public TinBlock(Properties settings, int maxBites, FoodProperties foodComponent) {
+    public TinBlock(BlockBehaviour.Properties settings, int maxBites, FoodProperties foodComponent) {
         super(settings, maxBites, foodComponent);
     }
 

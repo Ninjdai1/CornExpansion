@@ -4,4 +4,6 @@ build/
 run/
 .cache/
 
+bin/
+
 utils/output/

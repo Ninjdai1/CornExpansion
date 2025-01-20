@@ -6,7 +6,7 @@ import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
 import dev.doaddon.cornexpansion.CornExpansion;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.satisfy.farm_and_charm.registry.ObjectRegistry;
+import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 
 public class CornExpansionMillingRecipes extends ProcessingRecipeGen {
 

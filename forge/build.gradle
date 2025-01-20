@@ -34,7 +34,6 @@ dependencies {
     forge "net.minecraftforge:forge:$rootProject.forge_version"
     modImplementation "dev.architectury:architectury-forge:$rootProject.architectury_api_version"
 
-    modImplementation "maven.modrinth:do-api:${project.doapi_version}-forge"
     modImplementation "maven.modrinth:lets-do-farm-charm:${project.farm_and_charm_version}-forge"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }

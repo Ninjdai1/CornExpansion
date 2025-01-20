@@ -2,9 +2,5 @@
 `1.20.1` `Fabric & Forge`
 ### Changelog:
 
-Added:
-* Russian Translation by Ghost_Guardian
-
-Updated:
-* Tins Voxel Shapes
-* Corn Syrup Cookie, Cornbread and Polentas textures
+* Updated to farm&charm 1.0.5
+* Removed DoApi
