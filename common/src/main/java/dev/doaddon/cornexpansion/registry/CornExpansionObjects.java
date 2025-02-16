@@ -18,7 +18,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.satisfy.farm_and_charm.core.util.Util;
+import net.satisfy.farm_and_charm.core.util.GeneralUtil;
 import net.satisfy.farm_and_charm.core.registry.MobEffectRegistry;
 import dev.doaddon.cornexpansion.utils.CornExpansionFoodProperties;
 import dev.doaddon.cornexpansion.utils.FoodUtils;
@@ -111,7 +111,7 @@ public class CornExpansionObjects {
     }
 
     public static <T extends Block> RegistrySupplier<T> registerWithItem(String name, Supplier<T> block) {
-        return Util.registerWithItem(BLOCKS, BLOCK_REGISTRAR, ITEMS, ITEM_REGISTRAR, CornExpansion.id(name), block);
+        return GeneralUtil.registerWithItem(BLOCKS, BLOCK_REGISTRAR, ITEMS, ITEM_REGISTRAR, CornExpansion.id(name), block);
     }
 
     public static Item.Properties getFoodItemSettings(FoodProperties foodProperties) {
@@ -119,10 +119,10 @@ public class CornExpansionObjects {
     }
 
     public static <T extends Block> RegistrySupplier<T> registerWithoutItem(String path, Supplier<T> block) {
-        return Util.registerWithoutItem(BLOCKS, BLOCK_REGISTRAR, CornExpansion.id(path), block);
+        return GeneralUtil.registerWithoutItem(BLOCKS, BLOCK_REGISTRAR, CornExpansion.id(path), block);
     }
 
     public static <T extends Item> RegistrySupplier<T> registerItem(String path, Supplier<T> itemSupplier) {
-        return Util.registerItem(ITEMS, ITEM_REGISTRAR, CornExpansion.id(path), itemSupplier);
+        return GeneralUtil.registerItem(ITEMS, ITEM_REGISTRAR, CornExpansion.id(path), itemSupplier);
     }
 }

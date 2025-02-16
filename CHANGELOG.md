@@ -2,5 +2,4 @@
 `1.20.1` `Fabric & Forge`
 ### Changelog:
 
-* Updated to farm&charm 1.0.5
-* Removed DoApi
+* Updated to farm&charm 1.0.6
