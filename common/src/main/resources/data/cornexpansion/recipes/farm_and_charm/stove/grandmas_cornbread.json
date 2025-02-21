@@ -11,7 +11,10 @@
       "tag": "cornexpansion:sweet_ingredient"
     }
   ],
-  "item": "cornexpansion:grandmas_cornbread",
-  "count": 4,
-  "experience": 0.3
+  "result": {
+      "item": "cornexpansion:grandmas_cornbread",
+      "count": 4
+  },
+  "experience": 0.3,
+  "requiresLearning": false
 }

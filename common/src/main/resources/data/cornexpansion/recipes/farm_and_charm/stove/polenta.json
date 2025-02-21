@@ -11,7 +11,10 @@
       "item": "minecraft:water_bucket"
     }
   ],
-  "item": "cornexpansion:polenta",
-  "count": 2,
-  "experience": 0.3
+  "result": {
+      "item": "cornexpansion:polenta",
+      "count": 2
+  },
+  "experience": 0.3,
+  "requiresLearning": false
 }
