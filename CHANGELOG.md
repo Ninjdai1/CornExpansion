@@ -2,4 +2,4 @@
 `1.20.1` `Fabric & Forge`
 ### Changelog:
 
-* Updated to farm&charm 1.0.6
+* Hotfix: fix broken stove recipes (polenta and grandma's cornbread)
