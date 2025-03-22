@@ -15,9 +15,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "farm_and_charm:kernels"
-            ]
+            "tag": "cornexpansion:seeds/corn"
           }
         ]
       },

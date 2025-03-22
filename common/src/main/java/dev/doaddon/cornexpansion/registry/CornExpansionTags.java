@@ -23,4 +23,8 @@ public class CornExpansionTags {
 
     public static final TagKey<Item> BREAD_FABRIC = TagKey.create(Registries.ITEM, new ResourceLocation("c", "bread"));
     public static final TagKey<Item> BREAD_FORGE = TagKey.create(Registries.ITEM, new ResourceLocation("forge", "bread"));
+
+    public static final TagKey<Item> KERNELS = TagKey.create(Registries.ITEM, CornExpansion.id("seeds/corn"));
+    public static final TagKey<Item> CORN_SEEDS_FABRIC = TagKey.create(Registries.ITEM, new ResourceLocation("c", "seeds/corn"));
+    public static final TagKey<Item> CORN_SEEDS_FORGE = TagKey.create(Registries.ITEM, new ResourceLocation("forge", "seeds/corn"));
 }

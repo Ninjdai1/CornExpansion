@@ -5,6 +5,7 @@ import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
 import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
 import dev.doaddon.cornexpansion.CornExpansion;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
+import dev.doaddon.cornexpansion.registry.CornExpansionTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 
@@ -18,7 +19,7 @@ public class CornExpansionMillingRecipes extends ProcessingRecipeGen {
             .duration(150));
     GeneratedRecipe
             CORNMEAL = create(CornExpansion.id("cornmeal"), recipeBuilder -> recipeBuilder
-            .require(ObjectRegistry.KERNELS.get())
+            .require(CornExpansionTags.KERNELS)
             .output(CornExpansionObjects.CORNMEAL.get())
             .output(0.25f, CornExpansionObjects.CORNMEAL.get(), 1)
             .duration(150));

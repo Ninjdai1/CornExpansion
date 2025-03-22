@@ -74,5 +74,14 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
                 .add(CornExpansionObjects.GRANDMAS_CORNBREAD.get());
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BREAD_FORGE)
                 .add(CornExpansionObjects.GRANDMAS_CORNBREAD.get());
+
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.KERNELS)
+                .addTag(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN_SEEDS_FABRIC)
+                .addTag(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN_SEEDS_FORGE);
+
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN_SEEDS_FABRIC)
+                .add(ObjectRegistry.KERNELS.get());
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN_SEEDS_FORGE)
+                .add(ObjectRegistry.KERNELS.get());
     }
 }

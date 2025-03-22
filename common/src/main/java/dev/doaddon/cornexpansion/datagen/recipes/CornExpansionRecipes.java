@@ -20,17 +20,17 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
 
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> exporter) {
-        SimpleCookingRecipeBuilder.smoking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 15)
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(CornExpansionTags.KERNELS), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 15)
                 .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
-                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(CornExpansionTags.KERNELS))
                 .save(exporter, CornExpansion.id("smoking/popcorn"));
-        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 20)
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(CornExpansionTags.KERNELS), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 20)
                 .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
-                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(CornExpansionTags.KERNELS))
                 .save(exporter, CornExpansion.id("campfire/popcorn"));
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(ObjectRegistry.KERNELS.get()), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 30)
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(CornExpansionTags.KERNELS), RecipeCategory.FOOD, CornExpansionObjects.POPCORN.get(), 0.1F, 30)
                 .unlockedBy("has_corn", FabricRecipeProvider.has(CornExpansionTags.CORN))
-                .unlockedBy("has_kernels", FabricRecipeProvider.has(ObjectRegistry.KERNELS.get()))
+                .unlockedBy("has_kernels", FabricRecipeProvider.has(CornExpansionTags.KERNELS))
                 .save(exporter, CornExpansion.id("smelting/popcorn"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.CORN_ON_THE_COB.get())
