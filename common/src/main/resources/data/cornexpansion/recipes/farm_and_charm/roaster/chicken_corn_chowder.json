@@ -1,0 +1,31 @@
+{
+  "type": "farm_and_charm:roaster",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:raw_chicken"
+    },
+    {
+      "tag": "farm_and_charm:raw_chicken"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "tag": "farm_and_charm:milk"
+    }
+  ],
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "result": {
+    "item": "cornexpansion:chicken_corn_chowder",
+    "count": 3
+  },
+  "requiresLearning": false
+}

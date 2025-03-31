@@ -1,0 +1,22 @@
+{
+  "type": "farm_and_charm:roaster",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:raw_bacon"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "tag": "farm_and_charm:butter"
+    }
+  ],
+  "container": {
+    "item": "minecraft:stick"
+  },
+  "result": {
+    "item": "cornexpansion:bacon_wrapped_corn",
+    "count": 1
+  },
+  "requiresLearning": false
+}

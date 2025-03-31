@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "item": "farm_and_charm:lettuce"
+    },
+    {
+      "item": "farm_and_charm:onion"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "cornexpansion:corn_salad",
+    "count": 3
+  }
+}

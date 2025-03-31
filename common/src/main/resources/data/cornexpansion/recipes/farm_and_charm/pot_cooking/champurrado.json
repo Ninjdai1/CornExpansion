@@ -1,0 +1,34 @@
+{
+  "type": "farm_and_charm:pot_cooking",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:water_bottles"
+    },
+    {
+      "tag": "cornexpansion:sweet_ingredient"
+    },
+    {
+      "tag": "cornexpansion:candied_ingredient"
+    },
+    {
+      "tag": "cornexpansion:candied_ingredient"
+    },
+    {
+      "item": "cornexpansion:corn_flour"
+    },
+    {
+      "item": "cornexpansion:corn_flour"
+    }
+  ],
+  "container": {
+    "required": true,
+    "item": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "cornexpansion:champurrado",
+    "count": 2
+  },
+  "requiresLearning": false
+}
