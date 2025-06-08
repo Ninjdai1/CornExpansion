@@ -54,7 +54,7 @@ public class EffectFoodBlock extends FoodBlock {
             player.getFoodData().eat(foodComponent.nutrition(), foodComponent.saturation());
             for(FoodProperties.PossibleEffect effect: foodComponent.effects()){
                 if(!level.isClientSide && level.random.nextFloat() < effect.probability())
-                    player.addEffect(new MobEffectInstance(effect.effect().getEffect()));
+                    player.addEffect(new MobEffectInstance(effect.effect().getEffect(), effect.effect().getDuration()));
             }
 
             for (int count = 0; count < 10; ++count) {
