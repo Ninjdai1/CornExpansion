@@ -1,0 +1,28 @@
+{
+  "type": "farm_and_charm:pot_cooking",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:milk"
+    },
+    {
+      "tag": "cornexpansion:sweet_ingredient"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "item": "cornexpansion:cornmeal"
+    }
+  ],
+  "container": {
+    "required": true,
+    "item": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "cornexpansion:atole",
+    "count": 2
+  },
+  "requiresLearning": false
+}

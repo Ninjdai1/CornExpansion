@@ -1,0 +1,31 @@
+{
+  "type": "farm_and_charm:roaster",
+  "ingredients": [
+    {
+      "tag": "farm_and_charm:pasta"
+    },
+    {
+      "tag": "farm_and_charm:pasta"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "tag": "farm_and_charm:corn"
+    },
+    {
+      "tag": "farm_and_charm:milk"
+    }
+  ],
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "result": {
+    "item": "cornexpansion:creamy_corn_pasta",
+    "count": 3
+  },
+  "requiresLearning": false
+}

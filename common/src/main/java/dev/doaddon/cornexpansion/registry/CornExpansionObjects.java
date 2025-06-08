@@ -94,6 +94,26 @@ public class CornExpansionObjects {
             getFoodItemSettings(FoodUtils.createFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
 
 
+    // ROASTER UPDATE!
+    public static final RegistrySupplier<Item> CORN_PANCAKE = registerItem("corn_pancake", () -> new EffectItem(
+            getFoodItemSettings(FoodUtils.createFood(14, 0.8F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.LONG_DURATION, false, false))));
+    public static final RegistrySupplier<Item> CORN_SALSA = registerItem("corn_salsa", () -> new EffectItem(
+            getFoodItemSettings(FoodUtils.createFood(6, 0.3F, MobEffectRegistry.RESTED, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+    public static final RegistrySupplier<Item> CHICKEN_CORN_CHOWDER = registerItem("chicken_corn_chowder", () -> new EffectItem(
+            getFoodItemSettings(FoodUtils.createFood(10, 0.6F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.MEDIUM_DURATION, false, false))));
+    public static final RegistrySupplier<Item> BACON_CORN_CASSEROLE = registerItem("bacon_corn_casserole", () -> new EffectItem(
+            getFoodItemSettings(FoodUtils.createFood(8, 0.6F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.MEDIUM_DURATION, false, false))));
+    public static final RegistrySupplier<Item> CORN_SALAD = registerItem("corn_salad", () -> new EffectItem(
+            getFoodItemSettings(FoodUtils.createFood(7, 0.4F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+    public static final RegistrySupplier<Item> BACON_WRAPPED_CORN = registerItem("bacon_wrapped_corn", () -> new StickFoodItem(
+            getFoodItemSettings(FoodUtils.createFood(8, 0.4F, MobEffectRegistry.RESTED, CornExpansionFoodProperties.SHORT_DURATION, false, false)).stacksTo(16)));
+    public static final RegistrySupplier<Item> CREAMY_CORN_PASTA = registerItem("creamy_corn_pasta", () -> new EffectItem(
+            getFoodItemSettings(FoodUtils.createFood(10, 0.6F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.MEDIUM_DURATION, false, false))));
+    public static final RegistrySupplier<Item> CHAMPURRADO = registerItem("champurrado", () -> new HoneyBottleItem(
+            getFoodItemSettings(FoodUtils.createFood(7, 0.6F, MobEffectRegistry.SWEETS, CornExpansionFoodProperties.MEDIUM_DURATION, true, true)).stacksTo(16).craftRemainder(Items.GLASS_BOTTLE)));
+    public static final RegistrySupplier<Item> ATOLE = registerItem("atole", () -> new EffectItem(
+            getFoodItemSettings(FoodUtils.createFood(7, 0.6F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.MEDIUM_DURATION, true, true)).stacksTo(16).craftRemainder(Items.GLASS_BOTTLE)));
+
     public static void init() {
         ITEMS.register();
         BLOCKS.register();
