@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "tag": "cornexpansion:candied_ingredient"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "cornexpansion:candied_popcorn"
+  }
+}

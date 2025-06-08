@@ -1,0 +1,46 @@
+{
+  "parent": "cornexpansion:getcorn",
+  "criteria": {
+    "cook_kernels_on_campfire": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "#minecraft:campfires"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "farm_and_charm:kernels"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.cornexpansion.cook_kernels_on_campfire.description"
+    },
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "minecraft:campfire"
+    },
+    "title": {
+      "translate": "advancements.cornexpansion.cook_kernels_on_campfire.title"
+    }
+  },
+  "requirements": [
+    [
+      "cook_kernels_on_campfire"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

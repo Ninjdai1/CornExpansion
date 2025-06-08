@@ -1,0 +1,46 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/Ninjdai1/CornExpansion/issues"
+license = "GPLv3"
+
+[[mods]]
+modId = "cornexpansion"
+version = "${version}"
+displayName = "[Let's Do Addon] Corn Expansion"
+authors = '''
+Ninjdai
+KalWantsPizza
+Satisfy
+'''
+description = '''
+A corn addon for Farm&Charm
+'''
+logoFile = "assets/cornexpansion/icon.png"
+
+[[dependencies.cornexpansion]]
+modId = "neoforge"
+mandatory = true
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cornexpansion]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cornexpansion]]
+modId = "architectury"
+mandatory = true
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.cornexpansion]]
+modId = "farm_and_charm"
+mandatory = true
+versionRange = "[1.1.0,)"
+ordering = "AFTER"
+side = "BOTH"

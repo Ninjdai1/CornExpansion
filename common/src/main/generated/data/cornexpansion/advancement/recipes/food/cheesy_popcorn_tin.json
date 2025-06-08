@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cheesy_popcorn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cornexpansion:cheesy_popcorn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cornexpansion:cheesy_popcorn_tin"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cheesy_popcorn"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cornexpansion:cheesy_popcorn_tin"
+    ]
+  }
+}

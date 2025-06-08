@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "tag": "cornexpansion:butter"
+    },
+    "S": {
+      "item": "cornexpansion:corn_syrup"
+    },
+    "W": {
+      "tag": "cornexpansion:flour"
+    }
+  },
+  "pattern": [
+    "WSB"
+  ],
+  "result": {
+    "count": 8,
+    "id": "cornexpansion:corn_syrup_cookie"
+  }
+}

@@ -25,7 +25,7 @@ public class EffectItem extends Item {
         super(properties);
     }
 
-    @Override
+    /*@Override
     public void appendHoverText(ItemStack stack, @Nullable Level world, List<Component> tooltip, TooltipFlag context) {
         List<Pair<MobEffectInstance, Float>> list2 = getFoodProperties() != null ? getFoodProperties().getEffects() : Lists.newArrayList();
         List<Pair<Attribute, AttributeModifier>> list3 = Lists.newArrayList();
@@ -89,5 +89,5 @@ public class EffectItem extends Item {
                 }
             }
         }
-    }
+    }*/
 }

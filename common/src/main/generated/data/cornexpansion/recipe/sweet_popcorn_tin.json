@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cornexpansion:sweet_popcorn_tin"
+  }
+}

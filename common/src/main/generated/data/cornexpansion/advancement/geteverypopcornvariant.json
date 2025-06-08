@@ -1,0 +1,58 @@
+{
+  "parent": "cornexpansion:getpopcorn",
+  "criteria": {
+    "craft_buttery_popcorn": {
+      "conditions": {
+        "recipe_id": "cornexpansion:buttery_popcorn"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "craft_candied_popcorn": {
+      "conditions": {
+        "recipe_id": "cornexpansion:candied_popcorn"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "craft_cheesy_popcorn": {
+      "conditions": {
+        "recipe_id": "cornexpansion:cheesy_popcorn"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    },
+    "craft_sweet_popcorn": {
+      "conditions": {
+        "recipe_id": "cornexpansion:sweet_popcorn"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.cornexpansion.geteverypopcornvariant.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "cornexpansion:candied_popcorn"
+    },
+    "title": {
+      "translate": "advancements.cornexpansion.geteverypopcornvariant.title"
+    }
+  },
+  "requirements": [
+    [
+      "craft_sweet_popcorn"
+    ],
+    [
+      "craft_buttery_popcorn"
+    ],
+    [
+      "craft_cheesy_popcorn"
+    ],
+    [
+      "craft_candied_popcorn"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

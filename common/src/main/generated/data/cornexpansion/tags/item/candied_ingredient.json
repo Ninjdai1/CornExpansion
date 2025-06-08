@@ -1,0 +1,17 @@
+{
+  "values": [
+    "minecraft:cocoa_beans",
+    {
+      "id": "create:bar_of_chocolate",
+      "required": false
+    },
+    {
+      "id": "#c:chocolate",
+      "required": false
+    },
+    {
+      "id": "#forge:chocolate",
+      "required": false
+    }
+  ]
+}

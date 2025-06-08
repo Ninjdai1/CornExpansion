@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cornexpansion:polenta"
+    },
+    {
+      "tag": "cornexpansion:cheese"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cornexpansion:cheesy_polenta"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 80,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "cornexpansion:corn_on_the_cob"
+  },
+  "result": {
+    "id": "cornexpansion:grilled_corn"
+  }
+}

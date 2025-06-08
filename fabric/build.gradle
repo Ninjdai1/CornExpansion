@@ -8,7 +8,9 @@ architectury {
 }
 
 fabricApi {
-    configureDataGeneration()
+    configureDataGeneration{
+        modId = "cornexpansion"
+    }
 }
 
 configurations {
@@ -34,12 +36,12 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
-    modImplementation "maven.modrinth:lets-do-farm-charm:${project.farm_and_charm_version}-fabric"
+    modImplementation "net.satisfy:farm_and_charm:${project.farm_and_charm_version}-fabric"
 
-    modImplementation("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_fabric_version}+mc${project.minecraft_version}")
+    //modImplementation("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_fabric_version}+mc${project.minecraft_version}")
 
 
-    modLocalRuntime ("me.shedaniel.cloth:cloth-config-fabric:11.1.136") {
+    modLocalRuntime ("me.shedaniel.cloth:cloth-config-fabric:15.0.140") {
         exclude(group: "net.fabricmc.fabric-api")
     }
 
@@ -68,7 +70,7 @@ shadowJar {
 
 remapJar {
     injectAccessWidener = true
-    input.set shadowJar.archiveFile
+    inputFile.set shadowJar.archiveFile
     dependsOn shadowJar
     archiveClassifier.set(null)
 }
@@ -85,7 +87,7 @@ sourcesJar {
 
 loom {
     Project common = project(":common")
-    // Datagen, while this is in fabric only, it generates files for forge too
+    // Datagen, while this is in fabric only, it generates files for neoforge too
     runs {
         datagen {
             client()

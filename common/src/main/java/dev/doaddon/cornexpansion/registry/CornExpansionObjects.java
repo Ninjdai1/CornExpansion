@@ -66,11 +66,11 @@ public class CornExpansionObjects {
             getFoodItemSettings(FoodUtils.createFood(4, 0.4F)).stacksTo(16))
     );
 
-    public static final RegistrySupplier<Block> POPCORN_TIN_BLOCK = registerWithoutItem("popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 8, CornExpansionFoodProperties.POPCORN_FOOD_PROPERTIES));
-    public static final RegistrySupplier<Block> SWEET_POPCORN_TIN_BLOCK = registerWithoutItem("sweet_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 8, CornExpansionFoodProperties.SWEET_POPCORN_FOOD_PROPERTIES));
-    public static final RegistrySupplier<Block> BUTTERY_POPCORN_TIN_BLOCK = registerWithoutItem("buttery_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 8, CornExpansionFoodProperties.BUTTERY_POPCORN_FOOD_PROPERTIES));
-    public static final RegistrySupplier<Block> CHEESY_POPCORN_TIN_BLOCK = registerWithoutItem("cheesy_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 8, CornExpansionFoodProperties.CHEESY_POPCORN_FOOD_PROPERTIES));
-    public static final RegistrySupplier<Block> CANDIED_POPCORN_TIN_BLOCK = registerWithoutItem("candied_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.copy(Blocks.CAKE), 8, CornExpansionFoodProperties.CANDIED_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> POPCORN_TIN_BLOCK = registerWithoutItem("popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> SWEET_POPCORN_TIN_BLOCK = registerWithoutItem("sweet_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.SWEET_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> BUTTERY_POPCORN_TIN_BLOCK = registerWithoutItem("buttery_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.BUTTERY_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> CHEESY_POPCORN_TIN_BLOCK = registerWithoutItem("cheesy_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.CHEESY_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> CANDIED_POPCORN_TIN_BLOCK = registerWithoutItem("candied_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.CANDIED_POPCORN_FOOD_PROPERTIES));
 
     public static final RegistrySupplier<Item> POPCORN_TIN = registerItem("popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
     public static final RegistrySupplier<Item> SWEET_POPCORN_TIN = registerItem("sweet_popcorn_tin", () -> new PlaceableEffectBlockItem((EffectFoodBlock) SWEET_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
@@ -80,7 +80,7 @@ public class CornExpansionObjects {
 
 
     public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new EffectItem(
-            getFoodItemSettings(FoodUtils.createFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING.get(), CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+            getFoodItemSettings(FoodUtils.createFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
     public static final RegistrySupplier<Item> CORN_SYRUP_COOKIE = registerItem("corn_syrup_cookie", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SLOWDOWN, CornExpansionFoodProperties.BRIEF_DURATION, false, false))));
 
@@ -100,7 +100,7 @@ public class CornExpansionObjects {
     }
 
     private static Item.Properties getDefaultItemProperties(Consumer<Item.Properties> consumer) {
-        Item.Properties settings = new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB);
+        Item.Properties settings = new Item.Properties();
         consumer.accept(settings);
         return settings;
     }

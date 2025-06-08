@@ -33,8 +33,8 @@ public class EffectFoodBlock extends FoodBlock {
     }
 
     @Override
-    public @NotNull InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        ItemStack itemStack = player.getItemInHand(hand);
+    public @NotNull InteractionResult useWithoutItem(BlockState state, Level world, BlockPos pos, Player player, BlockHitResult hit) {
+        ItemStack itemStack = player.getItemInHand(player.getUsedItemHand());
         if (world.isClientSide) {
             if (tryEat(world, pos, state, player).consumesAction()) {
                 return InteractionResult.SUCCESS;
@@ -51,10 +51,10 @@ public class EffectFoodBlock extends FoodBlock {
         if ((!player.canEat(false) && !foodComponent.canAlwaysEat()) || !(world instanceof Level level)) {
             return InteractionResult.PASS;
         } else {
-            player.getFoodData().eat(foodComponent.getNutrition(), foodComponent.getSaturationModifier());
-            for(Pair<MobEffectInstance, Float> effect: foodComponent.getEffects()){
-                if(!level.isClientSide && effect.getFirst() != null && level.random.nextFloat() < effect.getSecond())
-                    player.addEffect(new MobEffectInstance(effect.getFirst()));
+            player.getFoodData().eat(foodComponent.nutrition(), foodComponent.saturation());
+            for(FoodProperties.PossibleEffect effect: foodComponent.effects()){
+                if(!level.isClientSide && level.random.nextFloat() < effect.probability())
+                    player.addEffect(new MobEffectInstance(effect.effect().getEffect()));
             }
 
             for (int count = 0; count < 10; ++count) {

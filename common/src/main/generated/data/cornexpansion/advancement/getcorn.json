@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "get_corn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farm_and_charm:corn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.cornexpansion.getcorn.description"
+    },
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "farm_and_charm:corn"
+    },
+    "title": {
+      "translate": "advancements.cornexpansion.getcorn.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_corn"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

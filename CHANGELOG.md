@@ -1,5 +1,5 @@
 # [Let's Do Addon] CornExpansion `@VERSION@`
-`1.20.1` `Fabric & Forge`
+`1.21.1` `Fabric & NeoForge`
 ### Changelog:
 
-* Hotfix: fix broken stove recipes (polenta and grandma's cornbread)
+

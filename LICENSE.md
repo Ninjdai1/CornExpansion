@@ -3,7 +3,7 @@ the license below.
 
 /common/src/main/resources/assets/
 /fabric/src/main/resources/assets/
-/forge/src/main/resources/assets/
+/neoforge/src/main/resources/assets/
 
 All Rights Reserved
 Copyright (c) 2024 Satisfy, KalWantsPizza, Ninjdai

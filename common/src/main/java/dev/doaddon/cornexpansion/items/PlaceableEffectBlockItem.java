@@ -8,6 +8,7 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffectUtil;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -23,16 +24,16 @@ public class PlaceableEffectBlockItem extends EffectBlockItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> tooltip, TooltipFlag tooltipFlag) {
+    public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> tooltip, TooltipFlag tooltipFlag) {
         tooltip.add(Component.translatable("tooltip.farm_and_charm.canbeplaced").withStyle(ChatFormatting.GRAY));
 
-        for (Pair<MobEffectInstance, Float> statusEffectInstance : ((EffectFoodBlock) getBlock()).foodComponent.getEffects()) {
-            MutableComponent mutableText = Component.translatable(statusEffectInstance.getFirst().getDescriptionId());
-            MobEffect statusEffect = statusEffectInstance.getFirst().getEffect();
-            if (statusEffectInstance.getFirst().getDuration() > 20) {
+        for (FoodProperties.PossibleEffect statusEffectInstance : ((EffectFoodBlock) getBlock()).foodComponent.effects()) {
+            MutableComponent mutableText = Component.translatable(statusEffectInstance.effect().getDescriptionId());
+            MobEffect statusEffect = statusEffectInstance.effect().getEffect().value();
+            if (statusEffectInstance.effect().getDuration() > 20) {
                 mutableText = Component.translatable(
                         "potion.withDuration",
-                        mutableText, MobEffectUtil.formatDuration(statusEffectInstance.getFirst(), statusEffectInstance.getSecond()));
+                        mutableText, MobEffectUtil.formatDuration(statusEffectInstance.effect(), statusEffectInstance.effect().getDuration(), 0));
             }
             tooltip.add(mutableText.withStyle(statusEffect.getCategory().getTooltipFormatting()));
         }

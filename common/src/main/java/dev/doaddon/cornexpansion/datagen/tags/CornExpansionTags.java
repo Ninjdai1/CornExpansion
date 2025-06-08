@@ -19,39 +19,39 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
     protected void addTags(HolderLookup.Provider arg) {
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BUTTER)
                 .addOptional(ObjectRegistry.BUTTER.getId())
-                .addOptionalTag(new ResourceLocation("c:butter"))
-                .addOptionalTag(new ResourceLocation("forge:butter"));
+                .addOptionalTag(ResourceLocation.parse("c:butter"))
+                .addOptionalTag(ResourceLocation.parse("forge:butter"));
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CHEESE)
-                .addOptionalTag(new ResourceLocation("c:cheese"))
-                .addOptionalTag(new ResourceLocation("forge:cheese"))
-                .addOptionalTag(new ResourceLocation("c:cheeses"))
-                .addOptionalTag(new ResourceLocation("forge:cheeses"));
+                .addOptionalTag(ResourceLocation.parse("c:cheese"))
+                .addOptionalTag(ResourceLocation.parse("forge:cheese"))
+                .addOptionalTag(ResourceLocation.parse("c:cheeses"))
+                .addOptionalTag(ResourceLocation.parse("forge:cheeses"));
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN)
                 .addOptional(ObjectRegistry.CORN.getId())
-                .addOptional(new ResourceLocation("brewery:corn"))
-                .addOptionalTag(new ResourceLocation("c:corn"))
-                .addOptionalTag(new ResourceLocation("c:crops/corn"))
-                .addOptionalTag(new ResourceLocation("forge:corn"))
-                .addOptionalTag(new ResourceLocation("forge:crops/corn"));
+                .addOptional(ResourceLocation.parse("brewery:corn"))
+                .addOptionalTag(ResourceLocation.parse("c:corn"))
+                .addOptionalTag(ResourceLocation.parse("c:crops/corn"))
+                .addOptionalTag(ResourceLocation.parse("forge:corn"))
+                .addOptionalTag(ResourceLocation.parse("forge:crops/corn"));
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.DRIED_CORN)
                 .addOptional(CornExpansionObjects.DRIED_CORN.getId())
-                .addOptional(new ResourceLocation("brewery:dried_corn"));
+                .addOptional(ResourceLocation.parse("brewery:dried_corn"));
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.SWEET_INGREDIENT)
                 .add(Items.SUGAR)
                 .add(Items.HONEY_BOTTLE)
                 .add(CornExpansionObjects.CORN_SYRUP.get())
-                .addOptionalTag(new ResourceLocation("c:sugar"))
-                .addOptionalTag(new ResourceLocation("forge:sugar"));
+                .addOptionalTag(ResourceLocation.parse("c:sugar"))
+                .addOptionalTag(ResourceLocation.parse("forge:sugar"));
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CANDIED_INGREDIENT)
                 .add(Items.COCOA_BEANS)
-                .addOptional(new ResourceLocation("create:bar_of_chocolate"))
-                .addOptionalTag(new ResourceLocation("c:chocolate"))
-                .addOptionalTag(new ResourceLocation("forge:chocolate"));
+                .addOptional(ResourceLocation.parse("create:bar_of_chocolate"))
+                .addOptionalTag(ResourceLocation.parse("c:chocolate"))
+                .addOptionalTag(ResourceLocation.parse("forge:chocolate"));
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.POPCORN)
                 .add(CornExpansionObjects.POPCORN.get())
