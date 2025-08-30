@@ -101,7 +101,7 @@ public class CornExpansionObjects {
     }
 
     private static Item.Properties getDefaultItemProperties(Consumer<Item.Properties> consumer) {
-        Item.Properties settings = new Item.Properties();
+        Item.Properties settings = new Item.Properties().arch$tab(CornExpansionCreativeTabs.CORNEXPANSION_TAB);
         consumer.accept(settings);
         return settings;
     }

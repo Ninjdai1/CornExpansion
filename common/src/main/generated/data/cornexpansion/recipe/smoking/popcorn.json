@@ -4,7 +4,7 @@
   "cookingtime": 15,
   "experience": 0.1,
   "ingredient": {
-    "tag": "cornexpansion:seeds/corn"
+    "item": "farm_and_charm:kernels"
   },
   "result": {
     "id": "cornexpansion:popcorn"
