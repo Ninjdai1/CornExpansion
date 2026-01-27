@@ -19,6 +19,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 import net.satisfy.farm_and_charm.core.util.GeneralUtil;
 import net.satisfy.farm_and_charm.core.registry.MobEffectRegistry;
 import dev.doaddon.cornexpansion.utils.CornExpansionFoodProperties;
@@ -81,7 +82,7 @@ public class CornExpansionObjects {
 
 
     public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new EffectItem(
-            getFoodItemSettings(FoodUtils.createFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+            getFoodItemSettings(FoodUtils.createFCFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
     public static final RegistrySupplier<Item> CORN_SYRUP_COOKIE = registerItem("corn_syrup_cookie", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SLOWDOWN, CornExpansionFoodProperties.BRIEF_DURATION, false, false))));
 
@@ -90,9 +91,9 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> SWEET_POLENTA = registerItem("sweet_polenta", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SPEED, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
     public static final RegistrySupplier<Item> BUTTERY_POLENTA = registerItem("buttery_polenta", () -> new EffectItem(
-            getFoodItemSettings(FoodUtils.createFood(3, 0.4F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+            getFoodItemSettings(FoodUtils.createFCFood(3, 0.4F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
     public static final RegistrySupplier<Item> CHEESY_POLENTA = registerItem("cheesy_polenta", () -> new EffectItem(
-            getFoodItemSettings(FoodUtils.createFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+            getFoodItemSettings(FoodUtils.createFCFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
 
 
     public static void init() {

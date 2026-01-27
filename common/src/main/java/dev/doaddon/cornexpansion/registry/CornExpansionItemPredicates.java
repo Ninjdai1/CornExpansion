@@ -2,13 +2,8 @@ package dev.doaddon.cornexpansion.registry;
 
 import dev.architectury.registry.item.ItemPropertiesRegistry;
 import dev.doaddon.cornexpansion.CornExpansion;
-import net.minecraft.client.renderer.block.model.ItemOverride;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.component.BlockItemStateProperties;
-import net.minecraft.world.level.block.LightBlock;
 
 public class CornExpansionItemPredicates {
     public static void register() {

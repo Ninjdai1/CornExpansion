@@ -2,6 +2,7 @@ package dev.doaddon.cornexpansion.forge;
 
 import dev.doaddon.cornexpansion.CornExpansion;
 import dev.doaddon.cornexpansion.registry.CornExpansionCompostables;
+import dev.doaddon.cornexpansion.registry.CornExpansionItemPredicates;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -17,5 +18,6 @@ public final class CornExpansionForge {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(CornExpansionCompostables::init);
+        event.enqueueWork(CornExpansionItemPredicates::register);
     }
 }

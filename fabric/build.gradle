@@ -37,6 +37,7 @@ dependencies {
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
     modImplementation "maven.modrinth:lets-do-farm-charm:${project.farm_and_charm_version}-fabric"
+    //modImplementation files("../libs/letsdo-farm_and_charm-fabric-1.1.15.jar")
 
     //modImplementation("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_fabric_version}+mc${project.minecraft_version}")
 

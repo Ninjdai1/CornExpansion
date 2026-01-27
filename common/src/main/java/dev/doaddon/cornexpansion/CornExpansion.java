@@ -19,7 +19,6 @@ public final class CornExpansion {
     public static void init() {
         CornExpansionObjects.init();
         CornExpansionCreativeTabs.init();
-        CornExpansionItemPredicates.register();
 
         LOGGER.info("Finished initializing !");
     }

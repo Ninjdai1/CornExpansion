@@ -86,7 +86,6 @@ subprojects {
         maven { name = "Devos Maven"; description = "Create Fabric, Porting Lib, Forge Tags, Milk Lib & Fabric Registrate"; url = "https://mvn.devos.one/snapshots/" }
         maven { name = "Jitpack maven"; description = "Mixin Extras & Fabric ASM"; url = "https://jitpack.io/" }
         maven { url "https://maven.shedaniel.me/" }
-        maven { url "https://maven.tsuyumori.dev/snapshots" }
     }
 
     dependencies {

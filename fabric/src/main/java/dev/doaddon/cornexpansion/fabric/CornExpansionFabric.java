@@ -1,6 +1,7 @@
 package dev.doaddon.cornexpansion.fabric;
 
 import dev.doaddon.cornexpansion.registry.CornExpansionCompostables;
+import dev.doaddon.cornexpansion.registry.CornExpansionItemPredicates;
 import net.fabricmc.api.ModInitializer;
 
 import dev.doaddon.cornexpansion.CornExpansion;
@@ -11,5 +12,6 @@ public final class CornExpansionFabric implements ModInitializer {
         CornExpansion.init();
 
         CornExpansionCompostables.init();
+        CornExpansionItemPredicates.register();
     }
 }

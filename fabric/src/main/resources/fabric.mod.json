@@ -37,7 +37,7 @@
     "architectury": ">=9.2.14",
     "fabric-api": "*",
 
-    "farm_and_charm": ">=1.1.0"
+    "farm_and_charm": ">=1.1.15"
   },
   "custom": {
     "modmenu": {
