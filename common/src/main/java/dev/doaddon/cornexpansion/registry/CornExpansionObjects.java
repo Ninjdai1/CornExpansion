@@ -1,5 +1,6 @@
 package dev.doaddon.cornexpansion.registry;
 
+import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.RegistrySupplier;
@@ -82,7 +83,7 @@ public class CornExpansionObjects {
 
 
     public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new EffectItem(
-            getFoodItemSettings(FoodUtils.createFCFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+            getFoodItemSettings(Platform.isNeoForge() ? FoodUtils.createFCFood(6, 0.9F, MobEffectRegistry.GRANDMAS_BLESSING, CornExpansionFoodProperties.SHORT_DURATION, false, false) : FoodUtils.createFood(6, 0.9F, MobEffects.ABSORPTION, CornExpansionFoodProperties.MEDIUM_DURATION, false, false))));
     public static final RegistrySupplier<Item> CORN_SYRUP_COOKIE = registerItem("corn_syrup_cookie", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SLOWDOWN, CornExpansionFoodProperties.BRIEF_DURATION, false, false))));
 
@@ -91,9 +92,9 @@ public class CornExpansionObjects {
     public static final RegistrySupplier<Item> SWEET_POLENTA = registerItem("sweet_polenta", () -> new EffectItem(
             getFoodItemSettings(FoodUtils.createFood(3, 0.2F, MobEffects.MOVEMENT_SPEED, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
     public static final RegistrySupplier<Item> BUTTERY_POLENTA = registerItem("buttery_polenta", () -> new EffectItem(
-            getFoodItemSettings(FoodUtils.createFCFood(3, 0.4F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+            getFoodItemSettings(Platform.isNeoForge() ? FoodUtils.createFCFood(3, 0.4F, MobEffectRegistry.SATIATION, CornExpansionFoodProperties.SHORT_DURATION, false, false) : FoodUtils.createFood(3, 0.4F, MobEffects.DIG_SPEED, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
     public static final RegistrySupplier<Item> CHEESY_POLENTA = registerItem("cheesy_polenta", () -> new EffectItem(
-            getFoodItemSettings(FoodUtils.createFCFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
+            getFoodItemSettings(Platform.isNeoForge() ? FoodUtils.createFCFood(4, 0.4F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.SHORT_DURATION, false, false) : FoodUtils.createFood(3, 0.4F, MobEffects.REGENERATION, CornExpansionFoodProperties.SHORT_DURATION, false, false))));
 
 
     public static void init() {
