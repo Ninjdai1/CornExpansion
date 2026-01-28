@@ -1,4 +1,4 @@
 # [Let's Do Addon] CornExpansion `@VERSION@`
 `1.21.1` `Fabric & NeoForge`
 ### Changelog:
-* Updated to Farm&Charm 1.1.15+
+* Temporary fix for a crash on fabric
