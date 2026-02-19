@@ -12,6 +12,5 @@ public final class CornExpansionFabric implements ModInitializer {
         CornExpansion.init();
 
         CornExpansionCompostables.init();
-        CornExpansionItemPredicates.register();
     }
 }

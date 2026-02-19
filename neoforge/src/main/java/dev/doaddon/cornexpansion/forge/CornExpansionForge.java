@@ -18,6 +18,5 @@ public final class CornExpansionForge {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(CornExpansionCompostables::init);
-        event.enqueueWork(CornExpansionItemPredicates::register);
     }
 }

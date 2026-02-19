@@ -1,6 +1,7 @@
 package dev.doaddon.cornexpansion.fabric.client;
 
 import dev.architectury.registry.client.rendering.RenderTypeRegistry;
+import dev.doaddon.cornexpansion.registry.CornExpansionItemPredicates;
 import dev.doaddon.cornexpansion.registry.CornExpansionObjects;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.renderer.RenderType;
@@ -15,5 +16,7 @@ public final class CornExpansionFabricClient implements ClientModInitializer {
                 CornExpansionObjects.CHEESY_POPCORN_TIN_BLOCK.get(),
                 CornExpansionObjects.CANDIED_POPCORN_TIN_BLOCK.get()
         );
+
+        CornExpansionItemPredicates.register();
     }
 }
