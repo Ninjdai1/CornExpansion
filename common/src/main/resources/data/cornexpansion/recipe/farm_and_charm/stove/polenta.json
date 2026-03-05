@@ -1,0 +1,20 @@
+{
+    "type": "farm_and_charm:stove",
+    "ingredients": [
+        {
+            "item": "cornexpansion:cornmeal"
+        },
+        {
+            "item": "cornexpansion:cornmeal"
+        },
+        {
+            "tag": "farm_and_charm:water_bottles"
+        }
+    ],
+    "result": {
+        "id": "cornexpansion:polenta",
+        "count": 2
+    },
+    "experience": 0.3,
+    "requiresLearning": false
+}

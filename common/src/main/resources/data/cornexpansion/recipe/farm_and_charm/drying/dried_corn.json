@@ -5,7 +5,7 @@
     },
     "recipe_type": "MEAT",
     "result": {
-        "item": "cornexpansion:dried_corn",
+        "id": "cornexpansion:dried_corn",
         "count": 1
     },
     "fabric:load_conditions": [
@@ -13,9 +13,7 @@
             "condition": "fabric:not",
             "value": {
                 "condition": "fabric:all_mods_loaded",
-                "values": [
-                    "brewery"
-                ]
+                "values": ["brewery"]
             }
         }
     ],
@@ -29,4 +27,4 @@
         }
     ]
 }
-  
+
