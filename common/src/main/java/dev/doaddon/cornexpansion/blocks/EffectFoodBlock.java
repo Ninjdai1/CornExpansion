@@ -18,7 +18,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
-import net.satisfy.farm_and_charm.core.block.FoodBlock;
+import net.satisfy.foundation.food.FoodBlock;
 import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("deprecation")

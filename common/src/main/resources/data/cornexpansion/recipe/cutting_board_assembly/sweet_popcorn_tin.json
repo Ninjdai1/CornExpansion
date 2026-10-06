@@ -1,0 +1,24 @@
+{
+  "type": "farm_and_charm:cutting_board_assembly",
+  "ingredients": [
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    },
+    {
+      "item": "cornexpansion:sweet_popcorn"
+    }
+  ],
+  "finisher": {
+    "item": "minecraft:bucket"
+  },
+  "result": {
+    "id": "cornexpansion:sweet_popcorn_tin",
+    "count": 1
+  }
+}

@@ -1,6 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "type": "farm_and_charm:cutting_board_assembly",
   "ingredients": [
     {
       "item": "cornexpansion:popcorn"
@@ -12,11 +11,11 @@
       "item": "cornexpansion:popcorn"
     },
     {
-      "tag": "cornexpansion:sweet_ingredient"
+      "tag": "cornexpansion:butter"
     }
   ],
   "result": {
-    "count": 3,
-    "id": "cornexpansion:sweet_popcorn"
+    "id": "cornexpansion:buttery_popcorn",
+    "count": 3
   }
 }

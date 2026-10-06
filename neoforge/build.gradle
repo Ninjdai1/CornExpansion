@@ -30,7 +30,9 @@ dependencies {
     // Architectury API. This is optional, and you can comment it out if you don't need it.
     modImplementation "dev.architectury:architectury-neoforge:$rootProject.architectury_api_version"
 
-    modImplementation "maven.modrinth:lets-do-farm-charm:${project.farm_and_charm_version}-neoforge"
+    include(modImplementation("net.satisfy.foundation:foundation-neoforge:${rootProject.foundation_version}") { transitive = false })
+    modImplementation(files(rootProject.file("local-mods/letsdo-farm_and_charm-neoforge-${rootProject.farm_and_charm_version}.jar")))
+    modLocalRuntime("me.shedaniel:RoughlyEnoughItems-neoforge:${rootProject.rei_version}")
     //modImplementation files("../libs/letsdo-farm_and_charm-neoforge-1.1.15.jar")
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }

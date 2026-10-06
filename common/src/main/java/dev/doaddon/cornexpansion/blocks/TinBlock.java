@@ -1,6 +1,8 @@
 package dev.doaddon.cornexpansion.blocks;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.DustParticleOptions;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -18,6 +20,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -28,7 +31,7 @@ public class TinBlock extends EffectFoodBlock{
     public static final EnumProperty<DyeColor> COLOR;
     public TinBlock(Properties settings, int maxBites, FoodProperties foodComponent) {
         super(settings, maxBites, foodComponent);
-        this.registerDefaultState(this.defaultBlockState().setValue(COLOR, DyeColor.WHITE));
+        this.registerDefaultState(this.defaultBlockState().setValue(COLOR, DyeColor.RED));
     }
 
     VoxelShape voxelShape = Shapes.join(Block.box(5, 0, 5, 11, 9, 11), Block.box(4, 7, 4, 12, 9, 12), BooleanOp.OR);
@@ -43,6 +46,10 @@ public class TinBlock extends EffectFoodBlock{
         if (itemStack.getItem() instanceof DyeItem dye && blockState.getValue(COLOR) != dye.getDyeColor()) {
             level.setBlock(blockPos, blockState.setValue(COLOR, dye.getDyeColor()), 3);
             level.playSound(null, blockPos, SoundEvents.DYE_USE, SoundSource.BLOCKS, 0.5f, level.getRandom().nextFloat() * 0.1f + 0.9f);
+            if (level instanceof ServerLevel serverLevel) {
+                DustParticleOptions dust = new DustParticleOptions(Vec3.fromRGB24(dye.getDyeColor().getTextureDiffuseColor()).toVector3f(), 1.0f);
+                serverLevel.sendParticles(dust, blockPos.getX() + 0.5, blockPos.getY() + 0.5, blockPos.getZ() + 0.5, 8, 0.25, 0.25, 0.25, 0.0);
+            }
             player.awardStat(Stats.ITEM_USED.get(itemStack.getItem()));
             itemStack.consume(1, player);
             return ItemInteractionResult.SUCCESS;

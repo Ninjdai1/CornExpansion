@@ -1,6 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "type": "farm_and_charm:cutting_board_assembly",
   "ingredients": [
     {
       "item": "cornexpansion:polenta"
@@ -10,7 +9,7 @@
     }
   ],
   "result": {
-    "count": 1,
-    "id": "cornexpansion:sweet_polenta"
+    "id": "cornexpansion:sweet_polenta",
+    "count": 1
   }
 }

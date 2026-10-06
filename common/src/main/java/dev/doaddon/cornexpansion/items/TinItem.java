@@ -29,7 +29,7 @@ public class TinItem extends BlockItem {
 
     @Override
     public void appendHoverText(ItemStack itemStack, TooltipContext tooltipContext, List<Component> tooltip, TooltipFlag tooltipFlag) {
-        DyeColor color = itemStack.getOrDefault(DataComponents.BASE_COLOR, DyeColor.WHITE);
+        DyeColor color = itemStack.getOrDefault(DataComponents.BASE_COLOR, DyeColor.RED);
         tooltip.add(Component.translatable("tooltip.farm_and_charm.canbeplaced").withColor(color.getTextColor()));
 
         for (FoodProperties.PossibleEffect statusEffectInstance : ((EffectFoodBlock) getBlock()).foodComponent.effects()) {
@@ -52,7 +52,7 @@ public class TinItem extends BlockItem {
         BlockState blockState = this.getBlock().getStateForPlacement(blockPlaceContext);
 
         if(blockState!=null && this.canPlace(blockPlaceContext, blockState)) {
-            DyeColor tinColor = blockPlaceContext.getItemInHand().getOrDefault(DataComponents.BASE_COLOR, DyeColor.WHITE);
+            DyeColor tinColor = blockPlaceContext.getItemInHand().getOrDefault(DataComponents.BASE_COLOR, DyeColor.RED);
             return blockState.setValue(TinBlock.COLOR, tinColor);
         }
         return null;
