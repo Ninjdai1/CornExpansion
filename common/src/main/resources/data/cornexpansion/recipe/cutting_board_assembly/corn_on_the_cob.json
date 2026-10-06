@@ -1,0 +1,15 @@
+{
+  "type": "farm_and_charm:cutting_board_assembly",
+  "ingredients": [
+    {
+      "tag": "cornexpansion:corn"
+    }
+  ],
+  "finisher": {
+    "item": "minecraft:stick"
+  },
+  "result": {
+    "id": "cornexpansion:corn_on_the_cob",
+    "count": 1
+  }
+}
