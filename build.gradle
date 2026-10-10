@@ -2,7 +2,7 @@ plugins {
     id 'dev.architectury.loom' version '1.13-SNAPSHOT' apply false
     id 'architectury-plugin' version '3.4-SNAPSHOT'
     id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
-    id "me.modmuss50.mod-publish-plugin" version "0.5.1"
+    id "me.modmuss50.mod-publish-plugin" version "2.2.1"
 }
 
 tasks.register("multiplatformDatagen") {
@@ -105,7 +105,6 @@ subprojects {
     }
 }
 
-
 publishMods {
     changelog = file("CHANGELOG.md").text.replace("@VERSION@", rootProject.mod_version)
     type = STABLE
@@ -114,6 +113,11 @@ publishMods {
         accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
         minecraftVersions.add("1.21.1")
         projectId = "1038740"
+
+        // Required for CurseForge in mod-publish-plugin 2.0+
+        client = true
+        server = true
+
         requires {
             slug = "architectury-api"
         }
@@ -135,7 +139,7 @@ publishMods {
     }
 
     curseforge("curseforgeFabric") {
-        from optionsCurseforge
+        from(optionsCurseforge)
         modLoaders.add("fabric")
         modLoaders.add("quilt")
         file = project(":fabric").tasks.named("remapJar").get().archiveFile
@@ -147,7 +151,7 @@ publishMods {
     }
 
     curseforge("curseforgeNeoForge") {
-        from optionsCurseforge
+        from(optionsCurseforge)
         modLoaders.add("neoforge")
         file = project(":neoforge").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} NeoForge"
@@ -158,7 +162,7 @@ publishMods {
     }
 
     modrinth("modrinthFabric") {
-        from optionsModrinth
+        from(optionsModrinth)
         modLoaders.add("fabric")
         modLoaders.add("quilt")
         file = project(":fabric").tasks.named("remapJar").get().archiveFile
@@ -172,7 +176,7 @@ publishMods {
     }
 
     modrinth("modrinthForge") {
-        from optionsModrinth
+        from(optionsModrinth)
         modLoaders.add("neoforge")
         file = project(":neoforge").tasks.named("remapJar").get().archiveFile
         displayName = "[Let's Do Addon] CornExpansion ${rootProject.mod_version} NeoForge"
