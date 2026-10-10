@@ -13,12 +13,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.satisfy.farm_and_charm.core.item.food.EffectBlockItem;
+import net.satisfy.foundation.food.PlaceableEffectFoodItem;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class PlaceableEffectBlockItem extends EffectBlockItem {
+public class PlaceableEffectBlockItem extends PlaceableEffectFoodItem {
     public PlaceableEffectBlockItem(EffectFoodBlock block, Item.Properties properties) {
         super(block, properties);
     }

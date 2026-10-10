@@ -53,6 +53,7 @@ subprojects {
     }
 
     repositories {
+        mavenLocal()
         maven {
             name "terraform wood api, trinkets"
             url "https://maven.terraformersmc.com"
@@ -61,24 +62,23 @@ subprojects {
             name = "Jared's maven"
             url = "https://maven.blamejared.com/"
         }
-        repositories {
-            exclusiveContent {
-                forRepository {
-                    maven {
-                        name = "Modrinth"
-                        url = "https://api.modrinth.com/maven"
-                    }
-                }
-                filter {
-                    includeGroup "maven.modrinth"
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = "Modrinth"
+                    url = "https://api.modrinth.com/maven"
                 }
             }
-            mavenCentral()
-            maven {
-                url "https://oss.sonatype.org/content/repositories/snapshots/"
+            filter {
+                includeGroup "maven.modrinth"
             }
         }
+        mavenCentral()
+        maven {
+            url "https://oss.sonatype.org/content/repositories/snapshots/"
+        }
 
+        maven { url "https://maven.architectury.dev/" }
         maven { url "https://maven.neoforged.net/releases" }
         maven { name = "Curseforge Maven"; description = "Forge Config API Port"; url = "https://cursemaven.com" }
         maven { name = "Tterrag Maven"; description = "Create, Forge Registrate & Forge Flywheel"; url = "https://maven.tterrag.com" }

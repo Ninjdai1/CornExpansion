@@ -36,8 +36,10 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
 
+    include(modImplementation("net.satisfy.foundation:foundation-fabric:${project.foundation_version}") { transitive = false })
     modImplementation "maven.modrinth:lets-do-farm-charm:${project.farm_and_charm_version}-fabric"
     //modImplementation files("../libs/letsdo-farm_and_charm-fabric-1.1.15.jar")
+    modLocalRuntime("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}") { exclude group: "net.fabricmc", module: "fabric-loader" }
 
     //modImplementation("com.simibubi.create:create-fabric-${project.minecraft_version}:${project.create_fabric_version}+mc${project.minecraft_version}")
 

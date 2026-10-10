@@ -41,6 +41,11 @@ side = "BOTH"
 [[dependencies.cornexpansion]]
 modId = "farm_and_charm"
 mandatory = true
-versionRange = "[1.1.15,)"
+versionRange = "[1.1.27,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies.cornexpansion]]
+modId = "foundation"
+mandatory = true
+versionRange = "[1.0.0,)"

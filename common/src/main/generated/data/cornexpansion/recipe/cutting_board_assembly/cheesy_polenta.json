@@ -1,0 +1,15 @@
+{
+  "type": "farm_and_charm:cutting_board_assembly",
+  "ingredients": [
+    {
+      "item": "cornexpansion:polenta"
+    },
+    {
+      "tag": "cornexpansion:cheese"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cornexpansion:cheesy_polenta"
+  }
+}

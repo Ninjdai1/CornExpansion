@@ -1,0 +1,21 @@
+{
+  "type": "farm_and_charm:cutting_board_assembly",
+  "ingredients": [
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "item": "cornexpansion:popcorn"
+    },
+    {
+      "tag": "cornexpansion:sweet_ingredient"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "cornexpansion:sweet_popcorn"
+  }
+}

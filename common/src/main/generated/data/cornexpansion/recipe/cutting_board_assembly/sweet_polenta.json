@@ -1,0 +1,15 @@
+{
+  "type": "farm_and_charm:cutting_board_assembly",
+  "ingredients": [
+    {
+      "item": "cornexpansion:polenta"
+    },
+    {
+      "tag": "cornexpansion:sweet_ingredient"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cornexpansion:sweet_polenta"
+  }
+}

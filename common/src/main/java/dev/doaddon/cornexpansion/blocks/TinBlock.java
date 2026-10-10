@@ -1,6 +1,8 @@
 package dev.doaddon.cornexpansion.blocks;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.DustParticleOptions;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
@@ -14,19 +16,21 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-public class TinBlock extends EffectFoodBlock{
+public class TinBlock extends EffectFoodBlock {
     public static final EnumProperty<DyeColor> COLOR;
-    public TinBlock(Properties settings, int maxBites, FoodProperties foodComponent) {
+    public TinBlock(BlockBehaviour.Properties settings, int maxBites, FoodProperties foodComponent) {
         super(settings, maxBites, foodComponent);
         this.registerDefaultState(this.defaultBlockState().setValue(COLOR, DyeColor.WHITE));
     }
@@ -43,6 +47,10 @@ public class TinBlock extends EffectFoodBlock{
         if (itemStack.getItem() instanceof DyeItem dye && blockState.getValue(COLOR) != dye.getDyeColor()) {
             level.setBlock(blockPos, blockState.setValue(COLOR, dye.getDyeColor()), 3);
             level.playSound(null, blockPos, SoundEvents.DYE_USE, SoundSource.BLOCKS, 0.5f, level.getRandom().nextFloat() * 0.1f + 0.9f);
+            if (level instanceof ServerLevel serverLevel) {
+                DustParticleOptions dust = new DustParticleOptions(Vec3.fromRGB24(dye.getDyeColor().getTextureDiffuseColor()).toVector3f(), 1.0f);
+                serverLevel.sendParticles(dust, blockPos.getX() + 0.5, blockPos.getY() + 0.5, blockPos.getZ() + 0.5, 8, 0.25, 0.25, 0.25, 0.0);
+            }
             player.awardStat(Stats.ITEM_USED.get(itemStack.getItem()));
             itemStack.consume(1, player);
             return ItemInteractionResult.SUCCESS;
