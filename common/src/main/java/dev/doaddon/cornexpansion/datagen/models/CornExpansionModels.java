@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.models.BlockModelGenerators;
 import net.minecraft.data.models.ItemModelGenerators;
 import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.resources.ResourceLocation;
 
 public class CornExpansionModels extends FabricModelProvider {
     public CornExpansionModels(FabricDataOutput generator) {
@@ -43,5 +44,8 @@ public class CornExpansionModels extends FabricModelProvider {
 
         itemModelGenerator.generateFlatItem(CornExpansionObjects.GRANDMAS_CORNBREAD.get(), ModelTemplates.FLAT_ITEM);
         itemModelGenerator.generateFlatItem(CornExpansionObjects.CORN_SYRUP_COOKIE.get(), ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerator.generateFlatItem(CornExpansionObjects.RAW_CORN_DOG.get(), ModelTemplates.FLAT_ITEM);
+        itemModelGenerator.generateFlatItem(CornExpansionObjects.CORN_DOG.get(), ModelTemplates.FLAT_ITEM);
     }
 }

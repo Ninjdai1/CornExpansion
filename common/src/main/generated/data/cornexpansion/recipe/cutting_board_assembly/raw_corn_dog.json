@@ -1,0 +1,21 @@
+{
+  "type": "farm_and_charm:cutting_board_assembly",
+  "finisher": {
+    "item": "minecraft:stick"
+  },
+  "ingredients": [
+    {
+      "item": "farm_and_charm:minced_beef"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "cornexpansion:cornmeal"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cornexpansion:raw_corn_dog"
+  }
+}

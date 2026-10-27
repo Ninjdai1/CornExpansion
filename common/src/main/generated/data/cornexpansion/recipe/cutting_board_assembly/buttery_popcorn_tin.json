@@ -1,7 +1,7 @@
 {
   "type": "farm_and_charm:cutting_board_assembly",
   "finisher": {
-    "item": "minecraft:bucket"
+    "item": "minecraft:paper"
   },
   "ingredients": [
     {

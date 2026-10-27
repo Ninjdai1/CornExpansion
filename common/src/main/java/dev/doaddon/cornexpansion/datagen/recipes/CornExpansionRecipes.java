@@ -6,24 +6,18 @@ import dev.doaddon.cornexpansion.registry.CornExpansionTags;
 import dev.doaddon.cornexpansion.utils.CuttingBoardAssemblyRecipeBuilder;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.fabricmc.fabric.api.tag.convention.v2.TagUtil;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.recipes.*;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.util.Tuple;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-import java.util.stream.Stream;
 
 public class CornExpansionRecipes extends FabricRecipeProvider {
     public CornExpansionRecipes(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -78,11 +72,29 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 .requires(CornExpansionTags.BUTTER)
                 .save(exporter);
 
+        CuttingBoardAssemblyRecipeBuilder.cuttingBoardAssembly(CornExpansionObjects.RAW_CORN_DOG.get())
+                .requires(ObjectRegistry.MINCED_BEEF.get())
+                .requires(Items.EGG)
+                .requires(CornExpansionObjects.CORNMEAL.get())
+                .finisher(Ingredient.of(Items.STICK))
+                .save(exporter);
+
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(CornExpansionObjects.RAW_CORN_DOG.get()), RecipeCategory.FOOD, CornExpansionObjects.CORN_DOG.get(), 0.2f, 100)
+                .unlockedBy("has_corn_dog", FabricRecipeProvider.has(CornExpansionObjects.RAW_CORN_DOG.get()))
+                .save(exporter, CornExpansion.id("smoking/corn_dog"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(CornExpansionObjects.RAW_CORN_DOG.get()), RecipeCategory.FOOD, CornExpansionObjects.CORN_DOG.get(), 0.2f, 120)
+                .unlockedBy("has_corn_dog", FabricRecipeProvider.has(CornExpansionObjects.RAW_CORN_DOG.get()))
+                .save(exporter, CornExpansion.id("smelting/corn_dog"));
+
         // Popcorn Tins
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.POPCORN_TIN.get(), 1)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CornExpansionObjects.POPCORN_BAG.get(), 1)
                 .requires(CornExpansionObjects.POPCORN.get(), 8)
-                .requires(Items.BUCKET)
+                .requires(Items.PAPER)
                 .unlockedBy("has_popcorn", FabricRecipeProvider.has(CornExpansionObjects.POPCORN.get()))
+                .save(exporter);
+        CuttingBoardAssemblyRecipeBuilder.cuttingBoardAssembly(CornExpansionObjects.POPCORN_BAG.get())
+                .requires(CornExpansionObjects.POPCORN.get(), 4)
+                .finisher(Ingredient.of(Items.PAPER))
                 .save(exporter);
 
         // Variants
@@ -99,13 +111,13 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
 
             ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, type.popcorn_tin, 1)
                     .requires(type.popcorn, 8)
-                    .requires(Items.BUCKET)
+                    .requires(Items.PAPER)
                     .unlockedBy("has_"+type.name+"_popcorn", FabricRecipeProvider.has(type.popcorn))
                     .save(exporter);
 
             CuttingBoardAssemblyRecipeBuilder.cuttingBoardAssembly(type.popcorn_tin)
                     .requires(type.popcorn, 4)
-                    .finisher(Ingredient.of(Items.BUCKET))
+                    .finisher(Ingredient.of(Items.PAPER))
                     .save(exporter);
 
             if (type.polenta != null) {
@@ -128,22 +140,22 @@ public class CornExpansionRecipes extends FabricRecipeProvider {
                 new RecipeElements("sweet",
                         CornExpansionTags.SWEET_INGREDIENT,
                         CornExpansionObjects.SWEET_POPCORN.get(),
-                        CornExpansionObjects.SWEET_POPCORN_TIN.get(),
+                        CornExpansionObjects.SWEET_POPCORN_BAG.get(),
                         CornExpansionObjects.SWEET_POLENTA.get()),
                 new RecipeElements("buttery",
                         CornExpansionTags.BUTTER,
                         CornExpansionObjects.BUTTERY_POPCORN.get(),
-                        CornExpansionObjects.BUTTERY_POPCORN_TIN.get(),
+                        CornExpansionObjects.BUTTERY_POPCORN_BAG.get(),
                         CornExpansionObjects.BUTTERY_POLENTA.get()),
                 new RecipeElements("cheesy",
                         CornExpansionTags.CHEESE,
                         CornExpansionObjects.CHEESY_POPCORN.get(),
-                        CornExpansionObjects.CHEESY_POPCORN_TIN.get(),
+                        CornExpansionObjects.CHEESY_POPCORN_BAG.get(),
                         CornExpansionObjects.CHEESY_POLENTA.get()),
                 new RecipeElements("candied",
                         CornExpansionTags.CANDIED_INGREDIENT,
                         CornExpansionObjects.CANDIED_POPCORN.get(),
-                        CornExpansionObjects.CANDIED_POPCORN_TIN.get(),
+                        CornExpansionObjects.CANDIED_POPCORN_BAG.get(),
                         null)
         );
     }

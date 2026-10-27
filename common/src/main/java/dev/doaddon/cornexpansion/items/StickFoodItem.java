@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.satisfy.foundation.food.EffectFoodItem;
 import org.jetbrains.annotations.NotNull;
 
 public class StickFoodItem extends EffectItem {

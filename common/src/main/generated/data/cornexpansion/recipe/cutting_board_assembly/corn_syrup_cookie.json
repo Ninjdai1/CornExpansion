@@ -2,7 +2,7 @@
   "type": "farm_and_charm:cutting_board_assembly",
   "ingredients": [
     {
-      "tag": "cornexpansion:flour"
+      "tag": "c:flour"
     },
     {
       "item": "cornexpansion:corn_syrup"

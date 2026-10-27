@@ -17,14 +17,9 @@ public class CornExpansionTags {
 
     public static final TagKey<Item> POPCORN = TagKey.create(Registries.ITEM, CornExpansion.id("popcorn"));
 
-    public static final TagKey<Item> FLOUR = TagKey.create(Registries.ITEM, CornExpansion.id("flour"));
-    public static final TagKey<Item> FLOUR_FABRIC = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "flour"));
-    public static final TagKey<Item> FLOUR_FORGE = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("forge", "flour"));
+    public static final TagKey<Item> FLOUR = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "flour"));
 
-    public static final TagKey<Item> BREAD_FABRIC = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "bread"));
-    public static final TagKey<Item> BREAD_FORGE = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("forge", "bread"));
+    public static final TagKey<Item> BREAD = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "bread"));
 
     public static final TagKey<Item> KERNELS = TagKey.create(Registries.ITEM, CornExpansion.id("seeds/corn"));
-    public static final TagKey<Item> CORN_SEEDS_FABRIC = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("c", "seeds/corn"));
-    public static final TagKey<Item> CORN_SEEDS_FORGE = TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath("forge", "seeds/corn"));
 }

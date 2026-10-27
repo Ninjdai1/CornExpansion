@@ -10,11 +10,11 @@ public final class CornExpansionFabricClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         RenderTypeRegistry.register(RenderType.cutout(),
-                CornExpansionObjects.POPCORN_TIN_BLOCK.get(),
-                CornExpansionObjects.SWEET_POPCORN_TIN_BLOCK.get(),
-                CornExpansionObjects.BUTTERY_POPCORN_TIN_BLOCK.get(),
-                CornExpansionObjects.CHEESY_POPCORN_TIN_BLOCK.get(),
-                CornExpansionObjects.CANDIED_POPCORN_TIN_BLOCK.get()
+                CornExpansionObjects.POPCORN_BAG_BLOCK.get(),
+                CornExpansionObjects.SWEET_POPCORN_BAG_BLOCK.get(),
+                CornExpansionObjects.BUTTERY_POPCORN_BAG_BLOCK.get(),
+                CornExpansionObjects.CHEESY_POPCORN_BAG_BLOCK.get(),
+                CornExpansionObjects.CANDIED_POPCORN_BAG_BLOCK.get()
         );
 
         CornExpansionItemPredicates.register();

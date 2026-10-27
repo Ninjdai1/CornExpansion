@@ -5,12 +5,10 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.RegistrySupplier;
 import dev.doaddon.cornexpansion.CornExpansion;
-import dev.doaddon.cornexpansion.blocks.EffectFoodBlock;
-import dev.doaddon.cornexpansion.blocks.TinBlock;
+import dev.doaddon.cornexpansion.blocks.BagBlock;
 import dev.doaddon.cornexpansion.items.EffectItem;
-import dev.doaddon.cornexpansion.items.PlaceableEffectBlockItem;
 import dev.doaddon.cornexpansion.items.StickFoodItem;
-import dev.doaddon.cornexpansion.items.TinItem;
+import dev.doaddon.cornexpansion.items.BagItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -20,7 +18,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 import net.satisfy.foundation.util.RegistryUtil;
 import net.satisfy.farm_and_charm.core.registry.MobEffectRegistry;
 import dev.doaddon.cornexpansion.utils.CornExpansionFoodProperties;
@@ -69,17 +66,26 @@ public class CornExpansionObjects {
             getFoodItemSettings(FoodUtils.createFood(4, 0.4F)).stacksTo(16))
     );
 
-    public static final RegistrySupplier<Block> POPCORN_TIN_BLOCK = registerWithoutItem("popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.POPCORN_FOOD_PROPERTIES));
-    public static final RegistrySupplier<Block> SWEET_POPCORN_TIN_BLOCK = registerWithoutItem("sweet_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.SWEET_POPCORN_FOOD_PROPERTIES));
-    public static final RegistrySupplier<Block> BUTTERY_POPCORN_TIN_BLOCK = registerWithoutItem("buttery_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.BUTTERY_POPCORN_FOOD_PROPERTIES));
-    public static final RegistrySupplier<Block> CHEESY_POPCORN_TIN_BLOCK = registerWithoutItem("cheesy_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.CHEESY_POPCORN_FOOD_PROPERTIES));
-    public static final RegistrySupplier<Block> CANDIED_POPCORN_TIN_BLOCK = registerWithoutItem("candied_popcorn_tin", () -> new TinBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.CANDIED_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Item> RAW_CORN_DOG = registerItem("raw_corn_dog", () -> new StickFoodItem(
+            getFoodItemSettings(FoodUtils.createFood(2, 0.3F)).stacksTo(16))
+    );
+    public static final RegistrySupplier<Item> CORN_DOG = registerItem("corn_dog", () -> new StickFoodItem(
+            getFoodItemSettings(
+                    Platform.isNeoForge() ? FoodUtils.createFCFood(6, 0.6F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.MEDIUM_DURATION, false, false)
+                            : FoodUtils.createFood(6, 0.6F, MobEffects.REGENERATION, CornExpansionFoodProperties.SHORT_DURATION, false, false)).stacksTo(16))
+    );
 
-    public static final RegistrySupplier<Item> POPCORN_TIN = registerItem("popcorn_tin", () -> new TinItem((TinBlock) POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
-    public static final RegistrySupplier<Item> SWEET_POPCORN_TIN = registerItem("sweet_popcorn_tin", () -> new TinItem((TinBlock) SWEET_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
-    public static final RegistrySupplier<Item> BUTTERY_POPCORN_TIN = registerItem("buttery_popcorn_tin", () -> new TinItem((TinBlock) BUTTERY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
-    public static final RegistrySupplier<Item> CHEESY_POPCORN_TIN = registerItem("cheesy_popcorn_tin", () -> new TinItem((TinBlock) CHEESY_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
-    public static final RegistrySupplier<Item> CANDIED_POPCORN_TIN = registerItem("candied_popcorn_tin", () -> new TinItem((TinBlock) CANDIED_POPCORN_TIN_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Block> POPCORN_BAG_BLOCK = registerWithoutItem("popcorn_tin", () -> new BagBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> SWEET_POPCORN_BAG_BLOCK = registerWithoutItem("sweet_popcorn_tin", () -> new BagBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.SWEET_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> BUTTERY_POPCORN_BAG_BLOCK = registerWithoutItem("buttery_popcorn_tin", () -> new BagBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.BUTTERY_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> CHEESY_POPCORN_BAG_BLOCK = registerWithoutItem("cheesy_popcorn_tin", () -> new BagBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.CHEESY_POPCORN_FOOD_PROPERTIES));
+    public static final RegistrySupplier<Block> CANDIED_POPCORN_BAG_BLOCK = registerWithoutItem("candied_popcorn_tin", () -> new BagBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.CANDIED_POPCORN_FOOD_PROPERTIES));
+
+    public static final RegistrySupplier<Item> POPCORN_BAG = registerItem("popcorn_tin", () -> new BagItem((BagBlock) POPCORN_BAG_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> SWEET_POPCORN_BAG = registerItem("sweet_popcorn_tin", () -> new BagItem((BagBlock) SWEET_POPCORN_BAG_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> BUTTERY_POPCORN_BAG = registerItem("buttery_popcorn_tin", () -> new BagItem((BagBlock) BUTTERY_POPCORN_BAG_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> CHEESY_POPCORN_BAG = registerItem("cheesy_popcorn_tin", () -> new BagItem((BagBlock) CHEESY_POPCORN_BAG_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
+    public static final RegistrySupplier<Item> CANDIED_POPCORN_BAG = registerItem("candied_popcorn_tin", () -> new BagItem((BagBlock) CANDIED_POPCORN_BAG_BLOCK.get(), getDefaultItemProperties().stacksTo(16)));
 
 
     public static final RegistrySupplier<Item> GRANDMAS_CORNBREAD = registerItem("grandmas_cornbread", () -> new EffectItem(

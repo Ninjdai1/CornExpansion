@@ -1,5 +1,6 @@
 package dev.doaddon.cornexpansion.utils;
 
+import dev.doaddon.cornexpansion.CornExpansion;
 import net.minecraft.advancements.Criterion;
 import net.minecraft.core.NonNullList;
 import net.minecraft.data.recipes.RecipeBuilder;
@@ -95,7 +96,6 @@ public class CuttingBoardAssemblyRecipeBuilder implements RecipeBuilder {
 
     @Override
     public void save(RecipeOutput recipeOutput) {
-        save(recipeOutput, ResourceLocation.fromNamespaceAndPath("cornexpansion",
-                "cutting_board_assembly/"+result.toString().replace("cornexpansion:", "")));
+        save(recipeOutput, CornExpansion.id("cutting_board_assembly/"+result.toString().replace("cornexpansion:", "")));
     }
 }

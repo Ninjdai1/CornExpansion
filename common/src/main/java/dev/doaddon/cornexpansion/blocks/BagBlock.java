@@ -1,6 +1,8 @@
 package dev.doaddon.cornexpansion.blocks;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.component.DataComponentMap;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -20,6 +22,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.BooleanOp;
@@ -28,9 +31,11 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-public class TinBlock extends EffectFoodBlock {
+import java.util.List;
+
+public class BagBlock extends EffectFoodBlock {
     public static final EnumProperty<DyeColor> COLOR;
-    public TinBlock(BlockBehaviour.Properties settings, int maxBites, FoodProperties foodComponent) {
+    public BagBlock(BlockBehaviour.Properties settings, int maxBites, FoodProperties foodComponent) {
         super(settings, maxBites, foodComponent);
         this.registerDefaultState(this.defaultBlockState().setValue(COLOR, DyeColor.WHITE));
     }
@@ -62,6 +67,16 @@ public class TinBlock extends EffectFoodBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         super.createBlockStateDefinition(builder);
         builder.add(COLOR);
+    }
+
+    @Override
+    protected @NotNull List<ItemStack> getDrops(BlockState blockState, LootParams.Builder builder) {
+        if (blockState.getValue(BITES) == 0) {
+            ItemStack stack = new ItemStack(this.asItem());
+            stack.applyComponents(DataComponentMap.builder().set(DataComponents.BASE_COLOR, blockState.getValue(COLOR)).build());
+            return List.of(stack);
+        }
+        return super.getDrops(blockState, builder);
     }
 
     static {

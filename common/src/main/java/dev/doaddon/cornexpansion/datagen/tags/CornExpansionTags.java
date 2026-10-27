@@ -62,26 +62,12 @@ public class CornExpansionTags extends FabricTagProvider.ItemTagProvider {
 
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR)
-                .addTag(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR_FORGE)
-                .addTag(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR_FABRIC);
-
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR_FABRIC)
-                .add(CornExpansionObjects.CORN_FLOUR.get());
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.FLOUR_FORGE)
                 .add(CornExpansionObjects.CORN_FLOUR.get());
 
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BREAD_FABRIC)
-                .add(CornExpansionObjects.GRANDMAS_CORNBREAD.get());
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BREAD_FORGE)
+        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.BREAD)
                 .add(CornExpansionObjects.GRANDMAS_CORNBREAD.get());
 
         getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.KERNELS)
-                .addTag(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN_SEEDS_FABRIC)
-                .addTag(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN_SEEDS_FORGE);
-
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN_SEEDS_FABRIC)
-                .add(ObjectRegistry.KERNELS.get());
-        getOrCreateTagBuilder(dev.doaddon.cornexpansion.registry.CornExpansionTags.CORN_SEEDS_FORGE)
                 .add(ObjectRegistry.KERNELS.get());
     }
 }

@@ -1,0 +1,54 @@
+{
+  "parent": "cornexpansion:getpopcorn",
+  "criteria": {
+    "color_popcorn_bag": {
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "cornexpansion:popcorn_tin",
+                  "cornexpansion:candied_popcorn_tin",
+                  "cornexpansion:sweet_popcorn_tin",
+                  "cornexpansion:cheesy_popcorn_tin",
+                  "cornexpansion:buttery_popcorn_tin"
+                ]
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:red_dye"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:item_used_on_block"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.cornexpansion.colorbag.description"
+    },
+    "icon": {
+      "components": {
+        "minecraft:base_color": "red"
+      },
+      "count": 1,
+      "id": "cornexpansion:candied_popcorn_tin"
+    },
+    "title": {
+      "translate": "advancements.cornexpansion.colorbag.title"
+    }
+  },
+  "requirements": [
+    [
+      "color_popcorn_bag"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

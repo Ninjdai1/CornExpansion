@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 120,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "cornexpansion:raw_corn_dog"
+  },
+  "result": {
+    "id": "cornexpansion:corn_dog"
+  }
+}

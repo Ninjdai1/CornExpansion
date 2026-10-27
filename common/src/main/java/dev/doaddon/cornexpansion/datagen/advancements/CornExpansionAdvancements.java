@@ -9,9 +9,14 @@ import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.advancements.AdvancementType;
 import net.minecraft.advancements.critereon.*;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.component.DataComponentMap;
+import net.minecraft.core.component.DataComponentType;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.satisfy.farm_and_charm.core.registry.ObjectRegistry;
 
@@ -52,6 +57,33 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
             .addCriterion("get_popcorn", InventoryChangeTrigger.TriggerInstance.hasItems(CornExpansionObjects.POPCORN.get()))
             .parent(ROOT_ADVANCEMENT)
             .build(CornExpansion.id("getpopcorn"));
+
+    private static final ItemStack POPCORN_BAG_COLOR_DISPLAY;
+    static {
+        POPCORN_BAG_COLOR_DISPLAY = new ItemStack(CornExpansionObjects.CANDIED_POPCORN_BAG.get());
+        POPCORN_BAG_COLOR_DISPLAY.applyComponents(DataComponentMap.builder().set(DataComponents.BASE_COLOR, DyeColor.RED).build());
+    }
+    public static AdvancementHolder COLOR_POPCORN_BAG_ADVANCEMENT = Advancement.Builder.advancement()
+            .display(
+                    POPCORN_BAG_COLOR_DISPLAY,
+                    Component.translatable("advancements.cornexpansion.colorbag.title"),
+                    Component.translatable("advancements.cornexpansion.colorbag.description"),
+                    ResourceLocation.fromNamespaceAndPath("minecraft","textures/gui/advancements/backgrounds/adventure.png"),
+                    AdvancementType.TASK,
+                    true,
+                    true,
+                    false
+            )
+            .addCriterion("color_popcorn_bag", ItemUsedOnLocationTrigger.TriggerInstance.itemUsedOnBlock(
+                    LocationPredicate.Builder.location().setBlock(BlockPredicate.Builder.block().of(
+                            CornExpansionObjects.POPCORN_BAG_BLOCK.get(),
+                            CornExpansionObjects.CANDIED_POPCORN_BAG_BLOCK.get(),
+                            CornExpansionObjects.SWEET_POPCORN_BAG_BLOCK.get(),
+                            CornExpansionObjects.CHEESY_POPCORN_BAG_BLOCK.get(),
+                            CornExpansionObjects.BUTTERY_POPCORN_BAG_BLOCK.get()
+                    )), ItemPredicate.Builder.item().of(Items.RED_DYE)))
+            .parent(GET_POPCORN_ADVANCEMENT)
+            .build(CornExpansion.id("colorbag"));
 
     public static AdvancementHolder GET_EVERY_POPCORN_VARIANT_ADVANCEMENT = Advancement.Builder.advancement()
             .display(
@@ -140,6 +172,7 @@ public class CornExpansionAdvancements extends FabricAdvancementProvider {
     public void generateAdvancement(HolderLookup.Provider provider, Consumer<AdvancementHolder> consumer) {
         consumer.accept(ROOT_ADVANCEMENT);
         consumer.accept(GET_POPCORN_ADVANCEMENT);
+        consumer.accept(COLOR_POPCORN_BAG_ADVANCEMENT);
         consumer.accept(GET_EVERY_POPCORN_VARIANT_ADVANCEMENT);
         consumer.accept(GET_POLENTA_ADVANCEMENT);
         consumer.accept(GET_EVERY_POLENTA_VARIANT_ADVANCEMENT);

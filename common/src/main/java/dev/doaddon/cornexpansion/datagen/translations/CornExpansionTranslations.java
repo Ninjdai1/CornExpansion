@@ -42,12 +42,15 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add(CornExpansionObjects.BUTTERY_POLENTA.get(), "Buttery Polenta");
         tb.add(CornExpansionObjects.CHEESY_POLENTA.get(), "Cheesy Polenta");
 
+        tb.add(CornExpansionObjects.RAW_CORN_DOG.get(), "Raw Corn Dog");
+        tb.add(CornExpansionObjects.CORN_DOG.get(), "Corn Dog");
+
         // Blocks
-        tb.add(CornExpansionObjects.POPCORN_TIN_BLOCK.get(), "Popcorn Tin");
-        tb.add(CornExpansionObjects.SWEET_POPCORN_TIN_BLOCK.get(), "Sweet Popcorn Tin");
-        tb.add(CornExpansionObjects.BUTTERY_POPCORN_TIN_BLOCK.get(), "Buttery Popcorn Tin");
-        tb.add(CornExpansionObjects.CHEESY_POPCORN_TIN_BLOCK.get(), "Cheesy Popcorn Tin");
-        tb.add(CornExpansionObjects.CANDIED_POPCORN_TIN_BLOCK.get(), "Candied Popcorn Tin");
+        tb.add(CornExpansionObjects.POPCORN_BAG_BLOCK.get(), "Popcorn Bag");
+        tb.add(CornExpansionObjects.SWEET_POPCORN_BAG_BLOCK.get(), "Sweet Popcorn Bag");
+        tb.add(CornExpansionObjects.BUTTERY_POPCORN_BAG_BLOCK.get(), "Buttery Popcorn Bag");
+        tb.add(CornExpansionObjects.CHEESY_POPCORN_BAG_BLOCK.get(), "Cheesy Popcorn Bag");
+        tb.add(CornExpansionObjects.CANDIED_POPCORN_BAG_BLOCK.get(), "Candied Popcorn Bag");
 
         // Tags
         tb.add("tags." + CornExpansionTags.BUTTER.location().toLanguageKey(), "Butter");
@@ -58,9 +61,6 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add("tags." + CornExpansionTags.SWEET_INGREDIENT.location().toLanguageKey(), "Sweet Ingredient");
 
         tb.add("tags." + CornExpansionTags.POPCORN.location().toLanguageKey(), "Popcorn");
-
-        tb.add("tags." + CornExpansionTags.FLOUR_FABRIC.location().toLanguageKey(), "Flour");
-        tb.add("tags." + CornExpansionTags.FLOUR_FORGE.location().toLanguageKey(), "Flour");
 
         // Creative tab
         tb.add(CornExpansionCreativeTabs.CORNEXPANSION_TAB.getKey(), "Corn Expansion");
@@ -80,5 +80,10 @@ public class CornExpansionTranslations extends FabricLanguageProvider {
         tb.add("advancements." + CornExpansionAdvancements.DRINK_CORN_SYRUP.id().toLanguageKey() + ".description", "Drink Corn Syrup");
         tb.add("advancements." + CornExpansionAdvancements.COOK_KERNELS_ON_CAMPFIRE.id().toLanguageKey() + ".title", "These are not Marshmallows !");
         tb.add("advancements." + CornExpansionAdvancements.COOK_KERNELS_ON_CAMPFIRE.id().toLanguageKey() + ".description", "Cook Popcorn using a Campfire");
+        tb.add("advancements." + CornExpansionAdvancements.COLOR_POPCORN_BAG_ADVANCEMENT.id().toLanguageKey() + ".title", "Cliché");
+        tb.add("advancements." + CornExpansionAdvancements.COLOR_POPCORN_BAG_ADVANCEMENT.id().toLanguageKey() + ".description", "Place down a Popcorn Bag and dye it red");
+
+        // Misc
+        tb.add("tooltip.cornexpansion.canbedyed", "Can be dyed");
     }
 }
