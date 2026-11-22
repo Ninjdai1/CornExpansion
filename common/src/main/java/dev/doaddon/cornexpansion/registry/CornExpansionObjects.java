@@ -71,8 +71,8 @@ public class CornExpansionObjects {
     );
     public static final RegistrySupplier<Item> CORN_DOG = registerItem("corn_dog", () -> new StickFoodItem(
             getFoodItemSettings(
-                    Platform.isNeoForge() ? FoodUtils.createFCFood(6, 0.6F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.MEDIUM_DURATION, false, false)
-                            : FoodUtils.createFood(6, 0.6F, MobEffects.REGENERATION, CornExpansionFoodProperties.SHORT_DURATION, false, false)).stacksTo(16))
+                    Platform.isNeoForge() ? FoodUtils.createFCFood(9, 0.8F, MobEffectRegistry.SUSTENANCE, CornExpansionFoodProperties.MEDIUM_DURATION, false, false)
+                            : FoodUtils.createFood(9, 0.8F, MobEffects.REGENERATION, CornExpansionFoodProperties.SHORT_DURATION, false, false)).stacksTo(16))
     );
 
     public static final RegistrySupplier<Block> POPCORN_BAG_BLOCK = registerWithoutItem("popcorn_tin", () -> new BagBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CAKE), 8, CornExpansionFoodProperties.POPCORN_FOOD_PROPERTIES));
